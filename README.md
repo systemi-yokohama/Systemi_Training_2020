@@ -5,7 +5,7 @@
 ```
 /
 ├README.md                      README(本書)
-├Java_training
+├Java_training                  Java研修
 │ ├unit-01/                     イントロダクション
 │ │ ├Description.md              
 │ │ └practice
@@ -39,8 +39,8 @@
 │ └unit-11                      高度なプログラミング
 │   ├Description.md              
 │   └practice
-├Linux_training
-│ ├Description.md               Linux研修教材      
+├Linux_training                 Linux研修
+│ ├Description.md                     
 │ └practice
 └AppTec                         応用技術演習
   ├Description.md                     
