@@ -36,10 +36,13 @@
 │ ├unit-10                      ラムダ式_StreamAPI
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-11                      高度なプログラミング
+│ └unit-11                      高度なプログラミング
 │   ├Description.md              
 │   └practice
-└ AppTec                        応用技術演習
+├Lunux_training
+│ ├Description.md               Linux研修教材      
+│ └practice
+└AppTec                         応用技術演習
   ├Description.md                     
   └practice
 ```
