@@ -100,8 +100,8 @@
     * [関数](https://eng-entrance.com/linux-shellscript-function)
 * シェルスリプト演習
     1. 「bash」シェルのバージョン表示(コマンドで)
-    2. 「bash」のプログラムファイルがどこにあるか(コマンドで) 
-    3. 「echo」コマンドを使用して「hello_world」を表示(コマンドで)
+    1. 「bash」のプログラムファイルがどこにあるか(コマンドで) 
+    1. 「echo」コマンドを使用して「hello_world」を表示(コマンドで)
     4. 「echo」で表示した文字列(hello_world)を「testfile」にリダイレクトする。
     5. 「ls」コマンドの結果をパイプで「sort」コマンドでソートする。
     6. 「hello_world.sh」ファイルを作成し、実行権限を与える。
