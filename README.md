@@ -39,7 +39,7 @@
 │ └unit-11                      高度なプログラミング
 │   ├Description.md              
 │   └practice
-├Lunux_training
+├Linux_training
 │ ├Description.md               Linux研修教材      
 │ └practice
 └AppTec                         応用技術演習
