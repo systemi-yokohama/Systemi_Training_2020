@@ -6,37 +6,37 @@
 /
 ├README.md                      README(本書)
 ├Java_training                  Java研修
-│ ├unit-01/                     イントロダクション
+│ ├unit_01/                     イントロダクション
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-02/                     Javaの基本
+│ ├unit_02/                     Javaの基本
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-03/                     演算子
+│ ├unit_03/                     演算子
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-04/                     制御構文
+│ ├unit_04/                     制御構文
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-05/                     標準ライブラリ
+│ ├unit_05/                     標準ライブラリ
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-06/                     コネクションフレームワーク
+│ ├unit_06/                     コネクションフレームワーク
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-07/                     オブジェクト指向構文_1
+│ ├unit_07/                     オブジェクト指向構文_1
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-08/                     オブジェクト指向構文_2
+│ ├unit_08/                     オブジェクト指向構文_2
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-09                      オブジェクト指向構文_3
+│ ├unit_09                      オブジェクト指向構文_3
 │ │ ├Description.md              
 │ │ └practice
-│ ├unit-10                      ラムダ式_StreamAPI
+│ ├unit_10                      ラムダ式_StreamAPI
 │ │ ├Description.md              
 │ │ └practice
-│ └unit-11                      高度なプログラミング
+│ └unit_11                      高度なプログラミング
 │   ├Description.md              
 │   └practice
 ├Linux_training                 Linux研修
