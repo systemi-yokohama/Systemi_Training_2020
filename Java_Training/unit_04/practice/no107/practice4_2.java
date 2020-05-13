@@ -1,4 +1,4 @@
-package Java_Training.unit_04.practice.m107;
+package Java_Training.unit_04.practice.no107;
 
 public class practice4_2 {
 
