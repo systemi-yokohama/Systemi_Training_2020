@@ -1,0 +1,5 @@
+liu@PC511:~/pracitive/10$ vi var-hello_world.sh
+liu@PC511:~/pracitive/10$ chmod 755 var-hello_world.sh
+liu@PC511:~/pracitive/10$ vi var-hello_world.sh
+liu@PC511:~/pracitive/10$ ./var-hello_world.sh
+hello_world

@@ -1,0 +1,2 @@
+liu@PC511:~/pracitive/03$ echo hello_world
+hello_world

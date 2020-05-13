@@ -1,0 +1,5 @@
+liu@PC511:~/pracitive/16$ vi test.sh
+liu@PC511:~/pracitive/16$ chmod 557 test.sh
+liu@PC511:~/pracitive/16$ ./test.sh
+INPUT_a:hello word
+hello word
