@@ -1,0 +1,2 @@
+cmdlog.txt
+setactive_true.sh

@@ -1,0 +1,4 @@
+合計 0
+-rw-rw-rw- 1 kanafunaki kanafunaki   0  5月 13 11:44 cmdlog06.txt
+-rw-rw-rw- 1 kanafunaki kanafunaki  16  5月 13 11:42 cmdlog07.txt
+-rwxrwxrwx 1 kanafunaki kanafunaki 150  5月 13 11:37 hello_world.sh
