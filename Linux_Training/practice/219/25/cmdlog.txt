@@ -1,0 +1,10 @@
+liu@PC511:~/pracitive/25$ vi test.sh
+liu@PC511:~/pracitive/25$ chmod 755 test.sh
+liu@PC511:~/pracitive/25$ ./test.sh
+１．加法　２．減法　３．乗法　４．除法
+1
+値１を入力してください
+43
+値２を入力してください
+2
+結果は 45 です

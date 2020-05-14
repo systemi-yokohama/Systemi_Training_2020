@@ -1,0 +1,4 @@
+liu@PC511:~/pracitive/24$ vi test.sh
+liu@PC511:~/pracitive/24$ chmod 755 test.sh
+liu@PC511:~/pracitive/24$ ./test.sh
+cmdlog.txt  test.sh
