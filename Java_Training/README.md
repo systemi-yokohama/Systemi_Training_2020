@@ -14,8 +14,8 @@
 
 
 練習問題の回答ファイルの名前は
-practice〇_〇.md
+Practice〇_〇.md
 または
-practice〇_〇.java
+Practice〇_〇.java
 としてください。
 ※〇は、練習問題の番号で置き換えてください。
