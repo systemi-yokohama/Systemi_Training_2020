@@ -1,4 +1,0 @@
-liu@PC511:~/pracitive/18$ vi test.sh
-liu@PC511:~/pracitive/18$ chmod 557 test.sh
-liu@PC511:~/pracitive/18$ ./test.sh
-午前

@@ -1,8 +1,0 @@
-liu@PC511:~/pracitive/05$ ls -l |sort
--rw-rw-rw- 1 liu liu 0  5月 13 10:21 cmdlog.txt
-合計 0
-
-
-
-
-

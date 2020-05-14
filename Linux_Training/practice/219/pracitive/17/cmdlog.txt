@@ -1,4 +1,0 @@
-liu@PC511:~/pracitive/17$ vi test.sh
-liu@PC511:~/pracitive/17$ chmod 557 test.sh
-liu@PC511:~/pracitive/17$ ./test.sh
-13、05、2020、11:34

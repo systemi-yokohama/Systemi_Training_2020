@@ -1,2 +1,0 @@
-liu@PC511:~/pracitive/02$ which bash
-/usr/bin/bash

@@ -1,6 +1,0 @@
-liu@PC511:~/pracitive/20$ vi test.sh
-liu@PC511:~/pracitive/20$ chmod 755 test.sh
-liu@PC511:~/pracitive/20$ ./test.sh
-数字を入力してください
-150
-１００以上１０００未満です

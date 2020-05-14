@@ -1,8 +1,0 @@
-liu@PC511:~/pracitive/22$ vi test.sh
-liu@PC511:~/pracitive/22$ chmod 755 test.sh
-liu@PC511:~/pracitive/22$ ./test.sh
-5
-4
-3
-2
-1

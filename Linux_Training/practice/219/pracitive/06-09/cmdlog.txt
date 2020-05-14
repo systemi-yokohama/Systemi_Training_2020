@@ -1,4 +1,0 @@
-liu@PC511:~/pracitive/06-09$ vi hello_world.sh
-liu@PC511:~/pracitive/06-09$ chmod 755 hello_world.sh
-liu@PC511:~/pracitive/06-09$ ./hello_world.sh
-hello_world

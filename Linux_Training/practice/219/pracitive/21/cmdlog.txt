@@ -1,9 +1,0 @@
-liu@PC511:~/pracitive/21$ vi test.sh
-liu@PC511:~/pracitive/21$ chmod 755 test.sh
-liu@PC511:~/pracitive/21$ ./test.sh
-liu@PC511:~/pracitive/21$ ./test.sh
-５以上の数字を入力してください
-6
-6
-5
-終了
