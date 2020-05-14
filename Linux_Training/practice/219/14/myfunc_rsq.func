@@ -1,0 +1,4 @@
+function myfunc_return_square(){
+  RETURN_VAR=hello_world
+  echo $RETURN_VAR
+}

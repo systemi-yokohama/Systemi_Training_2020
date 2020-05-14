@@ -1,0 +1,6 @@
+liu@PC511:~/pracitive/14$ vi myfunc_rsq.func
+liu@PC511:~/pracitive/14$ vi test-func.sh
+liu@PC511:~/pracitive/14$ chmod 557 test-func.sh
+liu@PC511:~/pracitive/14$ chmod 557 myfunc_rsq.func
+liu@PC511:~/pracitive/14$ ./test-func.sh
+hello_world

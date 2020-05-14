@@ -1,0 +1,4 @@
+liu@PC511:~/pracitive/15$ vi test.sh
+liu@PC511:~/pracitive/15$ chmod 557 test.sh
+liu@PC511:~/pracitive/15$ ./test.sh
+5
