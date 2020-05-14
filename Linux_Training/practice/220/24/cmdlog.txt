@@ -1,0 +1,1 @@
+cmdlog.txt  current.sh
