@@ -1,0 +1,175 @@
+【問1～問14】
+下記のサイト参照
+https://eng-entrance.com/linux-plactice-shellscript
+
+【問15】
+#!/bin/bash
+
+a=10
+b=5
+
+c=`expr $a - $b`
+echo $c
+
+【問16】
+#!/bin/bash
+
+echo "入力"
+read a
+
+echo "出力"
+echo $a
+
+【問17】
+#!/bin/bash
+
+date "+%d日、%m月、%Y年、時刻%T"
+
+【問18】
+#!/bin/bash
+
+hour=`date "+%H"`
+
+# 12より小さい時の処理
+if [ $hour -lt "12" ]; then
+  echo "午前です"
+# 12以上の時の処理
+elif [ $hour -ge "12" ]; then
+  echo "午後です"
+fi
+
+【問19】
+#!/bin/bash
+
+# 忙しいかった日をカウントする変数
+busyday=0
+
+for week in 月 火 水 木 金 土 日; do
+
+  echo "$week曜日は忙しかったですか？(yes/no)"
+  read busy
+
+  case $busy in
+    yes) busyday=`expr $busyday + 1`;;
+    no) continue;;
+  esac
+done
+
+echo "$busyday日、忙しい日がありました。"
+
+【問20】
+#!/bin/bash
+
+echo "数値を入力"
+read num
+
+if [ $num -lt "100" ]; then
+  echo "100未満です"
+elif [ $num -ge "100" ] && [ $num -lt "1000" ]; then
+  echo "100以上1000未満です"
+elif [ $num -ge "1000" ]; then
+  echo "1000以上です"
+fi
+
+【問21】
+#!/bin/bash
+
+echo "5以上の数値を入力してください"
+read num
+
+if [ $num -ge "5" ]; then
+  echo "出力"
+  while [ $num -ge "5" ]; do
+    echo "$num"
+    num=`expr $num - 1`
+  done
+  echo "終わり"
+else
+  echo "5以上の数値ではありません。"
+fi
+
+【問22】
+#!/bin/bash
+
+count=5
+until [ $count -eq "0" ]; do
+  echo $count
+  count=`expr $count - 1`
+done
+
+【問23】
+#!/bin/bash
+
+num=`expr $RANDOM % 10`
+echo "数当てゲーム"
+
+while :
+do
+  echo "0～9の数値を入力してください"
+  read inputNumber
+
+  if [ $inputNumber -eq $num ]; then
+    echo "正解！$numでした"
+    break
+  elif [ $inputNumber -gt $num ]; then
+    echo "もっと小さい"
+  elif [ $inputNumber -lt $num ]; then
+    echo "もっと大きい"
+  fi
+done
+
+【問24】
+#!/bin/bash
+
+ls ./
+
+【問25】
+#!/bin/bash
+
+while :
+do
+  echo "四則演算 1)加算 2)減算 3)乗算 4)除算 5)終了"
+  read calc
+
+  case $calc in
+    1)
+      echo "加算を始めます"
+      echo "最初の値を入力"
+      read num1
+      echo "次の値を入力"
+      read num2
+      answer=`expr $num1 + $num2`
+      echo "$num1 + $num2 = $answer です"
+    ;;
+    2)
+      echo "減算を始めます"
+      echo "最初の値を入力"
+      read num1
+      echo "次の値を入力"
+      read num2
+      answer=`expr $num1 - $num2`
+      echo "$num1 - $num2 = $answer です"
+    ;;
+    3)
+      echo "乗算を始めます"
+      echo "最初の値を入力"
+      read num1
+      echo "次の値を入力"
+      read num2
+      answer=`expr $num1 '*' $num2`
+      echo "$num1 x $num2 = $answer です"
+    ;;
+    4)
+      echo "除算を始めます"
+      echo "最初の値を入力"
+      read num1
+      echo "次の値を入力"
+      read num2
+      answer=`expr $num1 '/' $num2`
+      echo "$num1 / $num2 = $answer です"
+    ;;
+    5) break;;
+  esac
+done
+
+echo "終了しました"
