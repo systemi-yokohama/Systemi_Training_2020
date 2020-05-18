@@ -1,23 +1,21 @@
 package Java_Training.practice100.no211;
 import java.util.Arrays;
+import java.util.Date;
 
-public class No037 {
-	Arrays list;
-	Arrays rtlist;
+public final class No037 {
+	public static void main(String[] args) {
+		var list = new Date[]{
+		};
 
-	No037(Arrays list){
-		this.list = list;
-	}
+		//shallow
+		var listS = Arrays.copyOf(list, list.length);
 
-	public Arrays shallow() {
-		this.rtlist = Arrays.copyOf(this.list, this.list.length);
-		return this.rtlist;
-	}
-
-	public Arrays deep(){
-		this.rtlist = new Arrays[this.list.length];
-		for(var i = 0; i < this.list.length; i++){
-			this.rtlist[i] = new Arrays(this.list[i].toString());
+		//deep
+		var listD = new Date[list.length];
+		for(var i = 0; i < list.length; i++){
+			listD[i] = new Date(list[i].toString());
 		}
+		
 	}
+	//??????????
 }
