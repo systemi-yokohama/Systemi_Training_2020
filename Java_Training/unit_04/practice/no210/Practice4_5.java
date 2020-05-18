@@ -1,7 +1,7 @@
 package Java_Training.unit_04.practice.no210;
 
 public class Practice4_5 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		var language = "C#";
 
 		if(language.equals("Scala") || language.equals("Kotlin") || language.equals("Groovy")) {
