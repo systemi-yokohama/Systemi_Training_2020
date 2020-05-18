@@ -1,4 +1,4 @@
-package ""Java.practice100.no212.no054;
+#!/usr/bin/bash
 
 /*
 ・コアAPI:java.util.stream
@@ -9,10 +9,8 @@ package ""Java.practice100.no212.no054;
 
 import java.util.stream.IntStream;
 
-public class No054{
-  public static void main(final String[]args{
-  final List<String> list = Arrays.atList(1,100);
-  System.out.println(sum);
-  }
-}
-
+public class evenNumber{
+	public static void main(String[]args{
+	List<String>list=Arrays.atList(1,100));
+	sum=Arrays.atList
+	System.out.println(sum);
