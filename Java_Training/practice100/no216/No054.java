@@ -1,4 +1,4 @@
-package Java_Training.practice100.no216.No54;
+package Java_Training.practice100.no216;
 
 public class No054 {
 	public static void main(String[] args) {
