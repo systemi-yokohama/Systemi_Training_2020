@@ -1,7 +1,7 @@
 package Java_Training.unit_04.practice.no210;
 
 public class Practice4_2 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		int i = 1;
 		int sum = 0;
 

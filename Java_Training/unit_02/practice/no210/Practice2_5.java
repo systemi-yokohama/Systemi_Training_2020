@@ -1,7 +1,7 @@
 package Java_Training.unit_02.practice.no210;
 
 public class Practice2_5 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		//1
 		var value = 10d;
 
