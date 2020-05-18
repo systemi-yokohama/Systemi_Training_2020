@@ -1,8 +1,4 @@
-[1]
-var value = "おはようございます。"
-System.out.println(value == null ? "値なし" : value) ;
-[2]
-①false
-②false
-③true
-④true
+x=6
+y=4
+builder1=いろはにほへと
+builder2=いろはにほへと

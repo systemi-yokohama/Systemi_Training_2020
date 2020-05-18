@@ -1,5 +1,4 @@
-int
-long
-double
-boolean
-byte
+①完全修飾名
+②単純名
+③import
+④解決

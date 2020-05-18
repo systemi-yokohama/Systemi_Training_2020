@@ -1,8 +1,0 @@
-package Java_Training.practice100.217;
-import java.util.stream.IntStream;
-
-public class Practice_054 {
-    public static void main(final String[] args) {
-        System.out.println(IntStream.rangeClosed(1, 100).filter(x -> x % 2 == 0).sum());
-    }
-}
