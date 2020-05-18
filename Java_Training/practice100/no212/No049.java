@@ -4,4 +4,3 @@
 public class No049{
        System.out.Println(DateUtil.getRandomDate());
 }
-
