@@ -1,0 +1,10 @@
+1.  ×　×　×　〇　×
+2.  <String,String>
+    "carrot","ニンジン"
+    remove
+    replace
+    entry.getKey()
+    entry.getValue()    
+3.  removeは範囲外
+    変数iはStringではない、intまたはvarである。
+    ArrayList<Integer>のように型パラメーターを明記する。
