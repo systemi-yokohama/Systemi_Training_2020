@@ -1,0 +1,6 @@
+- ① < String,String >
+- ②"carrot","ニンジン"
+- ③remove
+- ④replace
+- ⑤entry.getKey()
+- ⑥entry.getValue()
