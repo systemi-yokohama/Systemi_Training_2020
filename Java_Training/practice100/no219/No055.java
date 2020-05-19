@@ -16,12 +16,15 @@ public class No055 {
 			char fch='A';
 			int countc =0;
 			while((ch=(char)bfr.read())!=(char)-1){
-				if(ch !='\n' && ch !='\r'){
+				if(ch !='\n'){
 					countc++;
+				}else{
+					System.out.println(countc);
+					countc=0;
 				}
 				fch=ch;
 			}
-			System.out.println(countc);
+			
 			bfr.close();
 			fr.close();
 		}catch(Exception e){
