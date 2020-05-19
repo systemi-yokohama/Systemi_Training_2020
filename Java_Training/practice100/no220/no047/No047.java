@@ -10,7 +10,7 @@ import java.util.List;
 public class No047 {
 
 	public static void main(String[] args) {
-
+		
 			var datetime = new Date();
 			if(datetime == null) {
 				System.out.println("null");
@@ -18,7 +18,7 @@ public class No047 {
 				SimpleDateFormat sdformat = new SimpleDateFormat("yyyy年-MM月-dd日 HH時:mm分:ss秒.SSS");
 				System.out.println(sdformat.format(datetime));
 			}
-
+	
 
 			// String strDate = "2020年-05月-17日 00時:00分:00秒.000";
 			// if(strDate == null) {
