@@ -12,7 +12,7 @@ public class No059 {
 		var connection = (HttpURLConnection) new URL(args[0]).openConnection();
 		var result = connection.getResponseCode();
 		if(result != 200) {
-			System.out.println(0);
+			System.exit(0);
 		}
 		System.out.println(result);
 
