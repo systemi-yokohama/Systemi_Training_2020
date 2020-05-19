@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HttpBasic",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.HttpBasic",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Answer059",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.Answer059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StrIndex",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.StrIndex",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StrStrip",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.StrStrip",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StrBlank",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.StrBlank",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - No044",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no107.no044.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
