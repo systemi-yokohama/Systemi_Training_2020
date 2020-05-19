@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Practice_044 implements Comparable<Practice_044> {
+public class No044 implements Comparable<No044> {
 	/* Date型変数. */
 	private Date day;
 		
@@ -15,7 +15,7 @@ public class Practice_044 implements Comparable<Practice_044> {
 	 *
 	 * @param day Date型変数
 	 */
-	Practice_044 (Date day) {
+	No044 (Date day) {
 		this.day = day;
 	}
 
@@ -30,20 +30,20 @@ public class Practice_044 implements Comparable<Practice_044> {
 	@Deprecated
 	public static void main(final String[] args) {
 		/* Dateリスト. */
-		final List<Practice_044> dateList = new ArrayList<Practice_044>();
+		final List<No044> dateList = new ArrayList<No044>();
 		
 		/* リストへDateインスタンスを保有するオブジェクトを格納. */
-		dateList.add(new Practice_044(new Date()));
-		dateList.add(new Practice_044(new Date(1476423938529L)));
-		dateList.add(new Practice_044(new Date(1421453545000L)));
-		dateList.add(new Practice_044(null));
+		dateList.add(new No044(new Date()));
+		dateList.add(new No044(new Date(1476423938529L)));
+		dateList.add(new No044(new Date(1421453545000L)));
+		dateList.add(new No044(null));
 		
 		// nullが混在していた場合、エラーを出力する.
 		try {
 			System.out.println("ソート前");
 			
 			// ソート前のDateリストの日時を標準出力する.
-			for (Practice_044 date : dateList) {
+			for (No044 date : dateList) {
 				System.out.println(date.day);
 			}
 			
@@ -53,7 +53,7 @@ public class Practice_044 implements Comparable<Practice_044> {
 			System.out.println("\nソート後");
 			
 			// ソート後のDateリストの日時を標準出力する.
-			for (Practice_044 date : dateList) {
+			for (No044 date : dateList) {
 				System.out.println(date.day);
 			}
 			
@@ -66,13 +66,13 @@ public class Practice_044 implements Comparable<Practice_044> {
 	 * Dateインスタンスが保有する日時を比較し、
 	 * 日時の昇順ソートを行う.
 	 *
-	 * @param object Practice_044オブジェクト
+	 * @param object No044オブジェクト
 	 * @return Date型インスタンスの日時比較結果
 	 * @exception NullPointerException objectがnullの場合.
 	 */
 	@Override
-	public int compareTo(Practice_044 object) {
-		Practice_044 dayInstance = object;
+	public int compareTo(No044 object) {
+		No044 dayInstance = object;
 		
 		if (this.day == null && dayInstance.day == null) {
 			return 0;
