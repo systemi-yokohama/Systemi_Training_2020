@@ -39,14 +39,14 @@ public class No030 {
 		e.printStackTrace();
 	}
 }
-    public ObjectOutputStream(var out){
+    public static ObjectOutputStream(var out){
 		try(var out =new ObjectOutputStream(new FileOutputStream(file))){
 			out.writeObject(new No030("writeObjectに引き渡し","url",false));
 		}catch(IOException e){
 			e.printStackTrace();
 		}
 	}
-	public ObjectInputStream (var in) {
+	public static ObjectInputStream (var in) {
 		try (var in =new ObjectInputStream(new FileInputStream(file))){
 		var data=(No030)in.readObject();
 		System.out.println(data);
