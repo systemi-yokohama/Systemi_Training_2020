@@ -1,7 +1,7 @@
 package Java_Training.unit_04.practice.no210;
 
 public class Practice4_3 {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		var sum = 0;
 
 		for(var i = 100; i <= 200; i ++) {
