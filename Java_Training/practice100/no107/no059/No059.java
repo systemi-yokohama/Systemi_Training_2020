@@ -33,7 +33,7 @@ public class No059 {
 		/* 復帰値. */
 		int errorCode = 0;
 
-		String urlParam = "https://www.google.com/?hl=ja";
+		String urlParam = "https://www.google.co.jp/";
 
 		try {
 
