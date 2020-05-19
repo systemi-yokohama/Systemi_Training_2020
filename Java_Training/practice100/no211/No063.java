@@ -1,9 +1,4 @@
 package Java_Training.practice100.no211;
-/*
-public class No063 {
-	
-}
-*/
 
 /*## 063：複合(3)
 * 以下のコードの問題点を指摘し、修正案を提示せよ。

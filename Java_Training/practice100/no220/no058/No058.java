@@ -1,35 +1,37 @@
 package Java_Training.practice100.no220.no058;
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
+import java.io.IOException;
+import java.nio.file.*;
 
 public class No058 {
 	public static void main(String[] args) {
-
-		FileOutputStream fos = null;
-		OutputStreamWriter osw = null;
-		BufferedWriter bw = null;
-
-		try {
-			fos = new FileOutputStream("C:\\work\\project\\Kenshu\\Systemi_Training_2020\\No058.txt");
-
-			fos.write(0xef);
-			fos.write(0xbb);
-			fos.write(0xbf);
-
-			osw = new OutputStreamWriter(fos, "UTF-8");
-			bw = new BufferedWriter(osw);
-
-			bw.write("Hello");
-
-			bw.flush();
-			osw.flush();
-			fos.flush();
-			bw.close();
-			osw.close();
-			fos.close();
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
+		
+		if (args.length < 1 ) {
+            System.err.println("引数にテキストファイル名を指定し、再実行してください。");
+            System.exit(1);
+        }
+        try {
+            // ファイル内容をバイト表記で取得.
+            final byte[] fileContentBytes = Files.readAllBytes(Paths.get(args[0]));
+            
+            // バイト数が3未満の場合.
+            if (fileContentBytes.length < 3){
+                System.out.println("BOM無しファイルです。");
+                System.exit(0);
+            }            
+            
+            // BOM判定.
+            if (fileContentBytes[0] == (byte)0xEF && fileContentBytes[1] == (byte)0xBB
+                    && fileContentBytes[2] == (byte)0xBF) {
+                
+                System.out.println("BOM付きファイルです。");
+                System.exit(1);
+            } else {
+                System.out.println("BOM無しファイルです。");
+                System.exit(0);
+            }
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 	}
 }

@@ -1,1 +1,11 @@
-
+unit1:なし
+unit2:No11,No12,No13,No14済
+unit3:No63済
+unit4:No54済
+unit5:No30,No37,No45,No46,No47済
+unit6:No52,No53,No62済
+unit7:No15,No16,No22,No23済
+unit8:
+unit9:
+unit10:
+unit11:
