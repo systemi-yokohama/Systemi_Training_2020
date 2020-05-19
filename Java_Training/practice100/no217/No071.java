@@ -1,6 +1,6 @@
 package Java_Training.practice100.no217;
 
-public class Practice_071 {
+public class No071 {
     private volatile static long longValue = 0;
 
     public static void main(String[] args) throws Exception {

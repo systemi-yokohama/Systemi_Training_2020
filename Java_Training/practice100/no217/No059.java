@@ -15,7 +15,7 @@ import java.net.MalformedURLException;
 import java.net.UnknownHostException;
 import java.io.IOException;
 
-public class Practice_059 {
+public class No059 {
     public static void main(String[] args) {
          /* 復帰値. */
          int errorCode = 0;

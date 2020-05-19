@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.IOException;
 
-public class Practice_058 {
+public class No058 {
     public static void main(String[] args) {
         // 配列に値が入っていない場合、強制終了.
         if (args.length < 1 ) {
