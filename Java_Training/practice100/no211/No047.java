@@ -23,8 +23,5 @@ public class No047 {
         	System.out.println(dateStr);
 		}
 		*/
-}
-
-
 	}
 }
