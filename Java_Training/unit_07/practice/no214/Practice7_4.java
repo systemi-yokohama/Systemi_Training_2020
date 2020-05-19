@@ -9,6 +9,7 @@ System.out.println(value[0]);//②100:10
 }
 
 public class Practice7_4 {
+	
 	public int[] change(int[] value){
 		value[0]=100;//③100,200,300
 		return value;
