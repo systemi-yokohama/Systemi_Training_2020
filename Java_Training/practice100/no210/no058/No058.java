@@ -9,9 +9,9 @@ public class No058 {
 		try(var reader = Files.newBufferedReader(Paths.get(args[0]), StandardCharsets.UTF_8)) {
 			byte[] byt = Files.readAllBytes(Paths.get(args[0]));
 			if(byt[0] == 0xEF && byt[1] == 0xBB && byt[2] == 0xBF) {
-				System.out.println(0);
+				System.exit(0);
 			} else {
-				System.out.println(1);
+				System.exit(1);
 			}
 		} catch(IOException e) {
 			e.printStackTrace();

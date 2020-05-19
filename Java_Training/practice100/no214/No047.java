@@ -11,15 +11,16 @@ import java.util.Locale;
 public class FormatUtil{
 	public void main(String[] args){
 		FormatUtil formatUtil=new FormatUtil(LocalDateTime.now());
-		
+		FormatUtil.keisan(formatUtil);
 	}
-	public String formatUtil( int date){
-		if (date==null){
+	public String keisan( int data){
+		if (data==null){
 
 			return null;
 		}
-	final FormatUtil dt=new date("yyyy-MM-dd HH:mm:ss.SSS");
-	return dt.date();	
+
+	       final FormatUtil data=new data("yyyy-MM-dd HH:mm:ss.SSS");
+	       return data;	
 	}
 }	
 
