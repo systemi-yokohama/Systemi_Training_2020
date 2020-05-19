@@ -12,12 +12,14 @@ public class No055 {
 			// 指定したファイルをバイナリとして読み込む
 			FileInputStream fileinput = new FileInputStream(file);
 			// 指定した文字コードで構成されるテキストファイルを読み込む
-			InputStreamReader inputstream = new InputStreamReader(fileinput, "utf-8");
+			InputStreamReader inputstream = new InputStreamReader(fileinput, "UTF-8");
 			// ファイルを一行ずつ読み込む
 			BufferedReader b_reader = new BufferedReader(inputstream);
 			String line = b_reader.readLine();
+
 			while(line != null) {
 			System.out.println(line);
+			System.out.println(line.length());
 			line = b_reader.readLine();
 			}
 		} catch(IOException e) {
