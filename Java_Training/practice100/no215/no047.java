@@ -1,10 +1,12 @@
 package Java_Training.practice100.no215;
 
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
 public class no047 {
 	public static void main(String[] args){
-		FormatUtil();
+	Date d = new Date();
+	SimpleDateFormat day = new SimpleDateFormat("GGGGy-MM-dd- HH:mm:ss.SS");
+	System.out.println(day.format(d));
 	}
-	public static void FormatUtil(){
-		System.out.println(String.format("%Y-%m-%d- %H:%M:%S:%L"));
-}
 }
