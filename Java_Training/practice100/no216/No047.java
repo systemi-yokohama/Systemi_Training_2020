@@ -4,10 +4,10 @@ import java.time.SimpleDateFormat;
 
 public class No047 {
 	public static void main(String[] args) {
-		var dt = LocalDateTime.now();
+		var d = new LocalDateTime.now();
 
-		public static void FormatUtil() {
-			System.out.println(dt.format(DateTimeFormatter.ofpattern(yyyy-M-dd kk:mm:ss.SSS)));
-		}
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-M-dd kk:mm:ss.SSS");
+
+		System.out.println(sdf.format(d));
 	}
 }

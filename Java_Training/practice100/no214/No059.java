@@ -12,17 +12,20 @@ import java.nio.file.FileSystems;
 URLへのアクセスに失敗した場合は復帰値1で終了し、標準エラー出力に失敗内容を出力するものとする。 */
 public class No059 {
 	public void main(String[] args){
-	module selflearn{
+	
 		Requires java.net.http;
 		var client=HttpClient.newHttpClient();
 		var req=HttpRequest.newBuilder()
-		.url(URI.create("https://sample.jp"))
+		.url(URL.create("https://sample.jp"))
 		.build;
+
+
 //レス
+
 		var res =client.send(req, HttpResponse.BodyHandlers.ofString());
 		System.out.println(res.header());
 		System.out.println(res.body());
 	 
-	}
+	
 	}
 }

@@ -10,8 +10,5 @@ public class No049 {
 	public static class DateUtil {
 		private DateUtil(){
 		}
-
-
 	}
-	
 }

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class No022 {
 
-	public ArrayList usage(String... strs){
+	public void usage(String... strs){
 		var count = 0;
 		var list = new ArrayList<String>(4);
 		for(var str : strs){
@@ -29,14 +29,8 @@ public class No022 {
 			list.add("usage");
 		}
 
-		return list;
-	}
-
-	public static void main(String[] args) {
-		var list = usage("a","b","c");
 		for(var str : list){
 			System.out.println(str);
 		}
 	}
-
 }

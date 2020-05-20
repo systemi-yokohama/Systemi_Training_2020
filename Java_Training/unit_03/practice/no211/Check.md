@@ -9,13 +9,13 @@
 x = 6  
 y = 4  
 builder1 = "いろはにほへと"  
-builder2 = "いろは"  
+builder2 = "いろは"　→"いろはにほへと"  
 
 [3]  
 if文の条件がfalseであり、elseの処理が書かれていないので表示されない。  
 
     String str = null;
-    if(str.endWith(".java)){
+    if(str.endWith(".java)){　→if(str != null && str.endWith(".java")){  
         System.out.println("拡張子はjavaです");
     }
     else{
