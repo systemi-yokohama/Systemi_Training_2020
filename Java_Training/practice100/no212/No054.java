@@ -4,6 +4,7 @@
 ・API=アプリケーションプログラミングインタフェース
 ・APIは自己のソフトウェアを一部公開して、他のソフトウェアと機能を共有できるようにしたもの
 */
+package Java_Training.practice100.no212;
 
 import java.util.stream.IntStream;
 
@@ -12,3 +13,7 @@ public class evenNumber{
 	List<String>list=Arrays.atList(1,100));
 	sum=Arrays.atList
 	System.out.println(sum);
+
+	
+	}
+}
