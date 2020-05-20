@@ -1,4 +1,4 @@
-package Java_Training.practice100.no217;
+package Java_Training.practice100.no217.No058;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.IOException;
