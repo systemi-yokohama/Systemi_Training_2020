@@ -1,4 +1,4 @@
-package Java_Training.practice100.no217;
+package Java_Training.practice100.no217.No059;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
