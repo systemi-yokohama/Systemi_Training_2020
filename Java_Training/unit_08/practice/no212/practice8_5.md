@@ -1,0 +1,2 @@
+・インタフェースではextendsではなくimplementsを使う
+・public overrideではなく、publicの前の行で@overirdeとする
