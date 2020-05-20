@@ -11,6 +11,7 @@ public class Practice3_2 {
 		else{
 			System.out.println(value);
 		}
+		//→System.out.println(value==null ? "値なし" : value);
 	}
 	
 

@@ -31,4 +31,3 @@ public class LruHashMap<K, V> extends LinkedHashMap<K, V> {
         return size() > maxSize;
     }
 }
-© 2020 GitHub, Inc.

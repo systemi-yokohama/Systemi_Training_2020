@@ -1,7 +1,6 @@
 package Java_Training.practice100.no220.no049;
-import java.util.Random;
-import java.util.Date;
-import java.util.Calendar;
+import java.util.*;
+import java.text.*;
 
 public class No049 {
 
@@ -10,11 +9,26 @@ public class No049 {
 
 		Date date = new Date();
 		Calendar calendar = Calendar.getInstance();
-		calendar.setTime(date);
-		Random r = new Random();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd/HH/mm/ss");
 		
-		 
-		System.out.println();
+		var fdate = sdf.format(date);
+		
+		// 現在時刻
+		System.out.println(fdate);
+
+		// 一日前
+		calendar.add(Calendar.DAY_OF_MONTH, -1);
+		var yesterday = sdf.format(calendar.getTime());
+		System.out.println(yesterday);
+
+		// 一日後
+		calendar.add(Calendar.DAY_OF_MONTH, +2);
+		var tommorow = sdf.format(calendar.getTime());
+		System.out.println(tommorow);
+
+		
+		Random rand = new Random();
+		rand.nextInt(Integer.parseInt(tommorow) + yesterday);
 
     }
 	

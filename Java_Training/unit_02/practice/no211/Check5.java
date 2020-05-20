@@ -5,7 +5,7 @@ import javax.print.event.PrintJobListener;
 public class Check5 {
 	public static void main(String[] args) {
 	//1
-	var value = 10.0;
+	var value = 10.0;//→10d;
 	
 	//2
 	System.out.println("ようこそ、/n Javaの世界へ");
