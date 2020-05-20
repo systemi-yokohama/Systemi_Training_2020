@@ -18,7 +18,7 @@ public class No059 {
 
 		try(var writer1 = Files.newBufferedWriter(Paths.get("header.txt"));
 			var writer2 = Files.newBufferedWriter(Paths.get("body.txt"))) {
-			writer1.write(connection.headers());
+			writer1.write(connection.header());
 			writer2.write(connection.body());
 		} catch(IOException e) {
 			e.printStackTrace();
