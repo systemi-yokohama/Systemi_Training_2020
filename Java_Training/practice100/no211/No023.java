@@ -12,3 +12,5 @@ public class No023 {
 		System.out.println(overload(30));
 	}
 }
+
+→〇引数の部分にはfinalを入れたほうが良い
