@@ -1,15 +1,19 @@
 package Java_Training.practice100.no216;
 
 public class No015 {
-	public class Test {
-		public String name;
+	
+		private String str;
 
-		public Test(String name) {
-			this.name = name;
+		No015(final String str) {
+			this.str = str;
+		}
+		No015() {
+			this("no name");
 		}
 
-		public Test() {
-			System.out.println("no name");
+		public static void main(String[] args) {
+			System.out.println(new No015("Itly"));
+			System.out.println(new No015().str);
 		}
-	}
+	
 }
