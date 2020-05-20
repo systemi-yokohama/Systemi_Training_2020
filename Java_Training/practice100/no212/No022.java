@@ -4,6 +4,7 @@
 同一のメソッドに渡し、そのメソッドでは渡された引数を標準出力に1行につき１つずつ出力するプログラムを実装
 ・引数の数が３、５、７のいずれでもない場合はusageを出力して復帰コード２で終了するようにする
 */
+package Java_Training.practice100.no212;
 
 public class No022{
        public int command(int... numbers){
@@ -20,7 +21,7 @@ public class No022{
 	       default:
 		System.out.println("Usage");
 		break;
-       }
+	   }
        }
 
 }
