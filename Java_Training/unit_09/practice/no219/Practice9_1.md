@@ -1,0 +1,1 @@
+Object  this    instanceof  (Person)    equals  false  
