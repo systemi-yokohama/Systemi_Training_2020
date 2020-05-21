@@ -6,6 +6,6 @@ unit1:なし
 <br>unit6:No52,No53,No62済
 <br>unit7:No15,No16,No22,No23済
 <br>unit8:No24,No25,No26,No27,No28済
-<br>unit9:
+<br>unit9:No18,No20,No39,No42,No66,No68,No69,No70済
 <br>unit10:
 <br>unit11:
