@@ -13,7 +13,7 @@ public class No055 {
 			FileReader fr =new FileReader(file);
 			BufferedReader bfr = new BufferedReader(fr);
 			char ch;
-			char fch='A';
+			
 			int countc =0;
 			while((ch=(char)bfr.read())!=(char)-1){
 				if(ch !='\n'){
@@ -22,7 +22,7 @@ public class No055 {
 					System.out.println(countc);
 					countc=0;
 				}
-				fch=ch;
+				
 			}
 			
 			bfr.close();
