@@ -6,12 +6,16 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class No030 {
+	public String str;
+	public int i;
+
+
 	public static void main(String[] args) {
+
 		final var file = "C:/work/project/Kenshu/Systemi_Training_2020/Java_Training/practice100/no211/Article.java";
 
 		try(var out = new ObjectOutputStream(new FileOutputStream(file))){
-			out.writeObject(new Article("Java11の変更点と新しいAPI",
-			"http://codezine.jp/article/corner/751", false));
+			out.writeObject(new Article("string", 10));
 		}catch(IOException e){
 			e.printStackTrace();
 		}

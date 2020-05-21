@@ -6,10 +6,9 @@
 ・$s,$dではなく%s,%d
 */
 
-
 package Java_Training.unit_08.practice.no212;
 
-public class practice8_3 {
+public class Animal {
 private String name;
 private int age;
 
@@ -31,7 +30,7 @@ public void setName(String name){
 	this.name = name;
 }
 
-public getAge(){
+public int getAge(){
 	return this.age;
 }
 
