@@ -13,15 +13,18 @@ public class Practice5_3 {
 
 		String mes = "qwertyuiop";
 
-		try {
-			var writer = Files.newBufferedWriter(Paths.get(filePath), Charset.forName("Windows-31J"),
-					StandardOpenOption.APPEND);
+		try (var writer = Files.newBufferedWriter(Paths.get(filePath), Charset.forName("Windows-31J"),
+				StandardOpenOption.APPEND)) {
+			/*
+			 * var writer = Files.newBufferedWriter(Paths.get(filePath),
+			 * Charset.forName("Windows-31J"), StandardOpenOption.APPEND);
+			 */
 
 			writer.write(LocalDateTime.now().toString() + " " + String.join(",", mes));
 			// System.out.println(LocalDateTime.now().toString() + "\r\n");
 			// System.out.println(String.join(",", mes));
 			writer.newLine();
-			writer.close();
+			// writer.close();
 
 		} catch (IOException e) {
 			e.printStackTrace();
