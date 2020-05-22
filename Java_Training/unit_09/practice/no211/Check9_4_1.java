@@ -15,3 +15,5 @@ public class Check9_4_1 {
 		}
 	}
 }
+
+//→多分〇

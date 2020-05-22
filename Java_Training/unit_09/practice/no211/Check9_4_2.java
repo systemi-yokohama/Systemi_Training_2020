@@ -10,8 +10,17 @@ public class Check9_4_2 {
 		Saturday,
 		Sunday
 	}
- 
+
+	/*
 	public boolean check(Object obj) {
 		return obj instsnceof Weekday;
 	}
+	*/
+	
+	//→
+	public static void main(String[] args) {
+		var day = Weekday.valueOf("Monday");
+		System.out.println(day instanceof Weekday);
+	}
+
 }

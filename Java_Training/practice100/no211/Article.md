@@ -11,3 +11,5 @@ public class Article implements Serializable{
 		this.i = i;
 	}
 }
+
+//(No030)
