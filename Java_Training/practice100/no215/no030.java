@@ -6,26 +6,29 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.lang.invoke.SerializedLambda;
 
-public class no030 {
+public class no030 implements Serializable {
+	private static final long serialVersionUID=1L;
+	public String s;
+	public int i;
+
+	public no030(String s,int i){
+		this.s=s;
+		this.i=i;
+	}
+	
 	public static void main(String[] args) {
-		try (var out=new ObjectOutputStream(new FileOutputStream("file"))){
-			forSerializeClass serializeClass=new SerializeClass();
-			public String s;
-			public int i;
-
-			public Article(String s,int i){
-				this.a=a;
-				this.i=i;
-			}
+		final var file="C:/data/no030.ser";
+		try (var out=new ObjectOutputStream(new FileOutputStream(file))){
+			out.writeObject(new no030("シリアライズ",10));
+			
 			
 		}catch(IOException e){
 			e.printStackTrace();
 		}
 
-		try (var in=new ObjectInputStream(new FileInputStream("file"))){
-			var a=(Article)in.readObject();
+		try (var in=new ObjectInputStream(new FileInputStream(file))){
+			var a=(no030)in.readObject();
 			System.out.println(a);
 		}catch(ClassNotFoundException | IOException e){
 			e.printStackTrace();
