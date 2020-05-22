@@ -9,17 +9,20 @@
             return String.format("Person:%s %s",this.lastName,this.firstName);
         }
     }
-
+------------------------------------
     var day =Weekday.valueOf("Monday");
     System.out.println(day instanceOf Weekday);
+------------------------------------
 
     try{
 
     }catch(IOException|SQLException e){...}
+------------------------------------
 
     public class Main{
         private static class Sub{}
     }
+------------------------------------
 
     public static <T> ArrayList<T> newArrayList(T... data){
         return new ArrayList<T> (List.of(data));

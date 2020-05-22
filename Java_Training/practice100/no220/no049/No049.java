@@ -8,7 +8,7 @@ public class No049 {
 
 	
 	public static void main(String[] args) {
-		public static List<String> createDateList8(int year, int month, int day, int count) {
+		public static List<String> createDateList(int year, int month, int day, int count) {
 			List<String> list = new ArrayList<>();
 			
 			for (int i = 0; i < count; i++) {
