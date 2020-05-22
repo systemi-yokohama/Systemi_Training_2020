@@ -19,4 +19,33 @@
   5. this.memos.clone()
   6. CloneNotSupportedException   
 4. コード作成   
-  Practice9_4_4_(1~5).java    
+  1-2.  Practice9_4_4_(1~2).java
+  3. 
+  ```
+    try {
+			//
+		}
+		} catch (IOException| SQLException e) {
+			//
+		}
+  ```
+  4. 
+  ```
+    private static class Sub{
+		//
+	  }
+
+	public static void main(String[] args) {
+		//
+	  }
+  ```
+  5.     
+  ```
+    public static <T> ArrayList<T>newArrayList(T... data) {
+		return new ArrayList<T>(List.of(data));
+	  }
+
+	  public static void main(String[] args) {
+		  //
+	  }
+  ```
