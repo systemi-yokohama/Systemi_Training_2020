@@ -20,3 +20,5 @@ public class Practice4_1 {
 
 	}
 }
+
+//→〇

@@ -11,3 +11,5 @@ public class Practice7_3 {
 		System.out.println(Practice7_3.getBmi(50, 1.6));
 	}
 }
+
+//→〇

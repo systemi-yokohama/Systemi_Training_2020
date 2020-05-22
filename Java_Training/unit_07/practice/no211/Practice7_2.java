@@ -17,3 +17,5 @@ public class Practice7_2 {
 		}
 	}
 }
+
+//→〇

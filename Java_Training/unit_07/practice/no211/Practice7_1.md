@@ -6,3 +6,5 @@ public var data = 10; → public int data = 10;
 
 - フィールドにアクセスする際はthi.を使う  
 var data = 0; → this.data = 0;  
+→data = 0;でok  
+引数と重複している。

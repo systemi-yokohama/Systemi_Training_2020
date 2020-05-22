@@ -14,3 +14,5 @@ public class Check3 {
 		System.out.println("100~200の奇数の合計値は" + sum );
 	}
 }
+
+//→〇

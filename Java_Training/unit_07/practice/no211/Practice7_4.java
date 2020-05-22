@@ -2,6 +2,7 @@ package Java_Training.unit_07.practice.no211;
 
 public class Practice7_4 {
 	public static double getAverage(int... values) {
+		//引数はdouble...で
 		var sum = 0;
 		var count = 0;
 
@@ -10,6 +11,7 @@ public class Practice7_4 {
 			count += 1;
 		}
 		return sum/count;
+		//countしなくてもsum.lengthを使えばok
 	}
 
 	public static void main(String[] args) {

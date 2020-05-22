@@ -16,3 +16,5 @@ public class Check2 {
 		System.out.println("合計が1000をこえるのは、1~" + i + "を加算した時です");
 	}
 }
+
+//→〇

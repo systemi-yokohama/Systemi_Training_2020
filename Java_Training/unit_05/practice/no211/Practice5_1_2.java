@@ -7,3 +7,5 @@ public class Practice5_1_2 {
 		System.out.println(String.join("&", result));
 	}
 }
+
+//→〇

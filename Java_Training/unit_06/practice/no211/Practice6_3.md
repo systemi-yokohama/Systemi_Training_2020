@@ -4,4 +4,6 @@
 代表的なクラス  
 - HashSet
 - LinkedHashSet
-- TreeSet
+- TreeSet  
+
+→〇

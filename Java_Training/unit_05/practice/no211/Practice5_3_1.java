@@ -11,3 +11,5 @@ public class Practice5_3_1 {
 		System.out.println("month:" + month + "   minute:" + minute);
 	}
 }
+
+//→〇

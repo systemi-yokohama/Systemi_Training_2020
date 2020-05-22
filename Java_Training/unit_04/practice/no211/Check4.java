@@ -20,3 +20,5 @@ public class Check4 {
 		
 	}
 }
+
+//→〇
