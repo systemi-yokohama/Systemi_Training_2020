@@ -11,8 +11,7 @@ import javax.xml.crypto.Data;
 
 public class No049 {
 	public static void main(String[] args) {
-		var d =LocalDate.now();
-		var period =Period.ofDays(1);
+
 		ArrayList<Date> l1 = new ArrayList<>();
 		l1.add(LocalDate.now());
 		l1.add(d.plus(period));
