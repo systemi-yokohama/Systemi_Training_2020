@@ -7,7 +7,7 @@ public class No020 {
 	public static void main(String[] args) {
 		final List<String> genericList = new ArrayList<String>();
 
-		final ArrayList nonGenericList = new ArrayList();
+		final ArrayList<String> nonGenericList = new ArrayList<String>();
 
 		for (final String medal : MEDALS) {
 			genericList.add(medal);
@@ -17,7 +17,7 @@ public class No020 {
 			System.out.println(genericList.get(i));
 		}
 
-		for (String medal : MEDALS) {
+		for (final String medal : MEDALS) {
 			nonGenericList.add(medal);
 		}
 
