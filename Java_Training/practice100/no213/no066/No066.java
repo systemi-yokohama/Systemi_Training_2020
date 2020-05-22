@@ -13,7 +13,7 @@ public class No066 {
 		StringBuilder stb = new StringBuilder();
 
 		if(modelList == null) {
-			return null;
+			return result.toString();
 		}
 
 		for(Model model : modelList) {
@@ -23,7 +23,8 @@ public class No066 {
 				result = (stb.append("name:").append(model.getName()).append("\n"));
 				result = (stb.append("type:").append(model.getType()).append(model.getId()).append("\n"));
 				result = (stb.append("memo:").append(model.getMemo()).append("\n"));
-				result = stb.append("---------\n");
+				result = (stb.append("---------").append("\n"));
+				
 				if(model.getId() == null) {
 					return null;
 				}
@@ -40,6 +41,6 @@ public class No066 {
 				return null;
 			}
 		}
-		return result;
+		return result.toString();
 	}
 }

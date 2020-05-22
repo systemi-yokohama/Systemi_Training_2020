@@ -17,17 +17,18 @@ public class No030 implements Serializable {
 		this.title = title;
 		this.url = url;
 		this.i = i;
-	}
-}
-try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("file1.txt"))){
-	out.writeObject(new No030(title, url, i));
-} catch(IOException e) {
-	e.printStackTrace();
-}
+		
+		try(ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("file1.txt"))){
+			out.writeObject(new No030(title, url, i));
+		} catch(IOException s) {
+			s.printStackTrace();
+		}	
 
-try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("file.txt"))) {
-	var aa = (No030)in.readObject();
-	System.out.println(aa);
-} catch(ClassNotFoundException | IOException e) {
-	e.printStackTrace();
+		try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("file.txt"))) {
+			var aa = (No030)in.readObject();
+			System.out.println(aa);
+		} catch(ClassNotFoundException | IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

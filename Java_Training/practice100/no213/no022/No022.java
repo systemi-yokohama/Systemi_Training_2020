@@ -1,8 +1,8 @@
 package Java_Training.practice100.no213.no022;
 
 public class No022 {
-	public int command(int... values) {
-		for(var value : values) {
+	static void command(String... values) {
+		for(String value : values) {
 			System.out.println(value);
 		}
 	}
@@ -17,7 +17,6 @@ public class No022 {
 			command(args[0], args[3], args[5], args[6]);
 		} else {
 			System.out.println("Usage");
-			return 2;
 		}
 	}
 }
