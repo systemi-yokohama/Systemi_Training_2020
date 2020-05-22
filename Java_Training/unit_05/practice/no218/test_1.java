@@ -30,12 +30,13 @@ public class test_1 {
 		System.out.println(nt.plus(tt));
 		
 		//⑤
-		System.out.print("⑤:");
-		var da1 = LocalDateTime.of(2020, 3, 12);
-		var da2 = LocalDateTime.of(2020, 11, 5);
-		var period = Period.between(da1, da2);
-		System.out.println("差:" + period.getMonths() + "カ月" +  period.getDays() + "日");
-
+		
+		  System.out.print("⑤:");
+		  var da1 = LocalDateTime.of(2020, 3, 12, 0, 0);
+		  var da2 = LocalDateTime.of(2020, 11, 5, 0, 0);
+		  var period = Period.between(da1.toLocalDate(), da2.toLocalDate());
+		  System.out.println("差:" + period.getMonths() + "カ月" +  period.getDays() + "日");
+		
 
 	}
 
