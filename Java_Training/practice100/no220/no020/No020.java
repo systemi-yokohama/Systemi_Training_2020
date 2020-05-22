@@ -8,14 +8,14 @@ public class No020 {
 	};
 	
 	// ジェネリックスなし
-	public static void noGenerics() {
-		List medals = new ArrayList(MEDALS.length);	
+	// public static void noGenerics() {
+	// 	List medals = new ArrayList(MEDALS.length);	
 		
-		for(String medal : MEDALS) {
-			medals.add(medal);
-			System.out.println(medal);
-		}
-	}
+	// 	for(String medal : MEDALS) {
+	// 		medals.add(medal);
+	// 		System.out.println(medal);
+	// 	}
+	// }
 
 	// ジェネリックスあり
 	public static void generics() {
@@ -27,7 +27,7 @@ public class No020 {
 	}
 
 	public static void main(String[] args) {
-		noGenerics();
+		// noGenerics();
 		System.out.println("--------");
 		generics();
 	}

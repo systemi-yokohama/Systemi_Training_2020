@@ -9,6 +9,7 @@ public class No059 {
 		HttpClient client = HttpClient.newBuilder()
 		.version(HttpClient.Version.HTTP_2)
 		.build();
+		
 		// リクエストを準備
 		HttpRequest req = HttpRequest.newBuilder()
 		.uri(URI.create("https://codezine.jp/"))
@@ -17,12 +18,10 @@ public class No059 {
 		.build();
 
 		// リクエストを送信
-		// client.sendAsync(req, HttpResponse.BodyHandlers.ofString())
-		// .thenAccept(res ->{
-		// 	System.out.println(res.body());
-		// });
-		var res = client.send(req, HttpResponse.BodyHandlers.ofString());
-		System.out.println(res.body);
+		client.sendAsync(req, HttpResponse.BodyHandlers.ofString())
+		.thenAccept(res ->{
+			System.out.println(res.body());
+		});
 
 	}
 }
