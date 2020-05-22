@@ -10,9 +10,10 @@ import java.util.Arrays;
 import java.util.stream.Stream;
 
 public class No033 {
-	var list = new ArrayList<Int>(
-		Arrays.asList(0,1,2,3,4,5,6,7,8,9);
-	)
+	public static void main(String[] args) {
+	var list = new ArrayList<String>(
+		Arrays.asList(0,1,2,3,4,5,6,7,8,9));
 	.filter(number -> isOddNumber(number))
 	.forEach(System.out::println);
+}
 }
