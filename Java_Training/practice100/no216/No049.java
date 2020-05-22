@@ -6,9 +6,4 @@ public class No049 {
 		final Date randomDate = new DateUtil().randomDayAndTime();
 		System.out.println(randomDate);
 	}
-
-	public static class DateUtil {
-		private DateUtil(){
-		}
-	}
 }
