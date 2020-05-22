@@ -13,3 +13,10 @@
   5. v -> v.length() > 3
 3. コードの作成
   Practice10_2_3_(1~5).java
+  3. 
+  ```
+  @FunctionalInterface 
+	public interface Foo<T,R> {
+		R process(T v1, T v2);
+	}
+  ```
