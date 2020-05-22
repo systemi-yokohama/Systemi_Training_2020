@@ -16,11 +16,32 @@ public class No018 {
 			this.id = id;
 			this.animals = animals;
 		}
-		public int NumberId() {
+		public int getNumberId() {
 			return this.id;
 		}
-		public String Name() {
+		public String getName() {
 			return this.animals;
 		}
+		public static T_animal getId(int id) {
+			for(T_animal Tanimal : T_animal.values()) {
+				if(Tanimal.getNumberId() == id) {
+					return Tanimal;
+				}
+			}
+			return null;
+		}
+
+		public static T_animal getAnimal(String animals) {
+			for(T_animal tAnimal : T_animal.values()) {
+				if(tAnimal.getName().equals(animals)) {
+					return tAnimal;
+				}
+			}
+			return null;
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println(T_animal.getAnimal("子"));
+		System.out.println(T_animal.getId(5));
 	}
 }
