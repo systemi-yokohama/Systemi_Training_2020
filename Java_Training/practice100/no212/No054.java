@@ -8,6 +8,18 @@ package Java_Training.practice100.no212;
 
 import java.util.stream.IntStream;
 
+public class No054{
+public static void main(final String[] args) {
+IntStream.rangeClosed(1,100);
+var i = rangeClosed;
+if(i % 2 != 0) {
+	continue;
+}
+sum += i;
+}
+}
+
+/*
 public class evenNumber{
 	public static void main(String[]args{
 	List<String>list=Arrays.atList(1,100));
@@ -17,3 +29,4 @@ public class evenNumber{
 	
 	}
 }
+*/

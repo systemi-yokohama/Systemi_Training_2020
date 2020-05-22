@@ -7,21 +7,28 @@
 package Java_Training.practice100.no212;
 
 public class No022{
-       public int command(int... numbers){
-       swtich(numbers.length){
-	       case 3:
-	        number(numbers[0],numbers[1]);
-		break;
-	       case 5:
-		number(numbers[1],numbers[2],numbers[4]);
-		break;
-	       case 7:
-		number(numbers[0],numbers[3],numbers[5],numbers[6]);
-		break;
-	       default:
-		System.out.println("Usage");
-		break;
+       public static void main(String... numbers){
+       switch(numbers.length){
+	    case 3:
+		showNumbers(numbers[0],numbers[1]);
+		    break;
+	    case 5:
+		showNumbers(numbers[1],numbers[2],numbers[4]);
+			break;
+	    case 7:
+		showNumbers(numbers[0],numbers[3],numbers[5],numbers[6]);
+			break;
+	    default:
+			System.out.println("Usage");
+			System.exit(2);
+			break;
 	   }
-       }
+	   }
+	   
+	   private static void showNumbers(String... items) {
+        for (String item : items) {
+            System.out.println(item);
+		}
+	   }
 
 }
