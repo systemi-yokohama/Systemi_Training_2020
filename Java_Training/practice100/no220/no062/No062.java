@@ -4,11 +4,11 @@ import java.util.*;
 
 public class No062 {
 	public static void main(String[] args) {
-		Map<String, String> map = Collections.synchronizedMap(new LinkedHashMap<String, String>());
+		Map<String, String> map = Collections.synchronizedMap(new LinkedHashMap<String, String>(100));
 		map.put("key1", "value1");
 		map.put("key2", "value3");
 		map.put("key3", "value4");
-		System.out.println(map);
+		// System.out.println(map);
 		// すでに挿入されているものと同じキーでデータを挿入した場合は、既存のデータを上書きする。
 		map.put("key1", "value2");
 		System.out.println(map);
@@ -27,6 +27,8 @@ public class No062 {
 		
 		// 単純な挿入・取得処理では、入れたデータは消えない。
 		map.put("key100", "value100");
+		map.put("key101", "value101");
+		map.put("key102", "value102");
 		System.out.println(map);
 		System.out.println(map.get("key1"));
 
