@@ -9,11 +9,36 @@ private static final String[] MEDALS = new String[]{
 
 package Java_Training.practice100.no212;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class No020 {
 	private static final String[] MEDALS = new String[]{
 		"GOLD", "SILVER", "BRONZE"
 	};
+public static void main(String arguments[]) {
+	NonGeneList();
+	GeneList();
+}
 
-//public class ArrayList<E> 
+private static void NonGeneList() {
+	List nonGeneList = new ArrayList();
+	for (String medal : MEDALS) {
+		nonGeneList.add((String) medal);
+	}
+	for (int i = 0; i < nonGeneList.size(); i++) {
+		System.out.println((String) nonGeneList.get(i));
+	}
+}
+
+private static void GeneList() {
+	List<String> geneList = new ArrayList<String>();
+	for (String medal : MEDALS) {
+		geneList.add(medal);
+	}
+	for (String item : geneList) {
+		System.out.println(item);
+	}
+}
 
 }

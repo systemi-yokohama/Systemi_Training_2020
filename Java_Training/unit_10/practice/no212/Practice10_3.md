@@ -1,23 +1,33 @@
+//①
 package Java_Training.unit_10.practice.no212;
 
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+import java.util.function.Consumer;
 
-public class Practice10_3 {
-	public static void main(String[] args) {
-//①
-@FunctionalInterface
-public interface Hoge{
-	void print(String str);
+public class Practice10_4 {
+	public void main(String[] data,Hoge output) {
+		for (var str :data){
+			output.print(str);
+		}
+	}
+		static void addQuote(String str){
+			System.out.printf("%s￥n",str);
+		}
+
+		@FunctionalInterface
+		public interface Hoge{
+			void print(String str);
+		}
 }
 
 //②
-@FunctionalInterface
-public interface Foo<T,R>{
-	R process(T v1,T v2);
-}
+		@FunctionalInterface
+		public interface Foo<T,R>{
+			R process(T v1,T v2);
+		}
 
 //③
 var list = new ArrayList<String>(
@@ -39,5 +49,3 @@ Stream.of("シュークリーム","プリン","マドレーヌ","ババロア")
 var list = new int[]{60,95,75,80,70};
 System.out.println(IntStream.of(list).max().orElse(0));
 System.out.println(IntStream.of(list).average().orElse(0));
-	}
-}
