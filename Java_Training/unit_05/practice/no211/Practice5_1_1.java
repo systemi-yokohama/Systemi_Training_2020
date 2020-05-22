@@ -9,3 +9,5 @@ public class Practice5_1_1 {
 		System.out.println(ming);
 	}
 }
+
+//→〇

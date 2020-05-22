@@ -10,3 +10,5 @@ public class Practice5_3_2 {
 		System.out.println("20日後は" + date20);
 	}
 }
+
+//→おそらく〇

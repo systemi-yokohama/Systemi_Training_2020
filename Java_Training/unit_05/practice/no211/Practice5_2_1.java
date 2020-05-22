@@ -12,3 +12,4 @@ public class Practice5_2_1 {
 		}
 	}
 }
+//→〇

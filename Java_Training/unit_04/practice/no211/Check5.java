@@ -28,3 +28,9 @@ public class Check5 {
 		
 	}
 }
+
+/*
+→
+if(language.equals("XX")||language.equals("OO")||~){}
+みたいな感じにまとめられる。
+*/

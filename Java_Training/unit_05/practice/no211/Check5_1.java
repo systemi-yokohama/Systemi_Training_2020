@@ -15,6 +15,7 @@ public class Check5_1 {
 		//3
 		var str3 = "彼女の名前は花子です。";
 		System.out.println(str3.replaceAll("彼女","妻"));
+		//Allはなくても可
 
 		//4
 		var date4 = LocalDateTime.now();

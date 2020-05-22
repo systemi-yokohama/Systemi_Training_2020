@@ -10,3 +10,5 @@ public class Practice5_2_2 {
 
 	}
 }
+
+//→〇

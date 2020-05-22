@@ -11,6 +11,7 @@ public class Check5_4 {
 
 		//3
 		var array = new Integer[] {110, 14, 28, 32};
+		//配列なのでラッパーじゃなくてok(int)
 		Arrays.sort(array);
 		System.out.println(Arrays.toString(array));
 	}
