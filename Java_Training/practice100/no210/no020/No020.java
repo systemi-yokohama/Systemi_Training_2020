@@ -7,21 +7,27 @@ public class No020 {
 		"GOLD", "SILVER", "BRONZE"
 	};
 
-	//ジェネリクス使用
-	List<String> jMedals = new ArrayList<String>(MEDALS.length);
-	for(String jmedal : MEDALS) {
-		jMedals.add(jmedal);
-	}
-	for(String jmedal2 : jMedals) {
-		System.out.println(jmedal2);
-	}
+	public static void main(String[] args) {
+		//ジェネリクス使用
+		List<String> jMedals = new ArrayList<String>(MEDALS.length);
 
-	//ジェネリクス未使用
-	List medals = new ArrayList(MEDALS.length);
-	for(String medal : MEDALS) {
-		medals.add(medal);
-	}
-	for(String medal2 : medals) {
-		System.out.println(medal2);
+		for(var jmedal : MEDALS) {
+			jMedals.add(jmedal);
+		}
+
+		for(var jmedal2 : jMedals) {
+			System.out.println(jmedal2);
+		}
+
+		//ジェネリクス未使用
+		List medals = new ArrayList(MEDALS.length);
+
+		for(var medal : MEDALS) {
+			medals.add(medal);
+		}
+
+		for(var medal2 : medals) {
+			System.out.println(medal2);
+		}
 	}
 }
