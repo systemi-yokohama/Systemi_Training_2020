@@ -1,8 +1,4 @@
-package Java_Training.unit_09.practice.no220;
-
-public class Practice9_4 {
-
-	// // 問1
+// // 問1
 	public static void main(String[] args) {
 		Practice9_4 person = new Practice9_4("first", "last");
 		System.out.println(person);
@@ -45,5 +41,3 @@ public class Practice9_4 {
 	public static <T> ArrayList<T> new ArrayList(T... list) {
 		return new ArrayList<T>(List.of(list));
 	}
-
-}

@@ -16,12 +16,13 @@ public class No055 {
 			// ファイルを一行ずつ読み込む
 			BufferedReader b_reader = new BufferedReader(inputstream);
 			String line = b_reader.readLine();
-
+			
 			while(line != null) {
-			System.out.println(line);
-			System.out.println(line.length());
-			line = b_reader.readLine();
+				System.out.println(line);
+				System.out.println(line.length());
+				line = b_reader.readLine();
 			}
+				b_reader.close();
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
