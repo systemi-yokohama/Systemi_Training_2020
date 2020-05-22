@@ -14,10 +14,12 @@ public class No079 {
 	public static void main(String[] args) {
 		var fs =FileSystems.getDefault();
 		var path=fs.getPath("http://example.com/folder/file.png");	
-		var dir1=Fails.createDirectories("C:\temp\test.txt");
-		try (var reader =Files.newBufferedReader(Path.get(dir1))){
-		out.writeObject(new data(C:\temp\test.txt),false);
+		var dir1=Files.createDirectories("C:\temp\test.txt");
+
+		try (var out =Files.newBufferedReader(path.get(dir1))){
+		out.writeObject(new data("C:\temp\test.txt"),false);
         } catch (IOException e) {
+			System.out.println(fs);
 	      e.printStackTrace();
 }
 	}

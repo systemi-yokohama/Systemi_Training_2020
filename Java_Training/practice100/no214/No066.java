@@ -1,14 +1,18 @@
 package Java_Training.practice100.no214;
-/*以下はModelクラスのリストを文字列化して返すプログラムである。
-問題点を指摘し、修正せよ。なお、Modelクラスは適切な実装が与えられているものとする。*/
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+
 
 public class No066 {
-    private No066() {};
+    
+    
+        public static String convertToString(List < Integer  > modelList) {
 
-    public static String convertToString(List<Model> modelList) {
-        String result = "";
-
-        for (Model model : modelList) {
+        StringBuilder result =new StringBuilder(" ");
+        
+        
+        for (Integer model : modelList) {
             if(null!=model){//モデルクラスのリストに値が入っているなら実行するという風にする。
             //result += "id:" + model.getId() + "\n";　リザルトに対して+=ではなくappendを使うべき。
             result.append( "id:");
@@ -34,8 +38,8 @@ public class No066 {
             
             result.append( "---------\n");
             }
+            
         }
-
-        return result;
+        return result.toString();
+        
     }
-}
