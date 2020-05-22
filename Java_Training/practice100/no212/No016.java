@@ -5,7 +5,12 @@
 
 package Java_Training.practice100.no212;
 
-private class No016{
-	private class name = new No016();
+public class No016{
+	String name;
+
+private No016(){
+    this.name = "a";
+}
+
 }
 

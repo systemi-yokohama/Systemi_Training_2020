@@ -14,6 +14,6 @@ public class No020 {
 		"GOLD", "SILVER", "BRONZE"
 	};
 
-public class ArrayList<E> 
+//public class ArrayList<E> 
 
 }

@@ -9,13 +9,12 @@ package Java_Training.practice100.no212;
 public class No015{
 	public String name;
 
-        public No015(){
-	this(name);
-	}
+public No015(){
+	this.name = "no name";
+}
 
-	public No015(String name1){
+public No015(String name1){
 	this.name = name1;
-	}
-
+}
 
 }

@@ -11,7 +11,7 @@ import java.util.ArraysList;
 import java.util.Coollections;
 import java.util.Arrays;
 
-public class No044(){
+public class No044 implements Comparable<No044> {
 	date = new Date();
 }
 
