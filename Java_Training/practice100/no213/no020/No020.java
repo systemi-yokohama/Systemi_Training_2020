@@ -8,19 +8,15 @@ public class No020 {
 		"GOLD", "SILVER", "BRONZE"
 	};
 	public static void main(final String[] args) {
-		final List<String> list = new ArrayList<String>();
-		for(var list : MEDALS) {
-			list.add("NO MEDAL");
-		}
-
-		final List list1 = new ArrayList();
+		final List<String> list = new ArrayList<String>(MEDALS.length);
 		for(var list1 : MEDALS) {
-			list1.add("No Medal");
+			list.add(list1);
+			System.out.println(list);
 		}
-
-		for(int i = 0; i < MEDALS.length; i++) {
-			System.out.println(MEDALS.get(i));
+		final List list1 = new ArrayList(MEDALS.length);
+		for(var list2 : MEDALS) {
+			list1.add(list2);
+			System.out.println(list1);
 		}
-
 	}
 }
