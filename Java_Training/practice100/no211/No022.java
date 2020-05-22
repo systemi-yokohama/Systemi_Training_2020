@@ -7,7 +7,7 @@ public class No022 {
 		var count = 0;
 		var list = new ArrayList<String>(4);
 		for(var str : strs){
-			count += 1;
+            count += 1;
 		}
 
 		if(count == 3){
