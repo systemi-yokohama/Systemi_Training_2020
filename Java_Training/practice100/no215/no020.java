@@ -1,5 +1,8 @@
 package Java_Training.practice100.no215;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class no020 {
 	
 	private static final String[] MEDALS = new String[]{
@@ -8,16 +11,17 @@ public class no020 {
 
 
 	private static void generic(){
-		List<String> medals = new ArrayList<>();
+		List<String> medals = new ArrayList<>(MEDALS.length);
 		for(String medal:MEDALS){
-			System.out.println(madal);
+			System.out.println(medal);
 	
 		}
 	}
 
 	public static void nogeneric(){
-		List list = new ArrayList();
+		List<String> list = new ArrayList<>(MEDALS.length);
 		for(String medal:MEDALS){
-			System.out.println(madal);
+			System.out.println(medal);
+		}
 	}
 }
