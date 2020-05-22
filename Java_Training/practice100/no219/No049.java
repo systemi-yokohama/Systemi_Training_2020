@@ -14,7 +14,7 @@ public class No049 {
 		var d =LocalDate.now();
 		var period =Period.ofDays(1);
 		ArrayList<Date> l1 = new ArrayList<>();
-		l1.add(LocalDate.now())
+		l1.add(LocalDate.now());
 		l1.add(d.plus(period));
 		l1.add(d.minus(period));
 		l1=new ArrayList<>(new HashSet<>(l1));

@@ -6,9 +6,9 @@ import java.io.FileReader;
 
 
 
-public class No055{
+public class No055_1{
 	public static void main(String[] args) {
-		File file = new File("C://work/project/kenshu/Systemi_Training_2020/Java_Training/practice100/no219/No055/test.txt");
+		File file = new File("C://work/project/kenshu/Systemi_Training_2020/Java_Training/practice100/no219/no055/test.txt");
 		try{
 			FileReader fr =new FileReader(file);
 			BufferedReader bfr = new BufferedReader(fr);
