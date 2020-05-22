@@ -1,13 +1,10 @@
 package Java_Training.practice100.no214;
-/*
-以下の配列MEDALSについて、ジェネリクスを用いた場合のリストと用いない場合のリストにそれぞれ要素を入れ、
-それぞれのリストについて、全要素を順番に出力するためのプログラムを実装せよ。
-private static final String[] MEDALS = new String[]{
-    "GOLD", "SILVER", "BRONZE"
-};
-*/
 
-public class No020A {
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class No020 {
 	private static final String[] MEDALS = new String[]{
 	"GOLD", "SILVER", "BRONZE"
 	

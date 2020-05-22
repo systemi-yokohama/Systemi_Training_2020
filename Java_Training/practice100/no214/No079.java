@@ -5,7 +5,7 @@ package Java_Training.practice100.no214;
 取得元にアクセスし、保存先フォルダーに対象ファイルを保存する
 取得元としては、URL（http://example.com/folder/file.png の形式）、ローカルファイル（C:\temp\test.txtの形式）、UNC形式のパス(\\host\public\file.htmlの形式)の3種類が指定できる。
 処理が失敗した場合は、保存先フォルダーのerror.txtに対して、失敗したファイルの取得元パスを出力する。*/
-
+import java.io.ObjectInput;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;

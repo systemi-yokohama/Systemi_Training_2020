@@ -4,8 +4,8 @@ import java.io.IOException;
 
 /*以下は、テキストファイルを読み取り、その結果を出力するプログラムである。
 問題点を指摘し、修正せよ。*/
-public class Knock070 {
-    private static final Logger logger = Logger.getLogger("Knock070");
+public class No070 {
+    private static final Logger logger = Logger.getLogger("No070");
 
     public static void readFile() {
         //FileReader reader = null;
