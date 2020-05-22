@@ -48,14 +48,11 @@ public static No018 etoId(final String name) {
   }
   return null;
 }
-
-
-
-
 }
+
 class Main{
 	public static void main(String[] args){
-    var animal=new No018();		
-		System.out.println(No018.etoName());
+    		
+		System.out.println(No018.etoName(11));
 	} 
 }

@@ -3,6 +3,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.time.LocalDate;
 import java.time.Period;
+//import java.time.Duration;
 
 //クラスを利用して以下のコードを書く
 public class Practice5_1 {
@@ -25,10 +26,10 @@ public class Practice5_1 {
 		 System.out.println(ldt);
 
 	/*2020/03/12から2020/11/05までの差を「××ヶ月××日間」の形式で出力する */
-		var date1 = LocalDateTime.of( 2020 , 03 , 12);
-		var date2 = LocalDateTime.of( 2020 , 11 , 05);
+		var date1 = LocalDate.of( 2020 , 03 , 12);
+		var date2 = LocalDate.of( 2020 , 11 , 05);
 		var date1_2=Period.between(date1, date2);
-		System.out.println(Period.getMonths() + "年" + Period.getDays() + "日間");
+		System.out.println(date1_2.getMonths() + "年" + date1_2.getDays() + "日間");
 
 }
 }
