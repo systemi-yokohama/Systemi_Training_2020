@@ -4,11 +4,11 @@ import java.util.Arrays;
 public class No044 {
 	public static void main(String[] args) {
 		var list = new ArrayList<String>(Arrays.asList(
-			"",
-			"",
-			"",
-			"",
-			""
+			"1",
+			"2",
+			"3",
+			"4",
+			"5"
 		));
 
 		list.sort((x, y) -> x.length() - y.length());
