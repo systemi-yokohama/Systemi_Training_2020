@@ -1,5 +1,6 @@
 package Java_Training.practice100.no214;
 
+
 //以下はリクエストパラメータの情報をModelクラスのインスタンスに変換し、JSON化して出力するサーブレットである。
 //問題点を指摘し、修正せよ。なお、Modelクラスは適切な実装が与えられているものとする。
 public class No068 extends HttpServlet {
@@ -23,4 +24,11 @@ public class No068 extends HttpServlet {
 
         res.getWriter().write(m.toJson());
     }
+}
+class Model{
+    
+
+}
+class HttpServlet{
+    
 }

@@ -7,22 +7,36 @@ package Java_Training.practice100.no214;
 //2020-22-22 22:22:22.222
 import java.time.LocalDateTime;
 import java.util.Locale;
+import java.time.format.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
-public class FormatUtil{
-	public void main(String[] args){
-		FormatUtil formatUtil=new FormatUtil(LocalDateTime.now());
-		FormatUtil.keisan(formatUtil);
+	class No047{
+	 public static void main(String[] args) {
+		
+		FormatUtil date=new FormatUtil();
+	
+		System.out.println(date.tds());
+	 
 	}
-	public String keisan( int data){
-		if (data==null){
-
-			return null;
-		}
-
-	       final FormatUtil data=new data("yyyy-MM-dd HH:mm:ss.SSS");
-	       return data;	
 	}
-}	
 
 
+	class FormatUtil{
+		public LocalDateTime today;
+
+	public FormatUtil(LocalDateTime today){
+		this.today=LocalDateTime.now();
+
+	}
+
+	public String tds(Date today){
+
+		
+
+        SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
+        return fmt.format(today);
+		
+	}
+	}
 	

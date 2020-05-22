@@ -21,7 +21,7 @@ public class No020 {
 	      System.out.println(genericListA.get(i));//取得
 		}
 		//なし
-		final ArrayList genericListB = new ArrayList();
+		final  ArrayList genericListB = new ArrayList();
 		for (final String medal : MEDALS) {
 			genericListB.add(medal);//付与
 		}
