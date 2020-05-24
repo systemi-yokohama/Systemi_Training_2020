@@ -9,15 +9,22 @@ package Java_Training.practice100.no212;
 import java.util.stream.IntStream;
 
 public class No054{
-public static void main(final String[] args) {
+	public static void main(final String[] args) {
+		System.out.println(IntStream.rangeClosed(1, 100).filter(x -> x % 2 == 0).sum());
+	}
+}
+
+/*
 IntStream.rangeClosed(1,100);
-var i = rangeClosed;
+var i = IntStream.rangeClosed;
 if(i % 2 != 0) {
 	continue;
 }
 sum += i;
 }
 }
+*/
+
 
 /*
 public class evenNumber{

@@ -6,26 +6,18 @@
 ・・デシリアライズ後にシリアライズ前の変数値が復元されていることを確認
 */
 
-/*
 package Java_Training.practice100.no212;
 
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.Serializable;
 
-public class No030{
-	public static Article implements Serializable {
-		private static final long serialVersionUID = 1L;
-		public String title;
+public class No030 implements Serializable{
+	private static final long serialVersionUID = 1L;
+	public String title;
 		public int number;
 
-public Article(String title,Int number){
-	this.title = title;
-	this.number = number;
-}
+		public No030(String title,int number){
+			this.title = title;
+			this.number = number;
+		}
 
-    }
 }
-
-*/
