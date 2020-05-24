@@ -5,15 +5,17 @@ import java.util.Arrays;
 
 
 public class No066 {
+    public No066( ) {
+       // Model model=new Model();
+    };
     
-    
-        public static String convertToString(List < Integer  > modelList) {
-
+        public static String convertToString(List < Model > modelList) {
+            
         StringBuilder result =new StringBuilder(" ");
         
         
-        for (Integer model : modelList) {
-            if(null!=model){//モデルクラスのリストに値が入っているなら実行するという風にする。
+        for (Model model : modelList) {
+            if(null != model){//モデルクラスのリストに値が入っているなら実行するという風にする。
             //result += "id:" + model.getId() + "\n";　リザルトに対して+=ではなくappendを使うべき。
             result.append( "id:");
             result.append( model.getId());
@@ -43,3 +45,4 @@ public class No066 {
         return result.toString();
         
     }
+}

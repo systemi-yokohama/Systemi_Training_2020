@@ -21,7 +21,7 @@ public class No062 {
 		
 		var data =new HashMap<String,String>();
 		for (int i=1;i<=100;i++){
-			data.putIfAbsent(i,i);
+			data.putIfAbsent(Integer.toString(i,i));
 		}
 		//データの取得
 		System.out.println(data.get("22"));

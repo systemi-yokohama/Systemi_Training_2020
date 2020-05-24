@@ -13,7 +13,9 @@ import java.nio.file.Files;
 public class No079 {
 	public static void main(String[] args) {
 		var fs =FileSystems.getDefault();
+
 		var path=fs.getPath("http://example.com/folder/file.png");	
+		
 		var dir1=Files.createDirectories("C:\temp\test.txt");
 
 		try (var out =Files.newBufferedReader(path.get(dir1))){

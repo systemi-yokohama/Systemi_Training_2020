@@ -5,9 +5,9 @@ import java.util.Random;
 
 /*現在時刻からプラスマイナス1日の範囲でランダムな日時を示すjava.util.Dateオブジェクトを
 生成するユーティリティメソッドを持つクラスDateUtilを実装せよ。*/
-public class DataUtil {
+public class DataUtil214 {
 	public static void DataUtil(String[] args){
-	DataUtil dataUtil=new.DataUtil();
+	DataUtil214 dataUtil=new DataUtil214();
 	System.out.println(data.dataUtil(LocalDateTime()));
 	}
 	public  int data(int data){

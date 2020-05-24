@@ -9,24 +9,31 @@ package Java_Training.practice100.no214;
 public class No022 {
 	public static void VariadicArguments(int...values){
 		 var sum=values.length;
-		 if(sum<8 && (1==sum%2)){
-	     	for(var value:values){
-				System.out.println(value +"\n");
-			}
+		 if(sum==3){
+			for(int i=1;i <= values.length ;i++){
+				if(i==3){
+					continue;
+				}
+				System.out.printf(values +"\n");
+				
+			} 
+		 }else if(sum==5){
+			for(int i=1;i <= values.length ;i++){
+				if(i==1|i==4){
+					continue;
+				}
+				System.out.printf(values +"\n");
+		 }
+		}else if(sum==7){
+			for(int i=1;i <= values.length ;i++){
+				if(i==2|i==3|i==5){
+					continue;
+				}
+				System.out.printf(values +"\n");
+		 }
 		}else{
 			System.out.println("usage");
 			System.exit(2);
-		
 		}
 	}
-}
-class Main{
- public static void main(String[] args) {
-var data=new int[]{0,1,2,3,4,5,6,7,8,9,10};
-var p=new No022();
-p.VariadicArguments(data[0],data[1]);
-p.VariadicArguments(data[1],data[2],data[4]);
-p.VariadicArguments(data[0],data[3],data[5],data[6]);
-
-}
 }
