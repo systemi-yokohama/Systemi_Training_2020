@@ -6,9 +6,13 @@ import java.nio.file.Paths;
 
 public class No055 {
 	public static void main(String[] args) {
-		try(var reader = Files.newBufferedReader(Paths.get("UTF8.txt"))) {
-			var sum = reader.readLine();
-			System.out.println(sum);
+		try(var reader = Files.newBufferedReader(Paths.get("C:\\work\\project\\UTF-8.txt"))) {
+			var sum = "";
+			while((sum = reader.readLine()) != null) {
+				System.out.println(sum);
+				System.out.println(sum.length());
+			}
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

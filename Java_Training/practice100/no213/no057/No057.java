@@ -10,9 +10,10 @@ public class No057 {
 	public static void main(String[] args) {
 		try {
 			var f = FileSystems.getDefault();
-			var path = Paths.get("C:/work/aa.txt");
+			var path = Paths.get("C:\\work\\project\\aa.txt");
+			System.out.println(path);
 			Files.readString(path);
-			Files.copy(path, f.getPath("C:/work/aa.read"), 
+			Files.copy(path, f.getPath("C:\\work\\project\\aa.read"), 
 			StandardCopyOption.REPLACE_EXISTING);
 			Files.deleteIfExists(path);
 		} catch(IOException e) {
