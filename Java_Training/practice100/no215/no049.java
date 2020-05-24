@@ -1,15 +1,14 @@
 package Java_Training.practice100.no215;
+import java.util.Date;
 
-import java.util.Random;
+import Java_Training.practice100.no216.DateUtil;
 
 public class no049 {
-	public static void main(String[] args){
-		DateUtil randomDay=new DateUtil();
-		random();	
-	}
-}
-class DateUtil{
-	public void random(){
-		System.out.println(rnd.Date());
+	public static void main(final String[] args){
+		
+        
+			final Date randomDate =new DateUtil().randomDayAndTime();
+			System.out.println(randomDate);
+		
 	}
 }

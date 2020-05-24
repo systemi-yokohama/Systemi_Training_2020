@@ -1,6 +1,6 @@
 package Java_Training.practice100.no215;
 
-import java.io.File;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -24,10 +24,10 @@ public class no057 {
 					
 					Files.deleteIfExists(sourcePath);
 
-				} catch(IOException e){
+				} 
+				}catch(IOException e){
 					e.printStackTrace();
 				}
 		}
-		
 	}
-}
+
