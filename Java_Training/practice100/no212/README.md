@@ -2,7 +2,7 @@ unit1:なし
 <br>unit2:No11,No12,No13,No14済
 <br>unit3:No63済
 <br>unit4:No54済
-<br>unit5:No30,No37,No45,No46,No47済
+<br>unit5:No30,No37,No45,No46,No47,No48,No49,No55,No57済
 <br>unit6:No52,No53,No62済
 <br>unit7:No15,No16,No22,No23済
 <br>unit8:No24,No25,No26,No27,No28済
