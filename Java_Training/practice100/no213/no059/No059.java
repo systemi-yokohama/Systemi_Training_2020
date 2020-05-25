@@ -50,8 +50,8 @@ public class No059 {
 	}
 		public final static void makeHeaderFile(HttpURLConnection connectHeader) {
 			try(final BufferedWriter output = new BufferedWriter(new FileWriter("Header.txt"))) {
-				final Map headers = connectHeader.getHeaderFields();
-				final Iterator header = headers.keySet().iterator();
+				final Map<?,?> headers = connectHeader.getHeaderFields();
+				final Iterator<?> header = headers.keySet().iterator();
 				while(header.hasNext()) {
 					final String headerKey = (String)header.next();
 					output.write(" " + headerKey + ":" + headers.get(headerKey));
