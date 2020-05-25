@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - No034",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no034.No034",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - No029",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no029.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - No017",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no017.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
