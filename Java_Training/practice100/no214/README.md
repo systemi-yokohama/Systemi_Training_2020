@@ -1,25 +1,25 @@
 - 05/18以前
-  - No.011
-  - No.012
-  - NO.013
-  - No.014
-  - No.030
-  - No.037
-  - No.044
-  - No.045
-  - No.046
-  - No.047
-  - No.048
-  - No.049
-  - No.052
-  - NO.053
-  - No.055
-  - No.057
-  - No.058
+  - No.011 fin
+  - No.012 fin
+  - NO.013 fin
+  - No.014 fin
+  - No.030 fin
+  - No.037 fin
+  - No.044 fin
+  - No.045 fin
+  - No.046 fin
+  - No.047 fin
+  - No.048 fin
+  - No.049 
+  - No.052 fin
+  - NO.053 fin
+  - No.055 fin
+  - No.057 fin
+  - No.058 fin
   - No.059
-  - No.062
-  - No.063
-  - No.079
+  - No.062 fin
+  - No.063 fin
+  - No.079 
 
 - 05/18（unit7）終了
   - No.015
@@ -46,3 +46,4 @@
 
 - 05/21(unit10) 終了
   - No.033
+

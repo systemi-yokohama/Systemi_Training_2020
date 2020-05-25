@@ -8,7 +8,7 @@ package Java_Training.practice100.no214;
 import java.io.ObjectInput;
 import java.io.IOException;
 import java.nio.file.FileSystems;
-import java.nio.file.Files;
+import java.nio.file.*;
 
 public class No079 {
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class No079 {
 
 		var path=fs.getPath("http://example.com/folder/file.png");	
 		
-		var dir1=Files.createDirectories("C:\temp\test.txt");
+	
 
 		try (var out =Files.newBufferedReader(path.get(dir1))){
 		out.writeObject(new data("C:\temp\test.txt"),false);

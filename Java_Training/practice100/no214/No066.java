@@ -2,14 +2,11 @@ package Java_Training.practice100.no214;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
+import java.lang.Thread;
 
-
-public class No066 {
-    public No066( ) {
-       // Model model=new Model();
-    };
+public class No066 extends Model {
     
-        public static String convertToString(List < Model > modelList) {
+        public String convertToString(List < Model > modelList) {
             
         StringBuilder result =new StringBuilder(" ");
         
@@ -18,7 +15,7 @@ public class No066 {
             if(null != model){//モデルクラスのリストに値が入っているなら実行するという風にする。
             //result += "id:" + model.getId() + "\n";　リザルトに対して+=ではなくappendを使うべき。
             result.append( "id:");
-            result.append( model.getId());
+            result.append(model.getId());
             result.append( "\n");
 
 

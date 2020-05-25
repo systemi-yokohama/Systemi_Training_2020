@@ -7,8 +7,9 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.nio.charset.StandardCharsets;
 //import java.nio.file.Paths;
-import java.io.FileReader;
 import java.nio.*;
+import java.io.FileReader;
+
 //import jdk.dynalink.StandardOperation;
 /*java.io 配下のパッケージのAPIを用いずに（java.nio 配下のパッケージのAPIを用いて）、
 コマンドの第1引数に指定されたテキストファイル(UTF-8形式)を読み込んで標準出力に出力しつつ、

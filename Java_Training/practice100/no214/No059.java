@@ -36,6 +36,7 @@ public static void main(String[] args){
 			out.write((byte)data);
 		}
 	}catch(URISyntaxException e){
+		
 		System.out.println("ファイルにアクセスできません");
 	} 
 	finally {

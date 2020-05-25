@@ -21,6 +21,7 @@ import java.util.Date;
 		System.out.println(FormatUtil214.tod(today));
 	}
 	}
+	
 	class FormatUtil214{
 		public LocalDateTime today;
 
