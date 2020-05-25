@@ -8,35 +8,31 @@ package Java_Training.practice100.no214;
 import java.time.LocalDateTime;
 import java.util.Locale;
 import java.time.format.*;
+import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-	class No047{
-	 public static void main(String[] args) {
+	class Main{
+	public static void main(String[] args) {
 		
-		FormatUtil date=new FormatUtil();
 	
-		System.out.println(date.tds());
-	 
+		FormatUtil214  today=new FormatUtil214(LocalDateTime.now());
+	
+		System.out.println(FormatUtil214.tod(today));
 	}
 	}
-
-
-	class FormatUtil{
+	
+	class FormatUtil214{
 		public LocalDateTime today;
 
-	public FormatUtil(LocalDateTime today){
-		this.today=LocalDateTime.now();
+	   public FormatUtil214(LocalDateTime today){			
+		this.today=today;	
+	   }
 
-	}
-
-	public String tds(Date today){
-
+	   public String tod(LocalDateTime today){
+		SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
 		
-
-        SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
         return fmt.format(today);
-		
-	}
+	   }
 	}
 	

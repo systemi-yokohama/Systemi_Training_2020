@@ -10,7 +10,7 @@ public class Practice9_4_1 {
 	}
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		
 
 		return String.format("Person:%s %s", this.firstName,this.lastName);
 	} 

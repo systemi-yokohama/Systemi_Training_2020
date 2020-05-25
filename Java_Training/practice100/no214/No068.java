@@ -1,6 +1,8 @@
 package Java_Training.practice100.no214;
-
-
+import java.io.IOException;
+import java.rmi.server.ServerCloneException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 //以下はリクエストパラメータの情報をModelクラスのインスタンスに変換し、JSON化して出力するサーブレットである。
 //問題点を指摘し、修正せよ。なお、Modelクラスは適切な実装が与えられているものとする。
 public class No068 extends HttpServlet {
@@ -8,7 +10,7 @@ public class No068 extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res)
-            throws ServletException, IOException {
+            throws ServerCloneException, IOException {
 
      final static SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");//24時制はhhではなくHH。オーバーライド時に取得する。
 
