@@ -1,6 +1,8 @@
 package Java_Training.practice100.no217;
 
 public class No071 {
+	// volatile修飾子を付与.
+	// private static long longValue = 0;
     private volatile static long longValue = 0;
 
     public static void main(String[] args) throws Exception {
@@ -10,7 +12,8 @@ public class No071 {
         Thread th1 = new Thread(new Runnable() {
             public void run() {
                 for (int i = 0; i < LOOP; i++) {
-                    // 同期処理.
+					// 同期処理.
+					// longValue++;
                     increment();
                 }
             }
@@ -20,7 +23,8 @@ public class No071 {
         Thread th2 = new Thread(new Runnable() {
             public void run() {
                 for (int i = 0; i < LOOP; i++) {
-                    // 同期処理.
+					// 同期処理.
+					// longValue++;
                     increment();
                 }
             }
