@@ -11,6 +11,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.UnknownHostException;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 
 public class No059 {
@@ -56,9 +57,9 @@ public class No059 {
 		}
 	}
 
-	public final static void makeHeaderFile(HttpURLConnection connectHeader) {
+	public final static void makeHeaderFile(final HttpURLConnection connectHeader) {
 		try (final BufferedWriter output = new BufferedWriter(new FileWriter("header.txt"))) {
-			final Map headers = connectHeader.getHeaderFields();
+			final Map<String, List<String>> headers = connectHeader.getHeaderFields();
 
 			final Iterator<?> header = headers.keySet().iterator();
 
@@ -74,10 +75,10 @@ public class No059 {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public final static void makeBodyFile(final HttpURLConnection connectBody) {
 		try (final BufferedInputStream input = new BufferedInputStream(connectBody.getInputStream());
-		final BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream("body.txt"))) {
+				final BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream("body.txt"))) {
 			int byteLength;
 
 			final byte[] maxbyte = new byte[1024];
