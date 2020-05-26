@@ -47,3 +47,15 @@
 - 05/21(unit10) 終了
   - No.033
 
+- 05/25
+  - No.017 fin
+  - No.029 fin
+  - No.031 fin
+  - No.032 fin
+  - No.034 fin
+  - No.035 fin
+  - No.036 fin
+  - No.040 
+  - No.043
+  - No.067 fin
+  - No.071 fin
