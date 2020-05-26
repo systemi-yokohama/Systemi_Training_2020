@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - No035",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No035",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
