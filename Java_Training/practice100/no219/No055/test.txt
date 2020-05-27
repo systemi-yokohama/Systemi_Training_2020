@@ -1,0 +1,21 @@
+cd
+gfdgre
+fesge
+File in = new File("C:\\Users\\simon\\Desktop\\a"); // 资源文件夹
+File out = new File("C:\\Users\\simon\\Desktop\\b"); // 目标文件夹
+	DirectoryStream<Path> directoryStream;
+
+try {
+       directoryStream = Files.newDirectoryStream(in.toPath()); //returning a DirectoryStream to iterate over* all entries in the directory.
+       directoryStream.forEach(path -> {
+           if (path.getFileName().toString().endsWith(".java")) { // 判断是否为java文件
+               try {
+                   Files.copy(path, out.toPath().resolve(path.getFileName().toString().replace(".java", ".txt")), StandardCopyOption.REPLACE_EXISTING); // 重命名为.txt 并且复制到out文件夹
+               } catch (IOException e) { // 因为在lambda表达式内，所以要包裹try catch
+                   e.printStackTrace();
+               }
+           }
+       });
+   } catch (IOException e) {
+       e.printStackTrace();
+   }
