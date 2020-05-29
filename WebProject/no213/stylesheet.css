@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #fff;
+}
+p {
+    line-height: 1.7;
+}
+a:link {
+    color: #36c;
+}
+a:visited {
+    color: #609;
+}
+a:hover {
+    color: #666;
+}
+img {
+    border: 0;
+}
+section, article, aside, nav, header, main, footer {
+    display: block;
+}
+#page {
+    margin: 0 auto;
+    width: 800px;
+}
+main section {
+    width: 400px;
+}
+section:first-child {
+    float: left;
+}
+section:last-child {
+    float: right;
+}
+h1 {
+    float: left;
+    margin: 10px 0;
+}
+header > ul li {
+    display: block;
+    float: right;
+    margin: 30px 0 0 20px;
+    padding-left: 10px;
+    background: url();
+}
+nav {
+    clear: both;
+    margin-bottom: 8px;
+}
+nav ul, nav li {
+    margin: 0;
+    padding: 0;
+}
+nav li, nav a {
+    display:block;
+}
+nav ul{
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+    width: 132px;
+    border-right: none;
+}
+nav a {
+    padding: 14px 0;
+    border-left: 1px solid #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.0;
+    font-size: small;
+    font-weight: bold;
+}
+nav a:link {
+    color: #36c;
+}
+nav a:hover {
+    color: #666;
+}
+
+h2 {
+    font-size: medium;
+}
+p, li {
+    font-size: small;
+}
+main ul{
+    list-style-image: url(img/ss.png);
+
+}
+footer {
+    clear: both;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
