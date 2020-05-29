@@ -1,0 +1,1 @@
+SELECT * FROM `practice_db`.`books` LIMIT 1000;
