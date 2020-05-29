@@ -1,0 +1,2590 @@
+{
+    // IntelliSense を使用して利用可能な属性を学べます。
+    // 既存の属性の説明をホバーして表示します。
+    // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.Java_Training.practice100.no107.no059.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no107.no030.No030",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no107.no044.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no107.no049.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no107.no054.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no107.no059.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No017<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.No017.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No015<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no015.No015",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No016<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no016.No016",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no020.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no022.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no023.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No029<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no029.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no030.No030",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no033.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No034<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no034.No034",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no037.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No040<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no040.No040",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no044.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No047<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no047.No047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no049.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no054.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no055.No055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no057.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no058.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no059.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no210.no062.No062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No015<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No015",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No018<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No018",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No030",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no211.No062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No017<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No018<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No018",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No029<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No030_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no212.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No017<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no017.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No018<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no018.No018",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no020.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no022.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no023.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No029<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no029.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no033.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No034<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no034.No034",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No035<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no035.No035",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no037.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No043<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no043.No043",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no044.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No047<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no047.No047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no049.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no054.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no055.No055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no057.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no058.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no059.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no062.No062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No079<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no213.no079.No079",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.Main",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No017<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No029<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030B<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No030B",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No034<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No034",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No035<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No035",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No071<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No071",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No079<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no214.No079",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no015<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no015",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no017<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no020<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no022<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no030<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no030",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no033<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no037<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no044<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no047<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no049<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no054<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no055<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no057<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no058<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no059<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no062<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no079<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no079",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-no080<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no215.no080",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No015<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No015",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No030_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No047<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No071<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No071",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No079<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No079",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No44.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no216.No58.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No015<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No015",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No016_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No016.No016_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No017<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No018<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No018",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No029<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No030.No030_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No032_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No032.No032_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No034<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No034",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No035_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No035.No035_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No040_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No040.No040_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No043<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No043",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No047<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No049.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No058.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No059.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No062.No062_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No071<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no217.No071",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No15<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no15.No15",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No22<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no22.No22",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No23<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no23.No23",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No34<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no34.No34",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No44<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no44.No44",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No47<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no47.No47",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No49<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no49.No49",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No54<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no54.No54",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No55<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no55.No55",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No57<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no218.no57.No57",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No018_<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No018_",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(8)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No047<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(8)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Helloworld<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No055.Helloworld",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No055_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-EncapsulationDemoTest<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no219.test.EncapsulationDemoTest",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No015<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no015.No015",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No017<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no017.No017",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No018<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no018.No018",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No020<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no020.No020",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No022<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no022.No022",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No023<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no023.No023",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No029<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no029.No029",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no030.No030",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No030_DeSer<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no030.No030_DeSer",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No033<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no033.No033",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No034<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no034.No034",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No037<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no037.No037",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No044<Systemi_Training_2020_2bb08595>(9)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no044.No044",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No047<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no047.No047",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No049<Systemi_Training_2020_2bb08595>(8)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no049.No049",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No054<Systemi_Training_2020_2bb08595>(9)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no054.No054",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No055<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no055.No055",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No057<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no057.No057",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No058<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no058.No058",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No059<Systemi_Training_2020_2bb08595>(8)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no059.No059",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No062<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no062.No062",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-No063<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.practice100.no220.no063.No063",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice2_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_02.practice.no210.Practice2_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice2_5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_02.practice.no210.Practice2_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_02.practice.no211.Check5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_02.practice.no213.Check2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice2_5<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_02.practice.no217.Practice2_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no107.Practice3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no210.Practice3_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no211.Practice3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no213.Check3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no213.Practice3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no217.Practice3_2_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no218.Practice3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no219.Practice3_2_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_2<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no220.Practice3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice3_3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_03.practice.no220.Practice3_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-practice4_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no107.practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no210.Practice4_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no210.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no210.Practice4_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no210.Practice4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no210.Practice4_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no211.Check2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no211.Check3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no211.Check4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no211.Check5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no211.Practice4_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no211.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no212.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no212.Practice4_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_4<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no212.Practice4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_5<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no212.Practice4_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check4<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no213.Check4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_1<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no213.Practice4_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no213.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no214.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no214.Practice4_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_4<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no214.Practice4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_5<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no214.Practice4_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no215.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no215.Practice4_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_4<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no215.Practice4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_5<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no215.Practice4_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no216.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no216.Practice4_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_4<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no216.Practice4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_5<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no216.Practice4_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_1<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no217.Practice4_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no217.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no217.Practice4_3_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no217.Practice4_3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no218.Practice4_2_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-practice4_1_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no218.practice4_1_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no218.test_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no218.test_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no218.test_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no218.test_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check2<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no219.Check2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check3<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no219.Check3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check4<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no219.Check4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no219.Check5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_1_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no219.Practice4_1_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no219.Practice4_2_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_1<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no220.Practice4_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_2<Systemi_Training_2020_2bb08595>(8)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no220.Practice4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_3<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no220.Practice4_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_4<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no220.Practice4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice4_5<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_04.practice.no220.Practice4_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HttpBasic<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.HttpBasic",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StrBlank<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.StrBlank",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StrIndex<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.StrIndex",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StrStrip<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no107.StrStrip",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no210.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no210.Practice5_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no210.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no210.Practice5_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Check5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Check5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Check5_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Practice5_1_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Practice5_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Practice5_2_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Practice5_2_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Practice5_3_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no211.Practice5_3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no212.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no212.Practice5_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check5<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.Check5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DateWrite<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.DateWrite",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DateWrite$keisan<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.DateWrite$keisan",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.Practice5_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-mail<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no213.mail",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no214.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no214.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no214.Practice5_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no215.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no216.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no216.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4<Systemi_Training_2020_2bb08595>(3)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no216.Practice5_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(5)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4_1_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_4_1_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4_1_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_4_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4_1_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_4_1_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4_1_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_4_1_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4_1_5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_4_1_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no217.Practice5_4_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no218.test_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no218.test_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no218.test_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_4<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no218.test_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Check",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(6)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Practice5_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Practice5_2_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_2_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Practice5_2_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Practice5_3_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no219.Practice5_3_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_1<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no220.Practice5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_3<Systemi_Training_2020_2bb08595>(7)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no220.Practice5_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice5_4<Systemi_Training_2020_2bb08595>(4)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_05.practice.no220.Practice5_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice6_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_06.practice.no210.Practice6_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice6_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_06.practice.no211.Practice6_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice6_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_06.practice.no213.Practice6_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice6_1<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_06.practice.no217.Practice6_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice6_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_06.practice.no220.Practice6_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no211.Practice7_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no211.Practice7_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no214.Main",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no216.Practice7_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no217.Practice7_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no217.Practice7_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_3<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no217.Practice7_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice7_4<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no217.Practice7_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-test_4_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_07.practice.no218.test_4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice8_3_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_08.practice.no217.Practice8_3_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice8_3_5_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_08.practice.no217.Practice8_3_5.Practice8_3_5_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice8_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_08.practice.no220.Practice8_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no107.Practice9_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TryException<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no107.TryException",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no210.Practice9_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check9_4_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no211.Check9_4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no211.Practice9_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_3<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no213.Practice9_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_4_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no214.Practice9_4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_3<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no217.Practice9_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_4_4_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no217.Practice9_4_4_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice9_4_4_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_09.practice.no217.Practice9_4_4_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_3_345<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no210.Practice10_3.Practice10_3_345",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubPracitce10_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no210.SubPracitce10_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check10_3_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no211.Check10_3_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check10_3_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no211.Check10_3_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check10_3_5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no211.Check10_3_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no211.Practice10_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Check10<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no213.Check10",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_1<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no213.Practice10_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_1_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no217.Practice10_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_2_3_1<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no217.Practice10_2_3_1",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_2_3_3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no217.Practice10_2_3_3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_2_3_4<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no217.Practice10_2_3_4",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_2_3_5<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no217.Practice10_2_3_5",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_1_2<Systemi_Training_2020_2bb08595>(1)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no218.Practice10_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice10_1_2<Systemi_Training_2020_2bb08595>(2)",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_10.practice.no219.Practice10_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Practice11_1_2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "Java_Training.unit_11.practice.no217.Practice11_1_2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Delete<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "WebProject.no210.src.main.practicecode.Delete",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Delete2<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "WebProject.no210.src.main.practicecode.Delete2",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Delete3<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "WebProject.no210.src.main.practicecode.Delete3",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Insert<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "WebProject.no210.src.main.practicecode.Insert",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Select<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "WebProject.no210.src.main.practicecode.Select",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Update<Systemi_Training_2020_2bb08595>",
+            "request": "launch",
+            "mainClass": "WebProject.no210.src.main.practicecode.Update",
+            "projectName": "Systemi_Training_2020_2bb08595"
+        }
+    ]
+}
