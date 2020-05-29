@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Delete",
+            "request": "launch",
+            "mainClass": "Delete",
+            "projectName": "no212"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Update",
+            "request": "launch",
+            "mainClass": "Update",
+            "projectName": "no212"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Insert",
+            "request": "launch",
+            "mainClass": "Insert",
+            "projectName": "no212"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Select",
+            "request": "launch",
+            "mainClass": "Select",
+            "projectName": "no212"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
