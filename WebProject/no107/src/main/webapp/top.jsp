@@ -12,7 +12,7 @@ uri="http://java.sun.com/jsp/jstl/fmt"%>
     <div class="main-contents">
       <div class="header">
         <a href="login">ログイン</a>
-        <a href="signup">登録する</a>
+        <a href="signup">登録する?</a>
       </div>
       <div class="copyright">
         Copyright(c)<%= request.getAttribute("YourName") %>

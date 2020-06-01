@@ -14,7 +14,7 @@ public class TopServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
 
-        request.setAttribute("YourName", "十六茶");
+        request.setAttribute("YourName", "十六茶!");
         request.getRequestDispatcher("/top.jsp").forward(request, response);
     }
 }
