@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>フォームサンプル</title>
+    <style>
+        form {
+          box-shadow: 3px 3px 8px rgba(0,0,0,0.3);
+          margin: 30px 30px 0;
+          border: 1px solid #cccccc;
+          border-radius: 7px;
+          padding: 1em 2em;
+          width: 300px;
+          background: #f0f0f0;
+        }
+        p {
+          margin: 0.5em 0;
+        }
+        label {
+          text-shadow: 1px 1px 2px #666666;
+        }
+        textarea {
+          resize: vertical;
+        }
+        #author, #mail, #text {
+          box-shadow: inset 3px 3px 8px rgba(0,0,0,0.3);
+          border: 2px solid #777777;
+          border-radius: 5px;
+          padding: 3px;
+          width: 290px;
+          font-size: medium;
+        }
+        #sb {
+          box-shadow: inset 2px 2px 3px rgba(255,255,255,0.5), inset -2px -2px 3px rgba(0,0,0,0.5);
+          border: 2px solid #666666;
+          border-radius: 10px;
+          padding: 8px 12px;
+          line-height: 1.0;
+          color: #ffffff;
+          background: #666666;
+          text-shadow: -1px -1px 1px rgba(0,0,0,0.5);
+          font-size: medium;
+          font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="sample.html" method="get">
+        <p>
+            <label for="author">名前</label>
+            <input id="author" name="author" type="text">
+        </p>
+        <p>
+            <label for="mail">メール</label>
+            <input id="mail" name="mail" type="text">
+        </p>
+        <p>
+            <label for="text">説明</label>
+            <textarea id="text" name="text" cols="30" rows="5"></textarea>
+        </p>
+        <input id="sb" type="submit" value="送信">
+    </form>
+</body>
+</html>
