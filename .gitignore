@@ -1,0 +1,9 @@
+*.class
+*.jar
+*.war
+target
+.DS_Store
+.project
+.classpath
+.settings
+pom.xml
