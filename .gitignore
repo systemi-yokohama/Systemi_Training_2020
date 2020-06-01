@@ -1,9 +1,12 @@
 *.class
 *.jar
 *.war
-target
+*zip
 .DS_Store
 .project
 .classpath
 .settings
 pom.xml
+target
+bin
+lib
