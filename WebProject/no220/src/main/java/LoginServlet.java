@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,36 +11,41 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import beans.User;
-import service.UserService;
+import service.LoginService;
 
-@WebServlet(urlPatterns = {"/login"})
+@WebServlet(urlPatterns = { "/login" })
 public class LoginServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
 
     @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ServletException {
+    protected void doGet(HttpServletRequest request,
+            HttpServletResponse response) throws IOException, ServletException {
 
         request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws IOException, ServletException {
+    protected void doPost(HttpServletRequest request,
+            HttpServletResponse response) throws IOException, ServletException {
 
         String accountOrEmail = request.getParameter("accountOrEmail");
         String password = request.getParameter("password");
 
-        User user = new UserService().select(accountOrEmail, password);
-        if (user == null) {
-            List<String> errorMessages = new ArrayList<String>();
-            errorMessages.add("ログインに失敗しました");
-            request.setAttribute("errorMessages", errorMessages);
-            request.getRequestDispatcher("login.jsp").forward(request, response);
-            return;
-        }
+        LoginService loginService = new LoginService();
+        User user = loginService.login(accountOrEmail, password);
 
         HttpSession session = request.getSession();
-        session.setAttribute("loginUser", user);
-        response.sendRedirect("./");
+        if (user != null) {
+
+            session.setAttribute("loginUser", user);
+            response.sendRedirect("./");
+        } else {
+
+            List<String> messages = new ArrayList<String>();
+            messages.add("ログインに失敗しました。");
+            session.setAttribute("errorMessages", messages);
+            response.sendRedirect("login");
+        }
     }
+
 }

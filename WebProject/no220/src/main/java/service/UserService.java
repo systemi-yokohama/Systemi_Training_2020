@@ -2,6 +2,7 @@ package service;
 
 import static utils.CloseableUtil.*;
 import static utils.DBUtil.*;
+
 import java.sql.Connection;
 
 import beans.User;
@@ -10,16 +11,18 @@ import utils.CipherUtil;
 
 public class UserService {
 
-    public void insert(User user) {
+    public void register(User user) {
 
         Connection connection = null;
         try {
-            // パスワード暗号化
+            connection = getConnection();
+
             String encPassword = CipherUtil.encrypt(user.getPassword());
             user.setPassword(encPassword);
 
-            connection = getConnection();
-            new UserDao().insert(connection, user);
+            UserDao userDao = new UserDao();
+            userDao.insert(connection, user);
+
             commit(connection);
         } catch (RuntimeException e) {
             rollback(connection);
@@ -32,26 +35,50 @@ public class UserService {
         }
     }
 
-    public User select(String accountOrEmail, String password) {
+    public User getUser(int userId) {
 
-        Connection connection = null;
-        try {
-            // パスワード暗号化
-            String encPassword = CipherUtil.encrypt(password);
+    	Connection connection = null;
+    	try {
+    		connection = getConnection();
 
-            connection = getConnection();
-            User user = new UserDao().select(connection, accountOrEmail, encPassword);
-            commit(connection);
+    		UserDao userDao = new UserDao();
+    		User user = userDao.getUser(connection, userId);
 
-            return user;
-        } catch (RuntimeException e) {
-            rollback(connection);
-            throw e;
-        } catch (Error e) {
-            rollback(connection);
-            throw e;
-        } finally {
-            close(connection);
-        }
+    		commit(connection);
+
+    		return user;
+    	} catch (RuntimeException e) {
+    		rollback(connection);
+    		throw e;
+    	} catch (Error e) {
+    		rollback(connection);
+    		throw e;
+    	} finally {
+    		close(connection);
+    	}
     }
+
+    public void update(User user) {
+
+		Connection connection = null;
+		try {
+			connection = getConnection();
+
+			String encPassword = CipherUtil.encrypt(user.getPassword());
+			user.setPassword(encPassword);
+
+			UserDao userDao = new UserDao();
+			userDao.update(connection, user);
+
+			commit(connection);
+		} catch (RuntimeException e) {
+			rollback(connection);
+			throw e;
+		} catch (Error e) {
+			rollback(connection);
+			throw e;
+		} finally {
+			close(connection);
+		}
+	}
 }

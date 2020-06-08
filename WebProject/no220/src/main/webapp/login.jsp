@@ -7,6 +7,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>ログイン</title>
+        <link href="./style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="main-contents">
@@ -32,7 +33,7 @@
                 <a href="./">戻る</a>
             </form>
 
-            <div class="copyright"> Copyright(c)YourName</div>
+            <div class="copyright"> Copyright(c)kogushi hayato</div>
         </div>
     </body>
 </html>
