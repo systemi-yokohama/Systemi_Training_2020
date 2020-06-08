@@ -6,8 +6,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>ログイン</title>
-        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <title>${loginUser.account}の設定</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="main-contents">
@@ -22,18 +22,29 @@
                 </div>
             </c:if>
 
-            <form action="login" method="post"><br />
-                <label for="accountOrEmail">アカウント名かメールアドレス</label>
-                <input name="accountOrEmail" id="accountOrEmail"/> <br />
+            <form action="setting" method="post"><br />
+                <input name="id" value="${user.id}" id="id" type="hidden"/>
+
+                <label for="name">名前</label>
+                <input name="name" value="${user.name}" id="name"/>（名前はあなたの公開プロフィールに表示されます）<br />
+
+                <label for="account">アカウント名</label>
+                <input name="account" value="${user.account}" /><br />
 
                 <label for="password">パスワード</label>
                 <input name="password" type="password" id="password"/> <br />
 
-                <input type="submit" value="ログイン" /> <br />
+                <label for="email">メールアドレス</label>
+                <input name="email" value="${user.email}" id="email"/> <br />
+
+                <label for="description">説明</label>
+                <textarea name="description" cols="35" rows="5" id="description"><c:out value="${user.description}" /></textarea> <br />
+
+                <input type="submit" value="更新" /> <br />
                 <a href="./">戻る</a>
             </form>
 
-            <div class="copyright"> Copyright(c)YourName</div>
+            <div class="copyright"> Copyright(c)Your Name</div>
         </div>
     </body>
 </html>
