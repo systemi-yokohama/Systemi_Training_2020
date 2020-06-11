@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.apache.commons.lang.StringUtils;
 
@@ -17,6 +18,7 @@ import service.UserService;
 
 @WebServlet(urlPatterns = { "/signup" })
 public class SignUpServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -37,11 +39,16 @@ public class SignUpServlet extends HttpServlet {
             request.getRequestDispatcher("signup.jsp").forward(request, response);
             return;
         }
-        new UserService().insert(user);
+        new UserService().register(user);
         response.sendRedirect("./");
     }
 
     private User getUser(HttpServletRequest request) throws IOException, ServletException {
+
+        List<String> messages = new ArrayList<String>();
+
+        HttpSession session = request.getSession();
+        if (isValid(request, messages) == true) {
 
         User user = new User();
         user.setName(request.getParameter("name"));
