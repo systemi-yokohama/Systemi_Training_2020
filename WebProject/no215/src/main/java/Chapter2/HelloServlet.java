@@ -1,28 +1,57 @@
- package Chapter2;
+//  package Chapter2;
 
- import java.io.IOException;
- import java.io.PrintWriter;
+//  import java.io.IOException;
+//  import java.io.PrintWriter;
 
- import javax.servlet.ServletException;
- import javax.servlet.annotation.WebServlet;
- import javax.servlet.http.HttpServlet;
- import javax.servlet.http.HttpServletRequest;
- import javax.servlet.http.HttpServletResponse;
+//  import javax.servlet.ServletException;
+//  import javax.servlet.annotation.WebServlet;
+//  import javax.servlet.http.HttpServlet;
+//  import javax.servlet.http.HttpServletRequest;
+//  import javax.servlet.http.HttpServletResponse;
 
 
- @WebServlet("/HelloServlet")
- public class HelloServlet extends HttpServlet {
- 	private static final long serialVersionUID = 1L;
+//  @WebServlet("/HelloServlet")
+//  public class HelloServlet extends HttpServlet {
+//  	private static final long serialVersionUID = 1L;
 
- 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
- 			throws ServletException, IOException{
+//  	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+//  			throws ServletException, IOException{
 
- 				PrintWriter out = response.getWriter();
- 				out.println("<html>");
- 				out.println("<body>");
- 				out.println("<h3>Hello Servlet!</h3>");
- 				out.println("</body>");
- 				out.println("</html>");
- 		}
+//  				PrintWriter out = response.getWriter();
+//  				out.println("<html>");
+//  				out.println("<body>");
+//  				out.println("<h3>Hello Servlet!</h3>");
+//  				out.println("</body>");
+//  				out.println("</html>");
+//  		}
 	
- }
+//  }
+
+package Chapter2;
+
+import javax.servlet.annotation.WebServlet;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/HelloServlet")
+public class HelloServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+		throws ServletException, IOException{
+
+			PrintWriter out = response.getWriter();
+			out.println("<html>");
+			out.println("<body>");
+			out.println("<h3>Hello Servlet!<h3>");
+			out.println("</body>");
+			out.println("</html>");
+		}
+	
+}

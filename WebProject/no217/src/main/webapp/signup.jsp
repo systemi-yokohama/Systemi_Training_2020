@@ -7,6 +7,7 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>ユーザー登録</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="main-contents">

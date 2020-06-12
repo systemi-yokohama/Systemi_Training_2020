@@ -7,7 +7,8 @@
     <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>ユーザー登録</title>
-    </head>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
     <body>
         <div class="main-contents">
 
@@ -40,7 +41,7 @@
                 <a href="./">戻る</a>
             </form>
 
-            <div class="copyright">Copyright(c)Your Name</div>
+            <div class="copyright">Copyright(c)kogushi hayato</div>
         </div>
     </body>
 </html>

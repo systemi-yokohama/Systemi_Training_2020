@@ -1,0 +1,126 @@
+body {
+	background-color: pink;
+}
+
+.main-contents {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: white;
+	height: 100%;
+	width: 800px;
+}
+
+.tweet-box {
+	width: 780px;
+	height: 56px;
+}
+
+.header {
+	text-align: right;
+}
+
+.profile {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	height: 100px;
+}
+
+.profile .profile-image {
+	float: left;
+}
+
+.profile .name h2 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 36px;
+	margin: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+a.profile .account {
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.profile .description {
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.form-area {
+	margin-top: 00px;
+	margin-right: 00px;
+	margin-bottom: 00px;
+	margin-left: 00px;
+	background-color: #ECECFF;
+}
+
+.message-icon {
+	border-bottom-style: ridge;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	height: 80px;
+}
+
+.message-icon .icon {
+	margin-top: 1px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	float: left;
+}
+
+.message-icon .text {
+	height: 40px;
+}
+
+.message-icon .message {
+	margin-left: 60px;
+}
+
+.message-icon .account-name {
+	margin-top: 1px;
+	margin-bottom: 5px;
+}
+
+.message-icon .account-name .account {
+	font-weight: bold;
+}
+
+.account-name .name {
+	font-weight: lighter;
+	color: gray;
+	font: small-caption;
+}
+
+.message .date {
+	font-weight: lighter;
+	color: gray;
+	font: small-caption;
+}
+
+.copyright {
+	width: 250px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+}
+
+.errorMessages {
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	color: red;
+}

@@ -5,53 +5,41 @@
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>簡易Twitter</title>
-</head>
-
-<body>
-    <div class="main-contents">
-        <div class="header">
-            <c:if test="${ empty loginUser }">
-                <a href="login">ログイン</a>
-                <a href="signup">登録する</a>
-            </c:if>
-            <c:if test="${ not empty loginUser }">
-                <a href="./">ホーム</a>
-                <a href="setting">設定</a>
-                <a href="logout">ログアウト</a>
-            </c:if>
-        </div>
-        <c:if test="${ not empty loginUser }">
-            <div class="profile">
-                <div class="name">
-                    <h2>
-                        <c:out value="${loginUser.name}" />
-                    </h2>
-                </div>
-                <div class="account">@
-                    <c:out value="${loginUser.account}" />
-                </div>
-                <div class="description">
-                    <c:out value="${loginUser.description}" />
-                </div>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>簡易Twitter</title>
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="main-contents">
+            <div class="header">
+                <c:if test="${ empty loginUser }">
+                    <a href="login">ログイン</a>
+                    <a href="signup">登録する</a>
+                </c:if>
+                <c:if test="${ not empty loginUser }">
+                    <a href="./">ホーム</a>
+                    <a href="setting">設定</a>
+                    <a href="logout">ログアウト</a>
+                </c:if>
             </div>
-        </c:if>
-        <div class="copyright"> Copyright(c)YourName
+            <c:if test="${ not empty loginUser }">
+                <div class="profile">
+                    <div class="name"><h2><c:out value="${loginUser.name}" /></h2></div>
+                    <div class="account">@<c:out value="${loginUser.account}" /></div>
+                    <div class="description"><c:out value="${loginUser.description}" /></div>
+                </div>
+            </c:if>
             <c:if test="${ not empty errorMessages }">
                 <div class="errorMessages">
                     <ul>
                         <c:forEach items="${errorMessages}" var="errorMessage">
-                            <li>
-                                <c:out value="${errorMessage}" />
+                            <li><c:out value="${errorMessage}" />
                         </c:forEach>
                     </ul>
                 </div>
                 <c:remove var="errorMessages" scope="session" />
             </c:if>
-
             <div class="form-area">
                 <c:if test="${ isShowMessageForm }">
                     <form action="message" method="post">
@@ -62,20 +50,19 @@
                     </form>
                 </c:if>
             </div>
-        </div>
-        <div class="messages">
-            <c:forEach items="${messages}" var="message">
-                <div class="message">
-                    <div class="account-name">
-                        <span class="account"><c:out value="${message.account}" /></span>
-                        <span class="name"><c:out value="${message.name}" /></span>
+            <div class="messages">
+                <c:forEach items="${messages}" var="message">
+                    <div class="message">
+                        <div class="account-name">
+                            <span class="account"><c:out value="${message.account}" /></span>
+                            <span class="name"><c:out value="${message.name}" /></span>
+                        </div>
+                        <div class="text"><c:out value="${message.text}" /></div>
+                        <div class="date"><fmt:formatDate value="${message.created_Date}" pattern="yyyy/MM/dd HH:mm:ss" /></div>
                     </div>
-                    <div class="text"><c:out value="${message.text}" /></div>
-                    <div class="date"><fmt:formatDate value="${message.createdDate}" pattern="yyyy/MM/dd HH:mm:ss" /></div>
-                </div>
-            </c:forEach>
+                </c:forEach>
+            </div>
+            <div class="copyright"> Copyright(c)YourName</div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
