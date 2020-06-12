@@ -18,10 +18,19 @@
 
 	<div class="container">
 		<div class="main">
+		
 			<h3>ログイン</h3>
+			
 			<form method="post">
-				<p>アカウント：<input type="text" name="account"></p>
-				<p>パスワード：<input type="password" name="account"></p>
+				<label for="account">アカウント：</label>
+				<input type="text" name="account"/>
+				
+				<br/>
+				
+				<label for="password">パスワード：</label>
+				<input type="password" name="password">
+				
+				<br/>
 
 				<c:if test="${ not empty errorMessages }">
 	                <div class="errorMessages">
