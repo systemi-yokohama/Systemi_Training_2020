@@ -19,6 +19,7 @@
                         </c:forEach>
                     </ul>
                 </div>
+                <!-- エラーメッセージをセッションスコープから削除 -->
                 <c:remove var="errorMessages" scope="session" />
             </c:if>
             <form action="signup" method="post">

@@ -13,10 +13,13 @@
 	<body>
 		<div class="main-contents">
 			<div class="header">
+				<!-- ログインしていないときに表示 -->
 				<c:if test="${ empty loginUser }">
 					<a href="login">ログイン</a>
 					<a href="signup">登録する</a>
 				</c:if>
+
+				<!-- ログイン中のユーザーがいたら表示 -->
 				<c:if test="${ not empty loginUser }">
 					<a href="./">ホーム</a>
 					<a href="settings">設定</a>
@@ -24,6 +27,7 @@
 				</c:if>
 			</div>
 
+			<!-- ログイン中のユーザーがいたら表示 -->
 			<c:if test="${ not empty loginUser }">
 			    <div class="profile">
 			        <div class="name"><h2><c:out value="${loginUser.name}" /></h2></div>
@@ -36,6 +40,7 @@
 			    </div>
 			</c:if>
 
+			<!-- ログイン中のユーザーがいたら表示 -->
 			<div class="form-area">
 				<c:if test="${ isShowMessageForm }">
 					<form action="newMessage" method="post">
@@ -47,6 +52,7 @@
 				</c:if>
 			</div>
 
+			<!-- 投稿表示欄 -->
 			<div class="messages">
 			    <c:forEach items="${messages}" var="message">
 			            <div class="message">

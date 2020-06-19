@@ -19,6 +19,8 @@ public class UserMessageDao {
 
         PreparedStatement ps = null;
         try {
+
+            //投稿を降順に1000件まで表示させるSQL文の作成
             StringBuilder sql = new StringBuilder();
             sql.append("SELECT ");
             sql.append("messages.id as id, ");
@@ -36,6 +38,7 @@ public class UserMessageDao {
 
             ResultSet rs = ps.executeQuery();
             List<UserMessage> ret = toUserMessageList(rs);
+            //投稿が新しい順に最大1000件入っているリストを返す
             return ret;
         } catch (SQLException e) {
             throw new SQLRuntimeException(e);
@@ -50,6 +53,7 @@ public class UserMessageDao {
         List<UserMessage> ret = new ArrayList<UserMessage>();
         try {
             while (rs.next()) {
+                //見つけた投稿のフィールドを取り出す
                 String account = rs.getString("account");
                 String name = rs.getString("name");
                 int id = rs.getInt("id");
@@ -57,6 +61,7 @@ public class UserMessageDao {
                 String text = rs.getString("text");
                 Timestamp createdDate = rs.getTimestamp("created_date");
 
+                //投稿のインスタンスにフィールドを追加
                 UserMessage message = new UserMessage();
                 message.setAccount(account);
                 message.setName(name);
@@ -65,6 +70,7 @@ public class UserMessageDao {
                 message.setText(text);
                 message.setCreated_date(createdDate);
 
+                //投稿のインスタンスをリストに追加
                 ret.add(message);
             }
             return ret;

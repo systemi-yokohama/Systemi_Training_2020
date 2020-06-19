@@ -23,6 +23,8 @@
                 <c:remove var="errorMessages" scope="session"/>
             </c:if>
 
+            <!-- ユーザーのidは隠しておく -->
+            <!-- 最初のeditUserはSettingsServletのdoGetメソッドを介して表示されるログインユーザーの情報 -->
             <form action="settings" method="post"><br />
                 <input name="id" value="${editUser.id}" id="id" type="hidden"/>
                 <label for="name">名前</label>

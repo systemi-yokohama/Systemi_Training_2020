@@ -60,6 +60,7 @@ public class UserService {
     	}
     }
 
+	//更新のコネクション作成とSQL文の実行
     public void update(User user) {
 
 		Connection connection = null;
@@ -70,6 +71,7 @@ public class UserService {
 			user.setPassword(encPassword);
 
 			UserDao userDao = new UserDao();
+			//UserDaoでupdateをする
 			userDao.update(connection, user);
 
 			commit(connection);
