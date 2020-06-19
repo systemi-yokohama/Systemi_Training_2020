@@ -82,9 +82,9 @@ public class CommentDao {
             System.out.println(ps);
             ps.executeUpdate();
 
-            ps.close();
             connection.commit();
             connection.close();
+            ps.close();
         }
 
 	public static void delete(int comment_id) throws SQLException{
@@ -102,9 +102,9 @@ public class CommentDao {
 
         ps.executeUpdate();
 
-        ps.close();
         connection.commit();
         connection.close();
+        ps.close();
 	}
 
 }

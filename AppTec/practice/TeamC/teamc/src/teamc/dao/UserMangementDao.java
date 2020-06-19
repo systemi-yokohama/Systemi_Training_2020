@@ -42,8 +42,8 @@ public class UserMangementDao {
         }
         connection.commit();
         connection.close();
-        rs.close();
         statement.close();
+        rs.close();
 
         return list;
 
@@ -69,8 +69,8 @@ public class UserMangementDao {
         }
         connection.commit();
         connection.close();
-        rs.close();
         statement.close();
+        rs.close();
 
         return list;
 
@@ -96,8 +96,8 @@ public class UserMangementDao {
         }
         connection.commit();
         connection.close();
-        rs.close();
         statement.close();
+        rs.close();
 
         return list;
 
@@ -130,9 +130,9 @@ public class UserMangementDao {
             System.out.println(ps);
             ps.executeUpdate();
 
-            ps.close();
             connection.commit();
             connection.close();
+            ps.close();
         }
 
 }
