@@ -20,6 +20,8 @@ public class UserDao {
 
         PreparedStatement ps = null;
         try {
+
+            //SQL文を構成
             StringBuilder sql = new StringBuilder();
             sql.append("INSERT INTO users ( ");
             sql.append("account");
@@ -58,6 +60,7 @@ public class UserDao {
         }
     }
 
+    //ユーザー情報を取り出したい時のメソッド
     public User getUser(Connection connection, String accountOrEmail,
         String password) {
 
@@ -67,6 +70,8 @@ public class UserDao {
             String sql = "SELECT * FROM users WHERE (account = ? OR email = ?) AND password = ?";
 
             ps = connection.prepareStatement(sql);
+
+            //?はStringBuilderを使えば必要ない
             ps.setString(1, accountOrEmail);
             ps.setString(2, accountOrEmail);
             ps.setString(3, password);
@@ -74,13 +79,19 @@ public class UserDao {
             //SQL文を実行（データベース検索）
             ResultSet rs = ps.executeQuery();
             List<User> userList = toUserList(rs);
+
+
+            //ログインしようとしているデータが1つだけ見つかるようにしている
             if (userList.isEmpty() == true) {
                 return null;
             } else if (2 <= userList.size()) {
+                //検索に2つ以上引っかかってしまったら例外処理
                 throw new IllegalStateException("2 <= userList.size()");
             } else {
+                //1つだけ取り出したインスタンスを返す
                 return userList.get(0);
             }
+
         } catch (SQLException e) {
             throw new SQLRuntimeException(e);
         } finally {
@@ -93,6 +104,7 @@ public class UserDao {
         List<User> ret = new ArrayList<User>();
         try {
             while (rs.next()) {
+
                 //SELECT文で見つけたユーザー情報を取り出す
                 int id = rs.getInt("id");
                 String account = rs.getString("account");
@@ -114,8 +126,10 @@ public class UserDao {
                 user.setCreatedDate(createdDate);
                 user.setUpdatedDate(updatedDate);
 
+                //ユーザーリストにユーザーを追加
                 ret.add(user);
             }
+            //ユーザーリストを返す
             return ret;
         } finally {
             close(rs);

@@ -35,6 +35,7 @@ public class MessageService {
         }
     }
 
+    //表示制限
     private static final int LIMIT_NUM = 1000;
 
     public List<UserMessage> getMessage() {
@@ -47,7 +48,7 @@ public class MessageService {
     		List<UserMessage> ret = messageDao.getUserMessages(connection, LIMIT_NUM);
 
     		commit(connection);
-
+            //投稿のリストを返す
     		return ret;
     	} catch (RuntimeException e) {
     		rollback(connection);

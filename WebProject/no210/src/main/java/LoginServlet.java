@@ -33,17 +33,22 @@ public class LoginServlet extends HttpServlet {
         String accountOrEmail = request.getParameter("accountOrEmail");
         String password = request.getParameter("password");
 
-        //
+        //DBの実行
         LoginService loginService = new LoginService();
         User user = loginService.login(accountOrEmail, password);
 
+        //sessionスコープを作成
         HttpSession session = request.getSession();
+
+        //上手くいっているとき
         if (user != null) {
 
+            //セッションスコープにユーザーを入れる
             session.setAttribute("loginUser", user);
             response.sendRedirect("./");
         } else {
 
+            //login.jspでエラーメッセージを表示するため
             List<String> messages = new ArrayList<String>();
             messages.add("ログインに失敗しました。");
             session.setAttribute("errorMessages", messages);

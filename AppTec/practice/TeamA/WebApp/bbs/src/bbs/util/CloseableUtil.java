@@ -1,4 +1,4 @@
-package utils;
+package bbs.util;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -7,19 +7,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import exception.IORuntimeException;
-import exception.SQLRuntimeException;
+import bbs.exception.IORuntimeException;
+import bbs.exception.SQLRuntimeException;
 
 public class CloseableUtil {
 
 	public static void close(Closeable closeable) {
 
-		//中身がnullなら何も返さない
-		if (closeable == null) 	{
+		if (closeable == null) {
 			return;
 		}
 
-		//closeableをクローズする
 		try {
 			closeable.close();
 		} catch (IOException e) {

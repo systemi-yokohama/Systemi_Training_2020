@@ -1,24 +1,23 @@
-package utils;
+package bbs.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import exception.SQLRuntimeException;
+import bbs.exception.SQLRuntimeException;
 
 /**
  * DB(コネクション関係)のユーティリティー
  */
 public class DBUtil {
 
-    //クラスフィールドに定数として、DBとの接続するための情報を定義
     private static final String DRIVER = "com.mysql.jdbc.Driver";
-    private static final String URL = "jdbc:mysql://localhost/simple_twitter";
-    private static final String USER = "root";
-    private static final String PASSWORD = "root";
+    private static final String URL = "jdbc:mysql://192.168.2.6:3306/test";
+    private static final String USER = "testuser";
+    private static final String PASSWORD = "test";
 
     static {
-        //クラスをロードすることで、DBドライバクラスを登録できる
+
         try {
             Class.forName(DRIVER);
         } catch (ClassNotFoundException e) {
@@ -34,9 +33,8 @@ public class DBUtil {
     public static Connection getConnection() {
 
         try {
-            //URL、USER、PASSWORDを使ってコネクションを取得
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-            //オートコミットをOFFにする
+
             connection.setAutoCommit(false);
 
             return connection;

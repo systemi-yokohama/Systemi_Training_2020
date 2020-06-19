@@ -33,8 +33,10 @@ public class SignUpServlet extends HttpServlet {
         List<String> messages = new ArrayList<String>();
 
         HttpSession session = request.getSession();
+
         if (isValid(request, messages) == true) {
 
+            //ユーザーのインスタンスに入力値を挿入
             User user = new User();
             user.setName(request.getParameter("name"));
             user.setAccount(request.getParameter("account"));
@@ -42,26 +44,31 @@ public class SignUpServlet extends HttpServlet {
             user.setEmail(request.getParameter("email"));
             user.setDescription(request.getParameter("description"));
 
+            //コネクションをとってSQL文を実行・ユーザー情報を登録
             new UserService().register(user);
-
+            //トップ画面にリダイレクト
             response.sendRedirect("./");
         } else {
+            //エラーメッセージが入っていればsignup.jspを出力し、エラーメッセージを表示
             session.setAttribute("errorMessages", messages);
             response.sendRedirect("signup");
         }
     }
 
     private boolean isValid(HttpServletRequest request, List<String> messages) {
+        //アカウントとパスワードの入力値を取得
         String account = request.getParameter("account");
         String password = request.getParameter("password");
 
+        //アカウントとパスワードがnull・空でないか確認し、メッセージにエラー文を追加
         if (StringUtils.isEmpty(account) == true) {
             messages.add("アカウント名を入力してください");
         }
         if (StringUtils.isEmpty(password) == true) {
             messages.add("パスワードを入力してください");
         }
-        // TODO アカウントが既に利用されていないか、メールアドレスが既に登録されていないかなどの確認も必要
+        // アカウントが既に利用されていないか、メールアドレスが既に登録されていないかなどの確認も必要
+        //エラーメッセージに何も入っていなければtrue、入っていればfalse
         if (messages.size() == 0) {
             return true;
         } else {
