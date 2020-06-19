@@ -77,6 +77,7 @@ public class UserEditServlet extends HttpServlet {
 						req.getRequestDispatcher("ToUserEditServlet").forward(req, res);
 					}
 				}
+
 				if (ac2) {
 					if (accountW(account)) {
 						users.setAccount(account);
@@ -110,7 +111,7 @@ public class UserEditServlet extends HttpServlet {
 					}
 				}
 				if( dame(password)
-					&& dame(samePassword)) {
+					&& dame(samePassword)&&bcdp) {
 					users.setPassword(passwordp);
 					users.setId(i);
 					UserDao.update(users);

@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body{
+	margin: 0;
+	font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+}
+
+.container{
+	margin: 50px 10%;
+	border: 1px solid black;
+	padding: 30px 100px 80px 100px;
+}
+
+.validation{
+	color: red;
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+}
+
+
+.button{
+	display: inline-block;
+	margin: 20px 0px;
+	background: rgb(91,155,213);
+	border: 5px solid rgb(91,155,213);
+	border-radius: 2px;
+	float: right;
+}

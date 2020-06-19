@@ -38,8 +38,8 @@ public class TweetDao {
 
         connection.commit();
         connection.close();
-        rs.close();
         statement.close();
+        rs.close();
 
         return list;
 
@@ -76,9 +76,9 @@ public class TweetDao {
             System.out.println(ps);
             ps.executeUpdate();
 
-            ps.close();
             connection.commit();
             connection.close();
+            ps.close();
         }
 
 	public static void delete(int tweet_id) throws SQLException{
@@ -96,8 +96,8 @@ public class TweetDao {
 
         ps.executeUpdate();
 
-        ps.close();
         connection.commit();
         connection.close();
+        ps.close();
 	}
 }

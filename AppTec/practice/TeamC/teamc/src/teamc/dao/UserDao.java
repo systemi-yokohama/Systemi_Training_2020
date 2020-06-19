@@ -80,9 +80,9 @@ public class UserDao {
             System.out.println(ps);
             ps.executeUpdate();
 
-            ps.close();
             connection.commit();
             connection.close();
+            ps.close();
 	}
 
 	public static void update(Users users)
@@ -114,8 +114,8 @@ public class UserDao {
 			System.out.println(ps);
 			ps.executeUpdate();
 
-			ps.close();
             connection.commit();
 			connection.close();
+			ps.close();
 	}
 }
