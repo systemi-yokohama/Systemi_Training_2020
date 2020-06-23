@@ -40,8 +40,8 @@ public class UserDao {
 
         connection.commit();
         connection.close();
-        rs.close();
         statement.close();
+        rs.close();
 
         return list;
 

@@ -110,17 +110,17 @@ public class TweetServlet extends HttpServlet {
 
 	//件名(1～30字)確認用メソッド
 	public static boolean subjectCheck(String str) {
-		return str.length() < 30;
+		return str.length() < 31;
 	}
 
 	//本文(1000字以下)確認用メソッド
 	public static boolean textCheck(String str) {
-		return str.length() < 1000;
+		return str.length() < 1001;
 	}
 
 	//カテゴリー(10字以下)確認用メソッド
 	public static boolean categoryCheck(String str) {
-		return str.length() < 10;
+		return str.length() < 11;
 	}
 
 }

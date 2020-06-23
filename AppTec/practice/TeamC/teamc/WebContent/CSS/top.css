@@ -2,20 +2,29 @@
 
 body{
 	margin: 0;
-	font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+	background-image: linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -webkit-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    -webkit-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+	background-image: -moz-linear-gradient(45deg, #E1DEB0 24%, transparent 24%, transparent 76%, #E1DEB0 76%, #E1DEB0),
+    -moz-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
 }
 
 header{
 	height: auto;
  	width: 100%;
-	background-color: rgb(34, 49, 52);
+	background-color: rgba(34, 49, 52, 0.8);
 	position: fixed;
 	top: 0px;
 	z-index: 10;
 }
 
-.container{
-}
+
 
 .header-left{
 	float: left;
@@ -24,25 +33,28 @@ header{
 
 .category{
 	margin-bottom: 5px;
+
 }
 
 .header-left p{
 	margin: 0px 5px;
+	color: white;
 }
 
 .header-right{
 	text-align: right;
 }
 
-.header-right input, .header-left input[type="submit"], .next, .before{
-	background-color: rgb(91,155,213);
+.btn{
+	color: white;
+	background-color: #EA4D3C;
 	border-radius: 5px;
 	transition: all 1s;
 }
 .header-right input{
 	width: 100px;
 }
-.header-right input :hover{
+.btn:hover{
 	opacity: 0.6;
 	cursor: pointer;
 }
@@ -60,6 +72,9 @@ header{
 .tweet{
 	width: 700px;
 	margin: 0 auto;
+	background-color: white;
+	border-collapse: collapse;
+	border: 1px solid black;
 }
 
 .subject{
@@ -74,23 +89,32 @@ header{
 	word-break : break-all;
 }
 
+.tweetText, .twe{
+	background-color: rgba(234,77,60,0.1);
+}
+
 .delete, .nonDelete, .setComment, .commentDelete, .commentNonDelete{
 	width: 50px;
 }
+
 .delete input, .setComment, .commentDelete{
 	background-color: #ffbb2d;
 }
+
 .nonDelete, .commentNonDelete{
 	background-color: #ffe8b3;
 }
 
 .bottom{
 	width: 700px;
-	margin: 50px 0px 100px 0px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 }
-.next{
-	float: right;
-}
+
 .before{
 	float: left;
+}
+
+.next{
+	float: right;
 }

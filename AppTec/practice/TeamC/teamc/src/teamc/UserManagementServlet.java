@@ -48,7 +48,7 @@ public class UserManagementServlet extends HttpServlet{
 			}
 		}else {
 			System.out.println(" zzzz");
-			request.setAttribute("commentVal", "権限がありません。");
+			request.setAttribute("Val", "権限がありません。");
 			getServletConfig().getServletContext().getRequestDispatcher("/TopServlet").forward(request, response);
 		}
 
