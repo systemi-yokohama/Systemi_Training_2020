@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import utils.DButil;
 
-@WebServlet(urlPatterns = { "/Delete_Write_Servlet" })
-public class Delete_Write_Servlet extends HttpServlet {
+@WebServlet(urlPatterns = { "/Delete_Comment_Servlet" })
+public class Delete_Comment_Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -26,8 +26,8 @@ public class Delete_Write_Servlet extends HttpServlet {
 		//UniversalDao.delete();
 
 //		Home_bean home_bean = new Home_bean();
-		String write_id = request.getParameter("write_id");
-		int i = Integer.parseInt(write_id);
+		String comment_id = request.getParameter("comment_id");
+		int i = Integer.parseInt(comment_id);
 		//write_id = home_bean.getWrite_id();
 
 
@@ -41,8 +41,8 @@ public class Delete_Write_Servlet extends HttpServlet {
 			connection.setAutoCommit(false);
 
 			StringBuilder sql = new StringBuilder();
-			sql.append("DELETE FROM  writes WHERE ");
-			sql.append("write_id = ");
+			sql.append("DELETE FROM  comments WHERE ");
+			sql.append("comment_id = ");
 			sql.append(i);
 			ps = connection.prepareStatement(sql.toString());
 

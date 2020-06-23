@@ -2,6 +2,7 @@ package board;
 
 import java.io.IOException;
 //import java.util.List;
+import java.sql.Connection;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,15 +11,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import bean.Comments;
+
 //import org.apache.commons.lang.StringUtils;
 
 import bean.Users;
-import bean.Writes;
-import dao.WriteDao;
-//import service.WriteService;
+import dao.CommentDao;
+import utils.DButil;
 
-@WebServlet(urlPatterns = { "/NewPost" })
-public class NewPost_Servlet extends HttpServlet {
+@WebServlet(urlPatterns = { "/NewComment_Servlet" })
+public class NewComment_Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override
@@ -26,11 +28,14 @@ public class NewPost_Servlet extends HttpServlet {
 			HttpServletResponse response) throws IOException, ServletException {
 		request.setCharacterEncoding("UTF-8");
 
-		String subject = request.getParameter("write_subject");
-		String category = request.getParameter("write_category");
-		String text = request.getParameter("write_text");
+		// どのドライバを使うか指定（今回はmysql）
+		Connection connection = DButil.getConnection();
 
-
+		String text = request.getParameter("comment_text");
+		String write_id = request.getParameter("comment_write_id");
+		int comment_write_id = Integer.parseInt(write_id);
+		System.out.println(text);
+		System.out.println(comment_write_id);
 
 		HttpSession session = request.getSession();
 
@@ -40,37 +45,14 @@ public class NewPost_Servlet extends HttpServlet {
 
 		Users user = (Users) session.getAttribute("loginUser");
 
-		//件名の文字数
-		if (subject.length() > 30) {
-			request.setAttribute("errorMessage", "件名の文字数は30文字までです");
-			request.getRequestDispatcher("/newpost.jsp").forward(request, response);
-			return;
-		}
+		CommentDao commentdao = new CommentDao();
 
-		//カテゴリーの文字列
-		if (category.length() > 10) {
-			request.setAttribute("errorMessage", "カテゴリーの文字数は10文字までです");
-			request.getRequestDispatcher("/newpost.jsp").forward(request, response);
-			return;
-		}
+		Comments comment = new Comments();
 
-		//本文の文字列
-		if (text.length() > 1000) {
-			request.setAttribute("errorMessage", "本文の文字数は1000文字までです");
-			request.getRequestDispatcher("/newpost.jsp").forward(request, response);
-			return;
-		}
+		comment.setComment_text(text);
+		comment.setComment_write_id(comment_write_id);
 
-
-		WriteDao writedao = new WriteDao();
-
-		Writes write = new Writes();
-
-		write.setWrite_subject(subject);
-		write.setWrite_category(category);
-		write.setWrite_text(text);
-
-		writedao.insert(write, user);
+		commentdao.insert(comment, user);
 
 		//         write.setWrite_text(request.getParameter("write"));
 		//         write.setUser_id(user.getUser_id());
