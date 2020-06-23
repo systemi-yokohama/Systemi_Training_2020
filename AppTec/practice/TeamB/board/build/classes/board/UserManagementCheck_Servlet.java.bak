@@ -26,8 +26,6 @@ public class UserManagementCheck_Servlet extends HttpServlet {
 
 		try {
 
-			//connection.setAutoCommit(false);
-
 			String user_account = request.getParameter("user_account");
 			String user_status = request.getParameter("user_status");
 
@@ -52,14 +50,11 @@ public class UserManagementCheck_Servlet extends HttpServlet {
 
 			statement.executeUpdate(sql.toString());
 
+			getServletConfig().getServletContext().getRequestDispatcher("/UserManagement_Servlet").forward(request,
+					response);
+
 			statement.close();
-			connection.commit();
-
-			// response.sendRedirect("/UserManagement_Servlet");
-
-			 getServletConfig().getServletContext().getRequestDispatcher("/UserManagement_Servlet").forward(request,response);
-
-			//    connection.close();
+			connection.close();
 
 		} catch (SQLException e) {
 			e.printStackTrace();

@@ -2,40 +2,15 @@ package bean;
 
 import java.sql.Date;
 
-public class Home_bean {
+public class Home_comment_bean {
 	String user_name;
 	String write_category;
 	String write_subject;
 	String write_text;
 	int write_id;
 	int comment_write_id;
-	int comment_id;
-	public int getComment_id() {
-		return comment_id;
-	}
-
-	public void setComment_id(int comment_id) {
-		this.comment_id = comment_id;
-	}
-
 	String comment_text;
 	Date write_created_date;
-
-	public String getComment_text() {
-		return comment_text;
-	}
-
-	public void setComment_text(String comment_text) {
-		this.comment_text = comment_text;
-	}
-
-	public Date getWrite_created_date() {
-		return write_created_date;
-	}
-
-	public void setWrite_created_date(Date write_created_date) {
-		this.write_created_date = write_created_date;
-	}
 
 	public String getName() {
 		return user_name;
@@ -84,4 +59,21 @@ public class Home_bean {
 	public void setComment_write_id(int comment_write_id) {
 		this.comment_write_id = comment_write_id;
 	}
+
+	public String getCommentText() {
+		return comment_text;
+	}
+
+	public void setCommentText(String comment_text) {
+		this.comment_text = comment_text;
+	}
+
+	public Date getWriteDate() {
+		return write_created_date;
+	}
+
+	public void setWriteDate(Date write_created_date) {
+		this.write_created_date = write_created_date;
+	}
+
 }

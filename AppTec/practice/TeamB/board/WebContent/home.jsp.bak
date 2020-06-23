@@ -34,6 +34,7 @@
 			<form action="Logout_Servlet" method="post">
 				<input type="submit" value="ログアウト">
 			</form>
+
 			<%
 				if (office.equals("1") && department.equals("1")) {
 			%>
@@ -75,9 +76,11 @@
 	</form>
 	</div>
 
-	<c:forEach var="write_List" items="${writesList}">
-		<a style="float: left;">投稿日：${write_List.getWrite_created_date()}</a>
-		<table border="1" style="table-layout: fixed; width: 100%;">
+
+	<%-- <a style="float: left;">投稿日：${write_List.getWriteDate()}</a>
+		<br> --%>
+	<table border="1" style="table-layout: fixed; width: 100%;">
+		<c:forEach var="write_List" items="${writesList}">
 			<tr>
 				<th>名前</th>
 				<td>${ write_List.getName() }</td>
@@ -89,13 +92,7 @@
 				<td colspan="3">${ write_List.getSubject() }</td>
 			</tr>
 			<tr>
-				<th>本文
-					<form action="Delete_Write_Servlet" method="post">
-						<input type="hidden" name="write_id"
-							value="${ write_List.getWrite_id() }" />
-						<button>削除</button>
-					</form>
-				</th>
+				<th>本文</th>
 				<td colspan="3" style="word-wrap: break-word;">${ write_List.getText() }</td>
 			</tr>
 
@@ -103,59 +100,36 @@
 				<c:if
 					test="${comment_List.getComment_write_id() ==  write_List.getWrite_id()}">
 					<tr>
-						<th>コメント
-							<form action="Delete_Comment_Servlet" method="post">
-								<input type="hidden" name="comment_id"
-									value="${ comment_List.getComment_id() }" />
-								<button>削除</button>
-							</form>
-						</th>
-						<td colspan="3" style="word-wrap: break-word;">${ comment_List.getComment_text() }</td>
+						<th>コメント</th>
+						<td colspan="3" style="word-wrap: break-word;">${ comment_List.getCommentText() }</td>
 					</tr>
-
 				</c:if>
-
 			</c:forEach>
 
+			<td>
+				<form action="Delete_Write_Servlet" method="post">
+					<input type="hidden" name="write_id"
+						value="${ write_List.getWrite_id() }" />
+					<button>削除</button>
+				</form>
+			</td>
 
-		</table>
-
-		<tr>
-			<th>コメントの投稿</th>
-			<form action="NewComment_Servlet" method="POST">
-			<input type="hidden" name="comment_write_id" value="${write_List.write_id}">
-				<td colspan="2"><textarea name="comment_text" id="comment_text"
-						style="width: 100%"></textarea>
-				<td><button>投稿</button></td>
-			</form>
-		</tr>
-	</c:forEach>
-
-
+		</c:forEach>
+	</table>
 	<br>
 	<a href="#" style="float: right;">前の10件</a>
 	<a href="#" style="float: left;">次の10件</a>
 
-	<c:if test="${ not empty categoryMessage}">
-		<div class="categoryMessage">
+	<c:if test="${ not empty searchResults}">
+		<div class="searchResults">
 			<ul style="text-align: center; color: red;">
-				<c:forEach items="${categoryMessage}" var="categoryMessage">
-					<c:out value="${categoryMessage}" />
+				<c:forEach items="${searchResults}" var="searchResults">
+					<c:out value="${searchResults}" />
 				</c:forEach>
 			</ul>
 		</div>
-		<c:remove var="categoryMessage" scope="session" />
+		<c:remove var="searchResults" scope="session" />
 	</c:if>
 
-	<c:if test="${ not empty dateMessage}">
-		<div class="dateMessage">
-			<ul style="text-align: center; color: red;">
-				<c:forEach items="${dateMessage}" var="dateMessage">
-					<c:out value="${dateMessage}" />
-				</c:forEach>
-			</ul>
-		</div>
-		<c:remove var="dateMessage" scope="session" />
-	</c:if>
 </body>
 </html>

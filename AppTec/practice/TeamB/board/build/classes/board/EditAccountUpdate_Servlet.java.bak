@@ -2,8 +2,6 @@ package board;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -12,8 +10,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import org.apache.commons.lang.StringUtils;
 
 import utils.DButil;
 
@@ -33,7 +29,6 @@ public class EditAccountUpdate_Servlet extends HttpServlet {
 			String old_user_account = request.getParameter("old_user_account");
 			String new_user_account = request.getParameter("new_user_account");
 			String user_password = request.getParameter("user_password");
-			String check_user_password=request.getParameter("check_user_password");
 			String user_name = request.getParameter("user_name");
 			String user_office = request.getParameter("user_office");
 			String user_department = request.getParameter("user_department");
@@ -47,64 +42,6 @@ public class EditAccountUpdate_Servlet extends HttpServlet {
 			//DBにSQL文を送るための入れ物
 			Statement statement = null;
 			statement = connection.createStatement();
-
-
-			//アカウント重複チェック
-			StringBuilder sql_check = new StringBuilder();
-			sql_check.append("SELECT COUNT(*) FROM users ");
-			sql_check.append("WHERE user_account = ");
-			sql_check.append("'");
-			sql_check.append(new_user_account);
-			sql_check.append("'");
-
-			ResultSet rs = null;
-			rs = statement.executeQuery(sql_check.toString());
-
-			System.out.println(sql_check.toString());
-
-
-
-			rs.next();
-
-			//名称の長さ
-
-			if (user_name.length() > 10) {
-
-				request.setAttribute("errorMessage", "名称は10文字以下で入力してください");
-				request.getRequestDispatcher("/editaccount.jsp").forward(request, response);
-				return;
-			}
-
-			//支社と部署のチェック
-
-			if (Integer.parseInt(user_office) == 1 && Integer.parseInt(user_department) <= 2) {
-
-			} else if (Integer.parseInt(user_office) == 2 && Integer.parseInt(user_department) == 3) {
-			} else if (Integer.parseInt(user_office) == 2 && Integer.parseInt(user_department) == 4) {
-			} else if (Integer.parseInt(user_office) == 3 && Integer.parseInt(user_department) == 3) {
-			} else if (Integer.parseInt(user_office) == 3 && Integer.parseInt(user_department) == 4) {
-			} else if (Integer.parseInt(user_office) == 4 && Integer.parseInt(user_department) == 3) {
-			} else if (Integer.parseInt(user_office) == 4 && Integer.parseInt(user_department) == 4) {
-			} else {
-				request.setAttribute("errorMessage", "支社と部署の組み合わせに誤りがあります");
-				request.getRequestDispatcher("/editaccount.jsp").forward(request, response);
-				return;
-			}
-
-			//アカウントの文字数の確認
-			if (new_user_account.length() < 6 || new_user_account.length() > 20) {
-				request.setAttribute("errorMessage", "アカウント名は文字数6～20で入力してください");
-				request.getRequestDispatcher("/editaccount.jsp").forward(request, response);
-				return;
-			}
-			//パスワードチェック
-			if (StringUtils.equals(user_password, check_user_password)) {
-			} else {
-				request.setAttribute("errorMessage", "パスワードと確認パスワードが違います");
-				request.getRequestDispatcher("/editaccount.jsp").forward(request, response);
-				return;
-			}
-
 
 			//SQL文作成
 			StringBuilder sql = new StringBuilder();
@@ -149,21 +86,12 @@ public class EditAccountUpdate_Servlet extends HttpServlet {
 			System.out.println(sql.toString());
 			//executeQuery()は引数に入れたものを実行してくれる関数。結果をrsに入れている
 
-			   PreparedStatement ps = null;
-		    	ps = connection.prepareStatement(sql.toString());
-				ps.executeUpdate();
+			statement.executeUpdate(sql.toString());
 
+			getServletConfig().getServletContext().getRequestDispatcher("/UserManagement_Servlet").forward(request,response);
 
-		        ps.close();
 			statement.close();
-			connection.commit();
-
-
-		        getServletConfig().
-			    getServletContext().
-			    getRequestDispatcher("/UserManagement_Servlet").forward(request,response);
-
-	//	connection.close();
+			connection.close();
 
 		} catch (SQLException e) {
 			e.printStackTrace();
