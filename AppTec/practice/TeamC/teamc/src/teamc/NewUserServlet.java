@@ -129,8 +129,8 @@ public class NewUserServlet extends HttpServlet {
 				if (ps) {
 					if (passwordSame(samePassword, password)) {
 						System.out.println("DB追加済み");
-						req.getRequestDispatcher("UserManagementServlet").forward(req, res);
 						UserDao.insert(users);
+						req.getRequestDispatcher("UserManagementServlet").forward(req, res);
 					} else {
 						req.setAttribute("error", "パスワードが一致しません");
 						req.getRequestDispatcher("newUser.jsp").forward(req, res);
@@ -164,7 +164,7 @@ public class NewUserServlet extends HttpServlet {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-
+		System.out.println(list);
 		for (Users user : list) {
 			String a = user.getAccount();
 			if (!dame(a)) {

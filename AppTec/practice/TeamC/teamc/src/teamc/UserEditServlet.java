@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import teamc.beans.Users;
 import teamc.dao.UserDao;
 
-@WebServlet(urlPatterns = "/UserEditServlet")
+@WebServlet(urlPatterns = { "/UserEditServlet" })
 public class UserEditServlet extends HttpServlet {
 
 	@Override
@@ -29,23 +29,25 @@ public class UserEditServlet extends HttpServlet {
 		String account = req.getParameter("account");
 		String accountp = req.getParameter("accountp");
 		String password = req.getParameter("password");
+		String passwordp = req.getParameter("passwordp");
 		String name = req.getParameter("name");
-		String passwordp=req.getParameter("passwordp");
-		String id=req.getParameter("id");
 		String branches_name = req.getParameter("branches_name");
 		String departments_name = req.getParameter("departments_name");
 		String samePassword = req.getParameter("samePassword");
+		String id = req.getParameter("id");
 		int i = Integer.parseInt(id);
 		int branches_id = Integer.parseInt(branches_name);
 		int departments_id = Integer.parseInt(departments_name);
 
-		String regex = "[a-zA-Z0-9]";
+		String regex = "^[0-9a-zA-Z]*$";
 		Pattern pt = Pattern.compile(regex);
 		Matcher m = pt.matcher(account);
 
-		String rgx = "[a-zA-Z0-9!-/:-@[-`{-~]]";
+		String rgx = "[a-zA-Z0-9]";
+		String rgx2 = "[!-/:-@[-`{-~]]";
 		Pattern ptn = Pattern.compile(rgx);
-		Matcher mt = ptn.matcher(password);
+		Pattern ptn2 = Pattern.compile(rgx2);
+		boolean mt = ptn.matcher(password).find() && ptn2.matcher(password).find();
 
 		boolean ac = false;
 		boolean ac2 = false;
@@ -59,9 +61,9 @@ public class UserEditServlet extends HttpServlet {
 
 			if (!dame(account) && !dame(name)
 					&& !dame(branches_name)
-					&& !dame(departments_name)) {
+					&& !dame(departments_name)&& !kinshi(branches_id, departments_id)) {
 
-				if (!accountLength(account)) {
+				if (account.length() >= 6 && account.length() <= 20) {
 					users.setAccount(account);
 					ac = true;
 				} else {
@@ -111,7 +113,7 @@ public class UserEditServlet extends HttpServlet {
 					}
 				}
 				if( dame(password)
-					&& dame(samePassword)&&bcdp) {
+					&& dame(samePassword)&&(bcdp)) {
 					users.setPassword(passwordp);
 					users.setId(i);
 					UserDao.update(users);
@@ -130,7 +132,7 @@ public class UserEditServlet extends HttpServlet {
 						}
 					}
 					if (psw) {
-						if (mt.find()){
+						if (mt){
 							users.setPassword(password);
 							users.setId(i);
 							ps = true;
@@ -163,10 +165,6 @@ public class UserEditServlet extends HttpServlet {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}
-	}
-
-	public static boolean accountLength(String account) {
-		return account.length() <= 6 && account.length() >= 20;
 	}
 
 
@@ -224,4 +222,7 @@ public class UserEditServlet extends HttpServlet {
 	public static boolean kinshi(int branches_id, int departments_id) {
 		return branches_id == 0 && departments_id == 0;
 	}
-}
+
+
+
+	}

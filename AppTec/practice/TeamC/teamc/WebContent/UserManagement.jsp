@@ -36,7 +36,7 @@ function dd() { if(confirm("稼働状況の切り替えを行きますか？" ))
 	<main>
 		<div class="container"></div>
 			<div class="tittle">
-				<h2>ユーザー管理</h2>
+				<h1>ユーザー管理</h1>
 			</div>
 			<div>
 				<table border="1" class="mytable" >

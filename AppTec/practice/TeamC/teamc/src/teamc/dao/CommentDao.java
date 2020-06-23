@@ -47,8 +47,8 @@ public class CommentDao {
 
         connection.commit();
         connection.close();
-        rs.close();
         statement.close();
+        rs.close();
 
         return list;
 

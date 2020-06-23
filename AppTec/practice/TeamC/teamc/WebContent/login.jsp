@@ -22,7 +22,7 @@
 		<p>
 			パスワード<br> <input type="password" name="password">
 		</p>
-		<input class="button" type="submit" value="ログイン">
+			<input class="btn" type="submit" value="ログイン">
 	</form>
 </div>
 </body>

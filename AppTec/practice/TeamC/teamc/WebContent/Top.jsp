@@ -46,28 +46,27 @@
 				</form>
 
 				<form action="SerchServlet" method="post" class="category">
-					<p>
-						カテゴリ<br> <input name="category" type="text"
-							placeholder="カテゴリ"> <input type="submit" id="serch"
-							value="🔎">
+					<p>カテゴリ<br>
+					<input name="category" type="text" placeholder="カテゴリ">
+					<input type="submit" class="btn" id="serch" value="🔎">
 					</p>
 
 				</form>
 
 			</div>
 			<div class="header-right">
-				<form action="tweets.jsp" method="post" class="btn">
-					<input type="submit" value="新規登録投稿" />
+				<form action="tweets.jsp" method="post">
+					<input class="btn" type="submit" value="新規投稿" />
 				</form>
-				<form action="UserManagementServlet" method="post" class="btn">
-					<input type="submit" value="ユーザー管理">
+				<form action="UserManagementServlet" method="post">
+					<input class="btn" type="submit" value="ユーザー管理">
 				</form>
-				<form action="logout" method="get" class="btn">
-					<input type="submit" value="ログアウト">
+				<form action="logout" method="get">
+					<input class="btn" type="submit" value="ログアウト">
 				</form>
 			</div>
-			<c:if test="${commentVal != null}">
-				<p class="valitation">${commentVal}</p>
+			<c:if test="${Val != null}">
+				<p class="valitation">${Val}</p>
 			</c:if>
 		</div>
 
@@ -77,17 +76,17 @@
 		<c:forEach var="i" items="${ list }">
 			<table border="1" class="tweet">
 				<tr>
-					<td class="subject">件名:${ i.getSubject()}</td>
+					<td class="twe">件名:${ i.getSubject()}</td>
 
-					<td colspan="2">投稿者: ${ i.getUser().getName() }</td>
+					<td colspan="2" class="twe">投稿者: ${ i.getUser().getName() }</td>
 
 				</tr>
 				<tr>
 					<td class="tweetText" colspan="3">${ i.getText()}</td>
 				</tr>
 				<tr>
-					<td>カテゴリ: ${ i.getCategory() }</td>
-					<td>投稿日時: <fmt:formatDate value="${ i.getCreated_at() }"
+					<td class="twe">カテゴリ: ${ i.getCategory() }</td>
+					<td class="twe">投稿日時: <fmt:formatDate value="${ i.getCreated_at() }"
 							pattern="yyyy/MM/dd HH:mm:ss" /></td>
 					<td class="delete"><c:if test="${ i.getUser().getId() == loginUser.getId() }">
 							<form action="TweetDeleteServlet" method="post" class="Tweet"
@@ -103,7 +102,7 @@
 				<tr>
 					<td colspan="3">
 						<form action="CommentServlet" method="post" class="Tweet">
-							<input name="comment" class="commentIn" placeholder="コメント入力">
+							<textarea name="comment" class="commentIn" placeholder="コメント入力"></textarea>
 							<input type="hidden" name="tweetId" value="${ i.getTweet_id() }">
 							<input class="setComment" type="submit" value="投稿">
 							<div class="valitation">
@@ -114,7 +113,6 @@
 						</form>
 					</td>
 				</tr>
-
 				<c:forEach var="c" items="${ i.getComment() }">
 					<tr>
 						<td class="comment" colspan="3">コメント:${ c.getText() }</td>
@@ -136,6 +134,7 @@
 				</c:forEach>
 
 			</table>
+			<br>
 		</c:forEach>
 	</div>
 	<div class="bottom">
@@ -143,14 +142,14 @@
 			<form action="TopServlet" method="post" class="Tweet">
 				<input type="hidden" name="topTweet" value="${ topTweet }">
 				<input type="hidden" name="post" value="-20">
-				<input class="before" type="submit" value="前へ">
+				<input class="btn before" type="submit" value="前へ">
 			</form>
 		</c:if>
 		<c:if test="${ next != null }">
 			<form action="TopServlet" method="post" class="Tweet">
 				<input type="hidden" name="topTweet" value="${ topTweet }">
 				<input type="hidden" name="post" value="20">
-				<input class="next" type="submit" value="次へ">
+				<input class="btn next" type="submit" value="次へ">
 			</form>
 		</c:if>
 	</div>
