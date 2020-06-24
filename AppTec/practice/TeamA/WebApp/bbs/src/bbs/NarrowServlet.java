@@ -5,7 +5,6 @@ import static bbs.util.DBUtil.*;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -55,15 +54,14 @@ public class NarrowServlet extends HttpServlet {
         ResultSet rsCm = null;
     	//投稿のリスト作成
     	List<UserCC> ret = new ArrayList<UserCC>();
-
+    	String error = "";
     	HttpSession session = request.getSession();
 
-		String driver = "com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://192.168.2.6:3306/test";
-		String user = "testuser";
-		String password = "test";
-
 		boolean flg = false;
+
+		if (StringUtils.isBlank(category) && StringUtils.isEmpty(date)) {
+			response.sendRedirect("/bbs/contributionIndex");
+		}
 
 		if (category.length() >= 11) {
 			session.setAttribute("categoryError", "※10文字以下で入力してください");
@@ -71,14 +69,7 @@ public class NarrowServlet extends HttpServlet {
 		}
 
 		try {
-			try {
-				Class.forName(driver);
-			} catch (ClassNotFoundException e) {
-				throw new RuntimeException(e);
-			}
-	      	//SQL文をDBに送るためのいれもの
-	      	connection = DriverManager.getConnection(url,user,password);
-	      	connection.setAutoCommit(false);
+			connection = getConnection();
 	      	StringBuilder sql = new StringBuilder();
 
 	      	sql.append("SELECT * FROM contributions WHERE ");
@@ -86,7 +77,7 @@ public class NarrowServlet extends HttpServlet {
 
 
 	      	if (date.equals("1d")) {
-	      		sql.append("updated_date BETWEEN ");
+	      		sql.append("created_date BETWEEN ");
 	      		d2.setTime(dt2);
 	    		d2.add(Calendar.DAY_OF_MONTH, -1);
 	    		Date date2 = d2.getTime();
@@ -97,11 +88,9 @@ public class NarrowServlet extends HttpServlet {
 	      		sql.append("'");
 	      		flg = true;
 
-	      		System.out.println(sql.toString());
-
 	      	}
 	      	if (date.equals("3d")) {
-	      		sql.append("updated_date BETWEEN ");
+	      		sql.append("created_date BETWEEN ");
 	      		d2.setTime(dt2);
 	    		d2.add(Calendar.DAY_OF_MONTH, -3);
 	    		Date date2 = d2.getTime();
@@ -111,9 +100,12 @@ public class NarrowServlet extends HttpServlet {
 	      		sql.append(sdf.format(dt));
 	      		sql.append("'");
 	      		flg = true;
+
+	      		System.out.println(sql.toString());
 	      	}
+
 	      	if (date.equals("1w")) {
-	      		sql.append("updated_date BETWEEN ");
+	      		sql.append("created_date BETWEEN ");
 	      		d2.setTime(dt2);
 	    		d2.add(Calendar.DAY_OF_MONTH, -7);
 	    		Date date2 = d2.getTime();
@@ -125,7 +117,7 @@ public class NarrowServlet extends HttpServlet {
 	      		flg = true;
 	      	}
 	      	if (date.equals("1m")) {
-	      		sql.append("updated_date BETWEEN ");
+	      		sql.append("created_date BETWEEN ");
 	      		d2.setTime(dt2);
 	    		d2.add(Calendar.MONTH, -1);
 	    		Date date2 = d2.getTime();
@@ -137,7 +129,7 @@ public class NarrowServlet extends HttpServlet {
 	      		flg = true;
 	      	}
 	      	if (date.equals("3m")) {
-	      		sql.append("updated_date BETWEEN ");
+	      		sql.append("created_date BETWEEN ");
 	      		d2.setTime(dt2);
 	    		d2.add(Calendar.MONTH, -3);
 	    		Date date2 = d2.getTime();
@@ -149,7 +141,7 @@ public class NarrowServlet extends HttpServlet {
 	      		flg = true;
 	      	}
 	      	if (date.equals("1y")) {
-	      		sql.append("updated_date BETWEEN ");
+	      		sql.append("created_date BETWEEN ");
 	      		d2.setTime(dt2);
 	    		d2.add(Calendar.YEAR, -1);
 	    		Date date2 = d2.getTime();
@@ -173,15 +165,10 @@ public class NarrowServlet extends HttpServlet {
 		      	}
 	      	}
 
-	            String sqlCm = "SELECT * FROM comments";
-
-	            System.out.println(sql.toString());
+	      	sql.append(" ORDER BY created_date DESC");
 
 	            psCb = connection.prepareStatement(sql.toString());
 		      	rsCb = psCb.executeQuery();
-
-	            psCm = connection.prepareStatement(sqlCm);
-	            rsCm = psCm.executeQuery();
 
 	            //投稿一つ分を取り出す
 	            while (rsCb.next()) {
@@ -198,6 +185,10 @@ public class NarrowServlet extends HttpServlet {
 
 	    			//インスタンスの中のコメントリストを定義
 	            	List<Comment> comments = new ArrayList<Comment>();
+
+	            	String sqlCm = "SELECT * FROM comments ORDER BY created_date DESC";
+	            	psCm = connection.prepareStatement(sqlCm);
+	 	            rsCm = psCm.executeQuery();
 
 	            	//コメントを一つずつ取り出す
 	            	while (rsCm.next()) {
@@ -217,19 +208,20 @@ public class NarrowServlet extends HttpServlet {
 
 	            			//投稿のコメントリストにコメントを入れる
 	            			comments.add(comment);
-
 	            			System.out.println(comment);
 
 	            			}
-
 	            		}
 
 	            	ret.add(userCC);
 	      }
-	            System.out.println(sql.toString());
+	           if (ret.size() == 0) {
+	        	   error = "該当する投稿がありません";
+	           }
 
 		      	commit(connection);
 		      	request.setAttribute("contributions", ret);
+		      	session.setAttribute("error", error);
 		      	request.getRequestDispatcher("/home.jsp").forward(request, response);
 
 		} catch (RuntimeException | SQLException e) {

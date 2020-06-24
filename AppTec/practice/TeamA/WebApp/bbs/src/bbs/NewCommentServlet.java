@@ -20,8 +20,8 @@ import org.apache.commons.lang.StringUtils;
 
 import bbs.bean.User;
 
-@WebServlet(urlPatterns = { "/newContribution" })
-public class NewContributionServlet extends HttpServlet {
+@WebServlet(urlPatterns = { "/newComment" })
+public class NewCommentServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -32,46 +32,37 @@ public class NewContributionServlet extends HttpServlet {
     	StringBuilder sql = new StringBuilder();
     	Connection connection = null;
     	PreparedStatement statement = null;
-//    	int uc = 0;
     	//jspで入力された値を獲得
-		String title = request.getParameter("title").toString();
-		String category = request.getParameter("category").toString();
-		String text = request.getParameter("text").toString();
+    	String contributionId = request.getParameter("cbId");
+		String text = request.getParameter("text");
 		User loginUser = (User) session.getAttribute("loginUser");
-
-		System.out.println(title);
 
 		if (!(isValid(request, messages))) {
 			session.setAttribute("errorMessages", messages);
-			request.getRequestDispatcher("/newContribution.jsp").forward(request,response);
+			request.getRequestDispatcher("/contributionIndex").forward(request,response);
 		} else {
 			try {
 		      	connection = getConnection();
 		      	//実行したいSQL文
-		      	sql.append("INSERT INTO contributions ( ");
+		      	sql.append("INSERT INTO comments ( ");
 		      	sql.append("text");
-		      	sql.append(", category");
-	            sql.append(", title");
+		      	sql.append(", contribution_id");
 	            sql.append(", user_account");
 	            sql.append(", created_date");
 	            sql.append(", updated_date");
 	            sql.append(") VALUES ( '");
-	            sql.append(text); // title
+	            sql.append(text); // text
 	            sql.append("', '");
-	            sql.append(category); // category
-	            sql.append("', '");
-	            sql.append(title); // text
+	            sql.append(contributionId);
 	            sql.append("', '");
 	            sql.append(loginUser.getAccount()); // userAccount
 	            sql.append("', CURRENT_TIMESTAMP"); // createdDate
 	            sql.append(", CURRENT_TIMESTAMP"); // updatedDate
 	            sql.append(")");
 
-		      	//sql.append("INSERT INTO contributions VALUES(?,?,?);");
-		      	System.out.println(sql.toString());
+//		      	System.out.println(sql.toString());
 		      	statement = connection.prepareStatement(sql.toString());
 		    	statement.executeUpdate(sql.toString());
-//		    	System.out.println(uc);
 		    	statement.close();
 		    	commit(connection);
 		    	request.getRequestDispatcher("/contributionIndex").forward(request,response);
@@ -83,34 +74,21 @@ public class NewContributionServlet extends HttpServlet {
 		}
       }
 		private boolean isValid(HttpServletRequest request, List<String> messages) {
-			String title = request.getParameter("title").toString();
-			String category = request.getParameter("category").toString();
-			String text = request.getParameter("text").toString();
-			//件名（title）関連のエラーメッセージ
-		    if (StringUtils.isBlank(title)) {
-		        messages.add("※件名を入力してください");
-		    }
-		    if (!(StringUtils.isBlank(title)) && 30 < title.length()) {
-		        messages.add("※件名は30文字以下で入力してください");
-		    }
-		    //カテゴリーのエラーメッセージ
-		    if (StringUtils.isBlank(category)) {
-		        messages.add("※カテゴリーを入力してください");
-		    }
-		    if (!(StringUtils.isBlank(category)) && 10 < category.length()) {
-		        messages.add("※カテゴリーは10文字以下で入力してください");
-		    }
-		    //本文（text）のエラーメッセージ
+			String text = request.getParameter("text");
+
+		    //コメント（text）のエラーメッセージ
 		    if (StringUtils.isBlank(text)) {
-		        messages.add("※本文を入力してください");
+		        messages.add("※コメントを入力してください");
 		    }
-		    if (!(StringUtils.isBlank(text)) && 1000 < text.length()) {
-		        messages.add("※本文は1000文字以下で入力してください");
+		    if (!(StringUtils.isBlank(text)) && 500 < text.length()) {
+		        messages.add("※コメントは500文字以下で入力してください");
 		    }
 		    if (messages.size() == 0) {
 		    	return true;
 		    } else {
 		    	return false;
 		    }
-		}
-	}
+
+}
+
+}

@@ -52,14 +52,20 @@ public class SignupServlet extends HttpServlet {
 	                UserDao userDao = new UserDao();
 	                User oldUser = userDao.getUser(connection, user);
 	                System.out.println(oldUser);
+
+
+
 	                if(oldUser == null) {
 	                	userDao.insert(connection, user);
-	                	request.getRequestDispatcher("settings.jsp").forward(request, response);
+	                	commit(connection);
+	                	request.getRequestDispatcher("/userManagement").forward(request, response);
 	                } else {
 	                	messages.add("※そのユーザーはすでに登録されています");
+	                	session.setAttribute("errorMessages", messages);
+	    	            request.getRequestDispatcher("signup.jsp").forward(request, response);
 	                }
 //	                userDao.insert(connection, user);
-	                commit(connection);
+
 	            } catch (RuntimeException e) {
 	                rollback(connection);
 	                throw e;
@@ -94,7 +100,7 @@ public class SignupServlet extends HttpServlet {
 	   //入力値がなかったらエラー
 	     if (StringUtils.isBlank(password)) {
 	         messages.add("※パスワードを入力してください");
-	        } else if((StringUtils.length(password) <= 5) || (StringUtils.length(password) >= 21) || !(password.matches("[,./-a-zA-Z0-9]+"))) {
+	        } else if((StringUtils.length(password) <= 5) || (StringUtils.length(password) >= 21) || !(password.matches("^[a-zA-Z0-9,/]+$"))) {
 	        //文字数が足りていない/多かったらエラー
 	        messages.add("※パスワードを6文字以上20文字以下の記号を含む半角文字で入力してください");
 		     }
@@ -106,8 +112,8 @@ public class SignupServlet extends HttpServlet {
 	     if(StringUtils.isBlank(name)) {
 	    	 messages.add("※名称を入力してください");
 	     }
-	     //10文字以上だったらエラー
-	     if(StringUtils.length(password) >= 10) {
+	     //11文字以上だったらエラー
+	     if(StringUtils.length(name) > 10) {
 	    	 messages.add("※名称を10文字以内で入力してください");
 	     }
 	   //入力値がなかったらエラー

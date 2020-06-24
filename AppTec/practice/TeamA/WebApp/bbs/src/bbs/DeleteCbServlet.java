@@ -5,7 +5,6 @@ import static bbs.util.DBUtil.*;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -31,32 +30,23 @@ public class DeleteCbServlet extends HttpServlet {
     	PreparedStatement psCb = null;
     	PreparedStatement psCm = null;
 
-		String driver = "com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://192.168.2.6:3306/test";
-		String user = "testuser";
-		String password = "test";
-
 		try {
-			try {
-				Class.forName(driver);
-			} catch (ClassNotFoundException e) {
-				throw new RuntimeException(e);
-			}
-
-	      	connection = DriverManager.getConnection(url,user,password);
-	      	connection.setAutoCommit(false);
+			connection = getConnection();
 
 	      	//投稿を削除するSQL文
 	      	StringBuilder sqlCb = new StringBuilder();
-	      	sqlCb.append("DELETE FROM contributions");
+	      	sqlCb.append("DELETE FROM contributions ");
 	      	sqlCb.append("WHERE id=");
 	      	sqlCb.append(cbId);
 
+
 	      	//コメントを削除するSQL文
 	      	StringBuilder sqlCm = new StringBuilder();
-	      	sqlCm.append("DELETE FROM comments");
+	      	sqlCm.append("DELETE FROM comments ");
 	      	sqlCm.append("WHERE contribution_id=");
 	      	sqlCm.append(cbId);
+
+	      	System.out.println(sqlCm.toString());
 
 	      	//SQLの実行
 	      	psCm = connection.prepareStatement(sqlCm.toString());

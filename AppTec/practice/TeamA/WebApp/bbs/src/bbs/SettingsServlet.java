@@ -39,10 +39,11 @@ public class SettingsServlet extends HttpServlet {
 		 //メッセージがないなら入力値を受け取る
 		 if (isValid(request, messages, session) == true) {
 			 String account = request.getParameter("account");
+			 String oldAccount = request.getParameter("oldAccount");
+			 System.out.println(account);
+			 System.out.println(oldAccount);
 			 UserDao userDao = new UserDao();
-			 if (userDao.getOldUser(connection, account, session)) {
-				 messages.add("※そのアカウントはすでに登録されています");
-			 } else {
+			 if (userDao.getOldUser(connection, account, oldAccount)) {
 				 User user = new User();
 		         user.setAccount(request.getParameter("account"));
 		         user.setPassword(request.getParameter("password"));
@@ -53,10 +54,12 @@ public class SettingsServlet extends HttpServlet {
 		                connection = getConnection();
 //		                String encPassword = CipherUtil.encrypt(user.getPassword());
 //		                user.setPassword(encPassword);
-				         userDao.update(connection, user, session);
+
+				        userDao.update(connection, user, oldAccount);
 		                commit(connection);
-		                request.getRequestDispatcher("/userManagement.jsp").forward(request, response);
-		            } catch (RuntimeException e) {
+		                request.getRequestDispatcher("/userManagement").forward(request, response);
+//		                response.sendRedirect("/bbs/userManagement");
+				 	} catch (RuntimeException e) {
 		                rollback(connection);
 		                throw e;
 		            } catch (Error e) {
@@ -65,34 +68,35 @@ public class SettingsServlet extends HttpServlet {
 		            } finally {
 		                close(connection);
 		            }
-			 }
+			 } else {
+				 messages.add("※そのアカウントはすでに登録されています");
+				 session.setAttribute("errorMessages", messages);
+		         request.getRequestDispatcher("/settings.jsp").forward(request, response);
 	        }
-	            session.setAttribute("errorMessages", messages);
-	            request.getRequestDispatcher("/settings.jsp").forward(request, response);
+		 }
+		 session.setAttribute("errorMessages", messages);
+         request.getRequestDispatcher("/settings.jsp").forward(request, response);
+
 	 }
 	 //部署、支社の組み合わせが違うときのエラー分岐
 	 private boolean isValid(HttpServletRequest request, List<String> messages, HttpSession session)  {
 		 String account = request.getParameter("account");
+		 String oldAccount = request.getParameter("oldAccount");
 	     String password = request.getParameter("password");
 	     String password2 = request.getParameter("password2");
+	     String name = request.getParameter("name");
 	     int departmentId = Integer.parseInt(request.getParameter("departmentId"));
 	     int branchId = Integer.parseInt(request.getParameter("branchId"));
-	     User editUser = (User) session.getAttribute("editUser");
+//	     User editUser = (User) session.getAttribute("editUser");
 	     //アカウント
-	     if(!(StringUtils.isBlank(account)) && !(account.equals(editUser.getAccount()))) {
+	     if(!(StringUtils.isBlank(account)) && !(account.equals(oldAccount))) {
 	    	 if((StringUtils.length(account) <= 5) || (StringUtils.length(account) >= 21) || !(StringUtils.isAlphanumeric(account))) {
 		    	 messages.add("※アカウント名を6文字以上20文字以下の半角英数字で入力してください");
 		     }
 	     }
 	     //10文字以上だったらエラー
-	     if(StringUtils.length(password) >= 10) {
+	     if(StringUtils.length(name) > 10) {
 	    	 messages.add("※名称を10文字以内で入力してください");
-	     }
-	     if(branchId == 0) {
-	    	 messages.add("※支社を入力してください");
-	     }
-	     if(departmentId == 0) {
-	    	 messages.add("※部署を入力してください");
 	     }
 	     if(branchId == 1 && departmentId >= 3) {
 	    	 messages.add("※正しい組み合わせで支社/部署を入力してください");
@@ -102,7 +106,7 @@ public class SettingsServlet extends HttpServlet {
 	     }
 	     //パスワード
 	     if(!(StringUtils.isBlank(password)) &&
-	    		 (!(password.matches("[,./-a-zA-Z0-9]+")) || StringUtils.length(password) <= 5) || (StringUtils.length(password) >= 21)) {
+	    		 (!(password.matches("^[a-zA-Z0-9,/]+$")) || StringUtils.length(password) <= 5) || (StringUtils.length(password) >= 21)) {
 		    messages.add("※パスワードを6文字以上20文字以下の記号を含む半角文字で入力してください");
 	     }
 	     //パスワードと再入力が違っていたらエラー

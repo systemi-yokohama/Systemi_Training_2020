@@ -1,0 +1,440 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+}
+
+form {
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+}
+
+header {
+	text-align: center;
+	/* 青緑 */
+	background-color: #00a497;
+	/* 薄桜 */
+	color: #fdeff2;
+	height: 100px;
+	position: relative;
+}
+
+header h2 {
+	font-size: 40px;
+	height: 100px;
+	line-height: 100px;
+}
+
+.menu {
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/* 薄桜 */
+	color: #fdeff2;
+	line-height: 50px;
+	height: 100px;
+	display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+header a:link, a:hover, a:active {
+	float: left;
+	padding-right: 10px;
+	/* 薄桜 */
+	color: #fdeff2;
+}
+
+header a:visited {
+	/* 青紫 */
+	color: #674598;
+}
+
+.comment h4 {
+	text-align: center;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+}
+
+header li {
+	float: left;
+	margin-right: 20px;
+}
+
+.top h3 {
+	border-bottom: 3px double black;
+	display: inline-block;
+	float: left;
+	font-size: 30px;
+	margin: 50px 0 50px 50px;
+
+}
+
+.contribution .comment {
+	margin: 0 auto;
+}
+
+.new {
+	border-radius: 3px;
+}
+
+.new input {
+	width: 150px;
+	height: 60px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 800px;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.narrow td {
+	width: 250px;
+}
+
+.factor {
+	text-align: left;
+	font-weight: bold;
+}
+
+.find-category {
+	width: 100%;
+	height: 24px;
+	display: flex;
+    align-items: center;
+}
+
+.find-date {
+	width: 250px;
+	height: 30px;
+	display: flex;
+    align-items: center;
+}
+
+.narrow {
+	margin-left: 200px;
+}
+
+.narrow-button {
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	width: 130px;
+	height: 30px;
+	text-align: center;
+	font-weight: bold;
+	margin-left: 0;
+	cursor: pointer;
+}
+
+.button {
+	margin-left: 10px;
+}
+
+.error {
+	margin: 50px auto;
+	text-align: center;
+}
+
+.contributions , comment {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contributions table , comment table {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.comments textarea {
+	line-height: 1.2;
+	height: 70px;
+	width: 400px;
+}
+
+.contribution .text {
+	/* 鳥の子色 */
+	background-color: #fff1cf;
+}
+
+.text {
+	height: 70px;
+	width: 600px;
+}
+
+.new-comment .submit {
+	margin-right: 0;
+}
+
+.delete {
+	width: 130px;
+	/* 白藍 */
+	background-color: #c1e4e9;
+}
+
+.old-comments {
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.login-top {
+	border-bottom: 3px double black;
+	display: inline-block;
+	float: left;
+	font-size: 30px;
+	margin: 50px 0 50px 50px;
+}
+
+.login-container input {
+	height: 20px;
+	margin-bottom: 30px;
+}
+
+.login-container {
+	font-weight: bold;
+	width: 100%;
+	height: 200px;
+	margin: 150px auto;
+	text-align: center;
+}
+
+.login-container label {
+	font-size: 20px;
+}
+
+.login-container .submit {
+	width: 150px;
+	height: 70px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.errorMessages {
+	/* しょうじょうひ */
+	color: #e2041b;
+	font-weight: bold;
+}
+
+.title2 , .category2 {
+	font-weight: bold;
+}
+
+.top .cansel {
+	width: 150px;
+	height: 60px;
+	/* 白藍 */
+	background-color: #c1e4e9;
+	display: inline-block;
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 800px;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.contents {
+	width: 100%;
+	margin-left: 0;
+	margin-top: 100px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 50px;
+}
+
+.contribution-account {
+	font-size: 25px;
+	float: left;
+}
+
+.contents form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contents textarea {
+	width: 600px;
+}
+
+.new-contribution {
+	width: 100%;
+	display: inline-block;
+	margin-left: 300px;
+}
+
+.contents .title2, .category2 {
+	float: left;
+	margin-right: 0;
+	width: 130px;
+	padding: 0;
+}
+
+.categoryInput , .titleInput {
+	width: 470px;
+	float: left;
+	margin-left: 0;
+}
+
+.new-contribution .submit {
+	width: 150px;
+	height: 60px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.topManagement {
+	position: relative;
+}
+
+.new-person {
+	position: absolute;
+	width: 150px;
+	height: 60px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	margin-top: 33px;
+	margin-left: 500px;
+}
+
+.cansel-person {
+	position: absolute;
+	width: 150px;
+	height: 60px;
+	/* 白藍 */
+	background-color: #c1e4e9;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 33px;
+	cursor: pointer;
+	margin-left: 800px;
+}
+
+.main-contents {
+	margin-top: 180px;
+	margin-right: 170px;
+	margin-left: 140px;
+}
+
+.main-contents table {
+	width: 1000px;
+}
+
+.main-contents td {
+	width: 12.5%;
+	text-align: center;
+	font-weight: bold;
+	height: 30px;
+}
+
+.editButton {
+	width: 100px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.editButton2 {
+	width: 70px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.columns {
+	font-size: 20px;
+	border-bottom: 6px double black;
+	height: 60px;
+}
+
+.main-input table {
+	margin-top: 130px;
+	margin-left: 310px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 0;
+}
+
+.main-input table td {
+	height: 50px;
+}
+
+.main-input table input , select {
+	height: 30px;
+	width: 400px;
+	display: flex;
+    align-items: center;
+}
+
+.t {
+	padding-left: 0;
+	float: left;
+	font-size: 15px;
+	height: 50px;
+}
+
+.main-input label {
+	float: right;
+	margin-right: 10px;
+}
+
+.to {
+	width: 130px;
+	height: 40px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	margin-left: 300px;
+}
+
+.can {
+	width: 130px;
+	height: 40px;
+	/* 白藍 */
+	background-color: #c1e4e9;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	margin-left: 300px;
+}
+
+.float {
+	width: 0;
+}
+
+.color {
+	width: 130px;
+	height: 40px;
+	/* サンゴ色 */
+	background-color: #f5b1aa;
+	display: inline-block;
+	font-weight: bold;
+	font-size: 20px;
+	cursor: pointer;
+}

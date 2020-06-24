@@ -5,18 +5,24 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>Insert title here</title>
-		<link href="./style.css" rel="stylesheet" type="text/css">
+		<title>ユーザー新規登録</title>
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 <body>
 	<header>
-		<div class="header-container" align="center">
-		    <h2>掲示板システム</h2>
-		</div>
+		<h2>掲示板システム</h2>
+		<div class="menu">
+			<ul>
+		 		<li>${loginUser.getAccount()}：</li>
+	         	<li><a href="/bbs/logout">ログアウト</a></li>
+	      	 </ul>
+      	 </div>
   	</header>
-	<div class="main-contents">
+  	<div class="top">
+  		<h3>ユーザー新規登録</h3>
+  	</div>
+	<div class="main-input inp">
 		<form action="signup" method="POST">
-			<h3>ユーザー新規登録</h3>
 				<table>
 					<tr>
 						<td><label for="account">アカウント:</label></td>
@@ -24,7 +30,7 @@
 					</tr>
 					<tr>
 					    <td></td>
-					    <td><p>(6~20文字の半角英数字で入力してください)</p></td>
+					    <td><p class="t">(6~20文字の半角英数字で入力してください)</p></td>
 				    </tr>
 					<tr>
 					    <td><label for="password">パスワード:</label></td>
@@ -32,19 +38,19 @@
 				    </tr>
 				    <tr>
 				    	<td></td>
-				    	<td><p>(6~20文字の記号を含む半角文字で入力してください)</p></td>
+				    	<td><p class="t">(6~20文字の記号を含む半角文字で入力してください)</p></td>
 				    </tr>
 					<tr>
 					    <td><label for="password2">パスワード（再入力）:</label></td>
 					    <td><input type="password" name="password2" id="password2"/></td>
 				    </tr>
 					<tr>
-					    <td><br /><label for="name">名称:</label></td>
+					    <td><label for="name">名称:</label></td>
 					    <td><input type="text" name="name" id="name"/></td>
 				    </tr>
 				    <tr>
 				    	<td></td>
-				    	<td><p>(10文字以内で入力してください)</p></td>
+				    	<td><p class="t">(10文字以内で入力してください)</p></td>
 				    </tr>
 					<tr>
 					    <td><label for="branchId">支社:</label></td>
@@ -69,6 +75,7 @@
 					    </td>
 				    </tr>
 				</table>
+
 			<c:if test="${ not empty errorMessages }">
 	                <div class="errorMessages">
 	                    <ul>
@@ -79,11 +86,20 @@
 	                </div>
 	                <c:remove var="errorMessages" scope="session" />
 	        </c:if>
-		    <p>
-				<input type="submit" value="登録">
-				<a href="/bbs/userManagement">キャンセル</a>
+	        <br>
+	        <br>
+		    <p class="float">
+				<input class="to" type="submit" value="登録"><br><br>
+				<a href="/bbs/userManagement">
+					<button class="can" type="button">キャンセル</button>
+				</a>
 			</p>
-	    </form>
+		</form>
      </div>
 </body>
+<br>
+<br>
+<br>
+<br>
+
 </html>
