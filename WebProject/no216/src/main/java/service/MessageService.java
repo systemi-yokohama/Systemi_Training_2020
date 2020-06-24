@@ -46,6 +46,7 @@ public class MessageService {
     		UserMessageDao messageDao = new UserMessageDao();
     		List<UserMessage> ret = messageDao.getUserMessages(connection, LIMIT_NUM);
 
+            
     		commit(connection);
 
     		return ret;

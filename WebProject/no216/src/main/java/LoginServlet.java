@@ -27,24 +27,38 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request,
             HttpServletResponse response) throws IOException, ServletException {
 
+        //ユーザーがログインした情報を受け取る
         String accountOrEmail = request.getParameter("accountOrEmail");
         String password = request.getParameter("password");
 
+        //ログインメソッドを使うためにインスタンス化する
         LoginService loginService = new LoginService();
         User user = loginService.login(accountOrEmail, password);
 
-        HttpSession session = request.getSession();
-        if (user != null) {
 
+        //セッションスコープを作る
+        HttpSession session = request.getSession();
+
+        //UserDaoのif文分岐でnullが入っていない＝うまくログインできている
+        if (user != null) {
+            //liginUserにuserのデータをセットする
+            //セッションスコープに入れることでログアウトするときにセッションを切る
+            //セッションを切るとuserデータも消える＝また他のでもログインができるようになる
             session.setAttribute("loginUser", user);
+            //画面推移をしている
             response.sendRedirect("./");
+
+            //データがないからログインできないため、
+            //jspに出力するためにerrorMessagesに格納してlogin.jspに送る
+
         } else {
 
+            //jspでこの配列の中の文だけエラーメッセージを出力するためにリストを作成
             List<String> messages = new ArrayList<String>();
             messages.add("ログインに失敗しました。");
+            //配列にエラーメッセージを追加
             session.setAttribute("errorMessages", messages);
             response.sendRedirect("login");
         }
     }
-
 }

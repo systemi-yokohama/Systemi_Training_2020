@@ -63,6 +63,7 @@ public class SettingsServlet extends HttpServlet {
 		}
 	}
 
+	//編集したデータを取得
 	private User getEditUser(HttpServletRequest request)
 			throws IOException, ServletException {
 

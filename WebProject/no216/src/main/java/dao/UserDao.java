@@ -16,10 +16,16 @@ import exception.SQLRuntimeException;
 
 public class UserDao {
 
+    //SQL文を書いて実行している
+    //新規ユーザーデータをDB
     public void insert(Connection connection, User user) {
 
+        //statement=問い合わせを実行したり問い合わせの結果の取得に関するベースとなるもの
+
+        //問い合わせ文の不正な入力を防ぐ
         PreparedStatement ps = null;
         try {
+
             StringBuilder sql = new StringBuilder();
             sql.append("INSERT INTO users ( ");
             sql.append("account");
@@ -54,25 +60,40 @@ public class UserDao {
         }
     }
 
+    
+    //登録しているユーザーを見つけるためのSQL文
     public User getUser(Connection connection, String accountOrEmail,
             String password) {
 
         PreparedStatement ps = null;
         try {
+            //StringBuilderを使えば？は使用しなくてもできる
             String sql = "SELECT * FROM users WHERE (account = ? OR email = ?) AND password = ?";
 
+            //ステートメントとる
             ps = connection.prepareStatement(sql);
             ps.setString(1, accountOrEmail);
             ps.setString(2, accountOrEmail);
             ps.setString(3, password);
 
+            //SQL文の実行
             ResultSet rs = ps.executeQuery();
+            //toUserListの変数としてrsを使う
+
             List<User> userList = toUserList(rs);
+            
+            //isEmpty=文字列が空かどうか判断する
+            //ユーザーが重複していたらエラーをなげて
+            //ユーザーが登録されていなかったらnullを投げる
+            //ユーザーが一つだけだったらユーザーのデータを投げる
             if (userList.isEmpty() == true) {
                 return null;
+                //ユーザーリストのサイズ（配列の数を数える＝length）を確認(格納したユーザーデータの数)
+                //２個以上だとユーザーが重複していることになるからエラーを投げる
             } else if (2 <= userList.size()) {
                 throw new IllegalStateException("2 <= userList.size()");
             } else {
+                //インスタンスを返す(ユーザーデータの)
                 return userList.get(0);
             }
         } catch (SQLException e) {
@@ -82,6 +103,7 @@ public class UserDao {
         }
     }
 
+    //SQL文の各カラムの情報をひとつひとつ入れてる
     private List<User> toUserList(ResultSet rs) throws SQLException {
 
         List<User> ret = new ArrayList<User>();
@@ -97,6 +119,7 @@ public class UserDao {
                 Timestamp updatedDate = rs.getTimestamp("updated_date");
 
 
+                //ユーザーを新しく一つのものとして作る＝インスタンス
                 User user = new User();
                 user.setId(id);
                 user.setAccount(account);
@@ -115,6 +138,7 @@ public class UserDao {
         }
     }
 
+    
     public User getUser(Connection connection, int id) {
 
     	PreparedStatement ps = null;

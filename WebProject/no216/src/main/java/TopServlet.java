@@ -11,14 +11,17 @@ import beans.User;
 import beans.UserMessage;
 import service.MessageService;
 
+//15~21行までは定型文
 @WebServlet(urlPatterns = { "/index.jsp" })
 public class TopServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     @Override
+    //サーブレットがリクエストされると実行するメソッド（＝サーブレットのメインメソッド）
     protected void doGet(HttpServletRequest request,
             HttpServletResponse response) throws IOException, ServletException {
 
+        //セッションスコープからUser型のuser（インスタンス）を取得する
         User user = (User) request.getSession().getAttribute("loginUser");
         boolean isShowMessageForm;
         if (user != null) {
@@ -31,7 +34,6 @@ public class TopServlet extends HttpServlet {
 
         request.setAttribute("messages", messages);
         request.setAttribute("isShowMessageForm", isShowMessageForm);
-
 
         request.getRequestDispatcher("/top.jsp").forward(request, response);
     }

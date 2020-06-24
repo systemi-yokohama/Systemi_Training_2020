@@ -12,6 +12,7 @@
 	<body>
 		<div class="main-contents">
 
+			<!--エラーメッセージの中にあったら配列の中にある分だけ出力-->
 			<c:if test="${ not empty errorMessages }">
 				<div class="errorMessages">
 					<ul>
@@ -23,6 +24,7 @@
 				<c:remove var="errorMessages" scope="session"/>
 			</c:if>
 
+			<!--actionのところに送られる-->
 			<form action="login" method="post"><br />
 				<label for="accountOrEmail">アカウント名かメールアドレス</label>
 				<input name="accountOrEmail" id="accountOrEmail"/> <br />
