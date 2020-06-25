@@ -1,11 +1,22 @@
 @charset "UTF-8";
 body{
 	margin: 0;
-	font-family: "Montserrat","游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+	background-image: linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -webkit-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    -webkit-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+	background-image: -moz-linear-gradient(45deg, #E1DEB0 24%, transparent 24%, transparent 76%, #E1DEB0 76%, #E1DEB0),
+    -moz-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
 
 .container{
 	margin: 50px 10%;
+	background-color: white;
 	border: 1px solid black;
 	padding: 30px 100px 80px 100px;
 }
@@ -19,11 +30,16 @@ input[type="text"], input[type="password"] {
 }
 
 
-.button{
+.btn{
+	color: white;
+	border-radius: 5px;
+	transition: all 1s;
 	display: inline-block;
 	margin: 20px 0px;
-	background: rgb(91,155,213);
-	border: 5px solid rgb(91,155,213);
-	border-radius: 2px;
+	background: #EA4D3C;
 	float: right;
+}
+.btn:hover{
+	opacity: 0.6;
+	cursor: pointer;
 }

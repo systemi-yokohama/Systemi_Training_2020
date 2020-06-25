@@ -1,18 +1,30 @@
 @charset "UTF-8";
 
 body {
-	font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif;
+/* 	font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,sans-serif; */
+/* 	font-family: "segoe UI", 'Noto Sans JP', "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, sans-serif; */
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 	margin: 0;
+	background-image: linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -webkit-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    -webkit-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+	background-image: -moz-linear-gradient(45deg, #E1DEB0 24%, transparent 24%, transparent 76%, #E1DEB0 76%, #E1DEB0),
+    -moz-linear-gradient(45deg, #E1DEB0 26%, transparent 26%, transparent 74%, #E1DEB0 74%, #E1DEB0);
+    background-image: -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0),
+    -o-linear-gradient(45deg, #E1DEB0 25%, transparent 25%, transparent 75%, #E1DEB0 75%, #E1DEB0);
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 50px;
 }
 
 #main {
-	width: 50%;
+	width: 40%;
 	margin: 0 auto;
 }
 
 .submain {
 	margin: 0 auto;
-	width: 80%
+	width: 100%
 }
 
 .submain .btn1 {
@@ -22,20 +34,23 @@ body {
 
 .submain .btn2 {
 	float: right;
+	margin-top: 10px;
+}
+
+span {
+	color: red;
 }
 
 h1 {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
-	border: 2px solid gray;
-	font-weight: normal;
+	border-bottom: solid 1px black;
 }
 
 .container p {
 	clear: left;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0 auto;
 }
 
 .container input {
@@ -58,16 +73,21 @@ textarea:focus {
 }
 
 .btn {
-	background-color: rgb(91,155,213);
+	height: 30px;
+	background-color: #ea4d3c;
 	border-radius: 5px;
+	border: solid 2px #ea4d3c;
 	color: white;
 	transition: all 1s;
-	width: 60px;
+	width: 80px;
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 }
 
 .btn:hover {
-	opacity: 0.6;
+	font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
 	cursor: pointer;
+  	color: #ea4d3c;
+  	background-color: white;
 }
 
 .error {

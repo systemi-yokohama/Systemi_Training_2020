@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>新規投稿画面</title>
+<title>新規投稿</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/CSS/tweets.css">
 </head>
@@ -13,11 +13,12 @@
 
 	<div id="main">
 		<div>
-			<h1>新規投稿</h1>
+			<h1><span>新</span>規投稿</h1>
 		</div>
 		<div class="submain">
 				<form class="form1" action="/teamc/TopServlet" method="POST">
-					<input class="btn btn1" type="submit" value="戻る">
+					<button class="btn btn1">戻る</button>
+<!-- 					<input class="btn btn1" type="submit" value="戻る"> -->
 				</form>
 
 			<form class="form2" action="/teamc/TweetServlet" method="POST">
@@ -32,7 +33,8 @@
 							<input Type="text" placeholder="カテゴリー" name="category">
 						</p>
 				</div>
-						<input class="btn btn2" type="submit" value="投稿">
+<!-- 						<input class="btn btn2" type="submit" value="投稿"> -->
+						<button class="btn btn2">投稿</button>
 			</form>
 			<p class="error">${ error }</p>
 			<p class="error">${ error_subject }</p>

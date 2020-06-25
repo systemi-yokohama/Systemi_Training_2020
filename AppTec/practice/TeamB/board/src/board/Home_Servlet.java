@@ -2,7 +2,6 @@ package board;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -18,6 +17,7 @@ import javax.servlet.http.HttpSession;
 
 import bean.Home_bean;
 import bean.Users;
+import utils.DButil;
 
 @WebServlet("/Home_Servlet")
 public class Home_Servlet extends HttpServlet {
@@ -27,21 +27,12 @@ public class Home_Servlet extends HttpServlet {
     	request.setCharacterEncoding("UTF-8");
 
     	// どのドライバを使うか指定（今回はmysql）
-    	String driver = "com.mysql.jdbc.Driver";
-        // 接続するDBのURLを変数に入れる
-    	  String url = "jdbc:mysql://192.168.2.5:3306/board";
-        // MySQLに接続する際のユーザー名(デフォルトはroot)
-        String user = "testuser";
-        // MySQLに接続する際のパスワード(今回はroot)
-        String password = "test";
+    	Connection connection = DButil.getConnection();
 
-     // 処理を行うことで後に出てくるgetConnectionでDB接続できるようになる
-        Connection connection = null;
-
-        String user_name = null;
-    	String write_category = null;
-    	String write_subject = null;
-    	String write_text = null;
+//        String user_name = null;
+//    	String write_category = null;
+//    	String write_subject = null;
+//    	String write_text = null;
 
         ResultSet rs = null;
         Statement statement = null;
@@ -58,9 +49,6 @@ public class Home_Servlet extends HttpServlet {
 
 
         try {
-			Class.forName(driver);
-			connection = DriverManager.getConnection(url,
-			        user, password);
 				statement = connection.createStatement();
 
 				sb.append("SELECT * from writes left join users on writes.write_user_id = users.user_id "
@@ -87,11 +75,14 @@ public class Home_Servlet extends HttpServlet {
 				writes.setWrite_id(rs.getInt("write_id"));
 
 				comments.setComment_text(rs.getString("comment_text"));
-				comments.setWrite_id(rs.getInt("comment_write_id"));
+				comments.setComment_write_id(rs.getInt("comment_write_id"));
+				comments.setComment_id(rs.getInt("comment_id"));
 
 			    ret.add(writes);
 			    ret2.add(comments);
+
 				request.setAttribute("commentsList",ret2);
+
 			}
 
         // 使った資産の後片付け
@@ -101,9 +92,10 @@ public class Home_Servlet extends HttpServlet {
 
 			request.setAttribute("writesList",ret);
 
+
 			getServletConfig().getServletContext().getRequestDispatcher("/home.jsp").forward(request,response);
 
-        }catch (SQLException | ClassNotFoundException e) {
+        }catch (SQLException  e) {
 			// TODO 自動生成された catch ブロック
 			e.printStackTrace();
 		}

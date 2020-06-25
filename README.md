@@ -45,6 +45,5 @@
 │ └practice
 ├WebProject                     Webアプリケーション基礎演習
 └AppTec                         応用技術演習
-  ├Description.md                     
   └practice
 ```
