@@ -1,6 +1,7 @@
 package bbs.dao;
 
 import static bbs.util.CloseableUtil.*;
+import static bbs.util.DBUtil.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -29,21 +30,17 @@ public class ContributionCommentDao {
         try {
             //投稿を降順に10件まで表示させるSQL文の作成
 
-        	String sqlCb = "SELECT * FROM contributions";
+        	String sqlCb = "SELECT * FROM contributions ORDER BY created_date DESC";
 //            StringBuilder sqlCb = new StringBuilder();
 //            sqlCb.append("SELECT * FROM contributions LIMIT ");
 //            sqlCb.append();
-            String sqlCm = "SELECT * FROM comments";
 
             psCb = connection.prepareStatement(sqlCb);
-            psCm = connection.prepareStatement(sqlCm);
 
             rsCb = psCb.executeQuery();
-            rsCm = psCm.executeQuery();
 
             //投稿一つ分を取り出す
             while (rsCb.next()) {
-
             	//投稿とコメントが一つになったインスタンスを生成
             	UserCC userCC = new UserCC();
 
@@ -57,12 +54,13 @@ public class ContributionCommentDao {
     			//インスタンスの中のコメントリストを定義
             	List<Comment> comments = new ArrayList<Comment>();
 
+            	String sqlCm = "SELECT * FROM comments ORDER BY created_date DESC";
+            	psCm = connection.prepareStatement(sqlCm);
+            	rsCm = psCm.executeQuery();
             	//コメントを一つずつ取り出す
             	while (rsCm.next()) {
-
             		//投稿とコメントを結合
             		if (rsCm.getInt("contribution_id") == rsCb.getInt("id")) {
-
             			//投稿のリストに入れるコメントリストの中のコメントインスタンスを生成
             			Comment comment = new Comment();
 
@@ -72,19 +70,20 @@ public class ContributionCommentDao {
             			comment.setContributionId(rsCm.getInt("contribution_id"));
             			comment.setCreatedDate(rsCm.getDate("created_date"));
             			comment.setUpdatedDate(rsCm.getDate("updated_date"));
-
             			//投稿のコメントリストにコメントを入れる
             			comments.add(comment);
-
-            			System.out.println(comment);
-
+ //           			System.out.println(comment.getText());
             			}
 
             		}
 
+            	userCC.setComments(comments);
             	ret.add(userCC);
+//            	System.out.println(userCC);
 
             	}
+
+            commit(connection);
 
             //投稿が新しい順に最大10件入っているリストを返す
 //            System.out.println(ret);

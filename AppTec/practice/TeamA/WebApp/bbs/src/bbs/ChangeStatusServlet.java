@@ -5,7 +5,6 @@ import static bbs.util.DBUtil.*;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
@@ -28,23 +27,13 @@ public class ChangeStatusServlet extends HttpServlet {
 		Connection connection = null;
     	PreparedStatement ps = null;
     	int count = 0;
-		String driver = "com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://192.168.2.6:3306/test";
-		String user = "testuser";
-		String password = "test";
 
 		String account = request.getParameter("account");
 		int status = Integer.parseInt(request.getParameter("status"));
 
 		try {
-			try {
-				Class.forName(driver);
-			} catch (ClassNotFoundException e) {
-				throw new RuntimeException(e);
-			}
-	      	//SQL文をDBに送るためのいれもの
-	      	connection = DriverManager.getConnection(url,user,password);
-	      	connection.setAutoCommit(false);
+			connection = getConnection();
+
 	      	StringBuilder sql = new StringBuilder();
 	      	sql.append("UPDATE users SET ");
 

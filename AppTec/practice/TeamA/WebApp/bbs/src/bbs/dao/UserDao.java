@@ -11,8 +11,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.servlet.http.HttpSession;
-
 import org.apache.commons.lang.StringUtils;
 
 import bbs.bean.User;
@@ -66,7 +64,7 @@ public class UserDao {
 		try {
 //			ps = connection.prepareStatement(sql);
 //			ps.setInt(1, id);
-			sql.append("SELECT * FROM users WHERE account = '");
+			sql.append("SELECT * FROM users WHERE account='");
 			sql.append(user.getAccount());
 			sql.append("'");
 			ps = connection.prepareStatement(sql.toString());
@@ -166,35 +164,42 @@ public class UserDao {
         }
 	}
 
-	public boolean getOldUser(Connection connection, String account, HttpSession session) {
+	public boolean getOldUser(Connection connection, String account, String oldAccount) {
 		PreparedStatement ps = null;
+		ResultSet rs = null;
 		connection = getConnection();
-		User editUser = (User) session.getAttribute("editUser");
+		List<User> ret = new ArrayList<User>();
 		try {
 			StringBuilder sql = new StringBuilder();
 			sql.append("SELECT * FROM users ");
 			sql.append("WHERE account='");
 			sql.append(account);
 			sql.append("'");
+			System.out.println(sql.toString());
 			ps = connection.prepareStatement(sql.toString());
-			ResultSet rs = ps.executeQuery();
-			if(rs == null) {
-				return false;
-			} else if (account.equals(editUser.getAccount())) {
-				return false;
-			} else {
-				return true;
-			}
+			rs = ps.executeQuery();
+
+			ret = toUserList(rs);
+
 		} catch (SQLException e) {
-    		throw new SQLRuntimeException(e);
+			e.printStackTrace();
 		} finally {
 			close(ps);
 		}
+
+		if(ret.isEmpty() == true) {
+			return true;
+		} else {
+			if (account.equals(oldAccount)) {
+				return true;
+			}
+			return false;
+		}
+
 	}
 
-	public void update(Connection connection, User user, HttpSession session) {
+	public void update(Connection connection, User user, String oldAccount) {
 		PreparedStatement ps = null;
-		User editUser = (User) session.getAttribute("editUser");
 		boolean flg = false;
 		try {
 			StringBuilder sql = new StringBuilder();
@@ -231,11 +236,11 @@ public class UserDao {
 			}
 			if (user.getBranchId() != 0) {
 				if (flg) {
-					sql.append(", branchId='");
+					sql.append(", branch_id='");
 					sql.append(user.getBranchId());
 					sql.append("'");
 				} else {
-					sql.append(" branchId='");
+					sql.append(" branch_id='");
 					sql.append(user.getBranchId());
 					sql.append("'");
 					flg = true;
@@ -243,21 +248,29 @@ public class UserDao {
 			}
 			if(user.getDepartmentId() != 0) {
 				if (flg) {
-					sql.append(", departmentId='");
+					sql.append(", department_id='");
 					sql.append(user.getDepartmentId());
 					sql.append("'");
 				} else {
-					sql.append(" departmentId='");
+					sql.append(" department_id='");
 					sql.append(user.getDepartmentId());
 					sql.append("'");
 					flg = true;
 				}
 			}
-			sql.append("', updated_date = CURRENT_TIMESTAMP");
+			sql.append(", updated_date = CURRENT_TIMESTAMP");
 			sql.append(" WHERE");
-			sql.append(" id='");
-			sql.append(editUser.getId());
+			sql.append(" account='");
+			sql.append(oldAccount);
 			sql.append("'");
+
+			System.out.println(sql.toString());
+
+			ps = connection.prepareStatement(sql.toString());
+			ps.executeUpdate();
+
+		} catch (SQLException e) {
+			e.printStackTrace();
 		} finally {
 			close(ps);
 		}

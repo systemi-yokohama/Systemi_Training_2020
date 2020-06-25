@@ -14,6 +14,8 @@ public class MnUser implements Serializable{
 	private String status;
 	private Date createdDate;
 	private Date updatedDate;
+
+
 	public String getAccount() {
 		return account;
 	}

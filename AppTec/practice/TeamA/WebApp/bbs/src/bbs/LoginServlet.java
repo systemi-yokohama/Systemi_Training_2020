@@ -18,7 +18,7 @@ import bbs.service.LoginService;
 
 
 
-@WebServlet(urlPatterns = {"/home"})
+@WebServlet(urlPatterns = {"/login"})
 public class LoginServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -45,10 +45,10 @@ public class LoginServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 
 		if (isValid(account) && isValid(password)) {
-			messages.add("※アカウントを6文字以上20文字以下半角英数字で入力してください");
+			messages.add("※アカウントを6文字以上20文字以下の半角英数字で入力してください");
 			messages.add("※パスワードを6文字以上20文字以下の記号を含む半角文字で入力してください");
 		} else if (isValid(account)) {
-			messages.add("※アカウントを6文字以上20文字以下半角英数字で入力してください");
+			messages.add("※アカウントを6文字以上20文字以下の半角英数字で入力してください");
 		} else if (isValid(password)) {
 			messages.add("※パスワードを6文字以上20文字以下の記号を含む半角文字で入力してください");
 		} else {

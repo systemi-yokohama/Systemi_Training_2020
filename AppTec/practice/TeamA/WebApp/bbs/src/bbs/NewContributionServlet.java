@@ -4,7 +4,6 @@ import static bbs.util.DBUtil.*;
 
 import java.io.IOException;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -33,27 +32,21 @@ public class NewContributionServlet extends HttpServlet {
     	StringBuilder sql = new StringBuilder();
     	Connection connection = null;
     	PreparedStatement statement = null;
-    	int uc = 0;
+//    	int uc = 0;
     	//jspで入力された値を獲得
 		String title = request.getParameter("title").toString();
 		String category = request.getParameter("category").toString();
 		String text = request.getParameter("text").toString();
-		//データベース接続
-		String driver = "com.mysql.jdbc.Driver";
-		String url = "jdbc:mysql://192.168.2.6:3306/test";
-		String user = "testuser";
-		String password = "test";
 		User loginUser = (User) session.getAttribute("loginUser");
-		System.out.println("muraruna");
+
+		System.out.println(title);
+
 		if (!(isValid(request, messages))) {
 			session.setAttribute("errorMessages", messages);
 			request.getRequestDispatcher("/newContribution.jsp").forward(request,response);
 		} else {
 			try {
-		      	Class.forName(driver);
-		      	//SQL文をDBに送るためのいれもの
-		      	connection = DriverManager.getConnection(url,user,password);
-		      	connection.setAutoCommit(false);
+		      	connection = getConnection();
 		      	//実行したいSQL文
 		      	sql.append("INSERT INTO contributions ( ");
 		      	sql.append("text");
@@ -77,13 +70,13 @@ public class NewContributionServlet extends HttpServlet {
 		      	//sql.append("INSERT INTO contributions VALUES(?,?,?);");
 		      	System.out.println(sql.toString());
 		      	statement = connection.prepareStatement(sql.toString());
-		    	uc = statement.executeUpdate(sql.toString());
-		    	System.out.println(uc);
+		    	statement.executeUpdate(sql.toString());
+//		    	System.out.println(uc);
 		    	statement.close();
 		    	commit(connection);
 		    	request.getRequestDispatcher("/contributionIndex").forward(request,response);
 
-		      }catch (SQLException | ClassNotFoundException e) {
+		      }catch (SQLException e) {
 		      	//TODO 自動生成されたcatchブロック
 		      	e.printStackTrace();
 		      }

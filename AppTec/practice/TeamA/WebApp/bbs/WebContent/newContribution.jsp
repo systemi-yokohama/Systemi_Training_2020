@@ -6,62 +6,65 @@
 <html>
 	<head>
     	<title>新規投稿</title>
-        <link rel="style" href="style.css">
-            <style>
-            h2{
-            font-size:30px;
-            text-align:center;
-            background-size:cover;
-            background-color:green;
-            }
-            h3{
-            font-size:25px;
-            }
-            .btn1{
-            float:right;
-            }
-            .btn2{
-            float:right;
-            }
-            contents{
-            margin-bottom:10px;
-            }
-            textarea{
-            rows:50;
-            }
-            </style>
-    </head>
-   <body>
-        <div class = header>
-            <h2>掲示板システム</h2>
-        </div>
-        <h3>新規投稿</h3>
+        <link href="css/style.css" rel="stylesheet">
 
-        <div class="main-contents">
-                <form method="post" action="/bbs/newContribution">
-                    <input type="submit" name="cansel" value="キャンセル" class="btn1"><br>
-			<div class="contents">
-                    <%-- <p>ID：<input type="text" name="id" ></p> --%>
-                    <p>${loginUser.getAccount()}</p><br>
-                    <label for="text">件名:</label>
-                        <input type="text" name="title" size="20">
-                    <label for="category">カテゴリー:</label>
-                        <input type="text" name="category" size="20"><br>
-                    <label for="text"></label>
-                    <textarea name="text" cols="70" rows="10"></textarea><br>
-			</div>
+    </head>
+    <body>
+        <header>
+            <h2>掲示板システム</h2>
+            <div class="menu">
+			 <ul>
+			 		<li>${loginUser.getAccount()}：</li>
+		         	<li><a href="/bbs/logout">ログアウト</a></li>
+	      	 </ul>
+      	 	 </div>
+        </header>
+        <div class="top">
+        	<h3>新規投稿</h3>
+        	<form action="/bbs/contributionIndex">
+        		<input class="cansel" type="submit" value="キャンセル">
+            </form>
+        </div>
+			<div class="new-contribution">
+			<form action="/bbs/newContribution" method="post">
+				<div class="contents">
+	                <p class="contribution-account">＜${loginUser.getAccount()}＞</p><br>
+	                <table>
+	                <tr>
+	                <td class="title2">
+	                	<label for="title">件名:</label>
+	                </td>
+	                <td><input class="titleInput" type="text" name="title"></td>
+	                <tr>
+	                <td class="category2" >
+	                	<label for="category">カテゴリー:</label>
+	                </td>
+	                <td><input class="categoryInput" type="text" name="category"></td>
+	                </tr>
+	                <tr>
+	                <td colspan="2">
+	                <label for="text"></label>
+	                <textarea name="text" cols="70" rows="10" placeholder="いまなにしてる？"></textarea><br>
+					</td>
+					</tr>
+					</table>
+				</div>
 				<c:if test="${ not empty errorMessages }">
-                <div class="errorMessages">
-                    <ul>
-                        <c:forEach items="${errorMessages}" var="errorMessage">
-                            <li><c:out value="${errorMessage}" />
-                        </c:forEach>
-                    </ul>
-                </div>
-                <c:remove var="errorMessages" scope="session"/>
-            </c:if>
-                    <input type="submit" name="contribution" value="投稿" class="btn2"><br>
-                </form>
+	                <div class="errorMessages">
+	                    <ul>
+	                        <c:forEach items="${errorMessages}" var="message">
+	                            <li><c:out value="${message}" />
+	                        </c:forEach>
+	                    </ul>
+	                </div>
+	                <c:remove var="messages" scope="session"/>
+	            </c:if>
+	            <input class="submit" type="submit" value="投稿"><br>
+			</form>
         </div>
     </body>
+    <br>
+    <br>
+    <br>
+    <br>
 </html>
