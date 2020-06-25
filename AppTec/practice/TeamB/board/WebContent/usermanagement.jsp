@@ -68,7 +68,7 @@ footer p {
 	function dd() {
 		if (confirm("稼働状況の切り替えを行いますか？"))
 			return true;
-
+    		window.location.reload();
 		return false;
 	}
 </script>

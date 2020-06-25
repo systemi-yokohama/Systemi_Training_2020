@@ -94,11 +94,12 @@ h5 {
 	</form>
 	<br>
 	<c:if test="${ not empty errorMessage}">
-		<div class="errorMessage">
+		<div class="errorMessage" style="text-align: center; color: red;">
 			<a style="text-align: center; color: red;">
 				<c:forEach items="${errorMessage}" var="errorMessage">
 					<c:out value="${errorMessage}" />
 				</c:forEach>
+
 			</a>
 		</div>
 		<c:remove var="errorMessage" scope="session" />

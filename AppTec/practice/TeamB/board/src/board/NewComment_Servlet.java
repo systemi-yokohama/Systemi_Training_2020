@@ -45,6 +45,13 @@ public class NewComment_Servlet extends HttpServlet {
 
 		Users user = (Users) session.getAttribute("loginUser");
 
+		//コメントの文字列
+		if (text.length() > 500 || text==null || text.trim().equals("") ) {
+			request.setAttribute("errorMessage", "本文の文字数は1~500文字です");
+			request.getRequestDispatcher("/Home_Servlet").forward(request, response);
+			return;
+		}
+
 		CommentDao commentdao = new CommentDao();
 
 		Comments comment = new Comments();
@@ -68,7 +75,11 @@ public class NewComment_Servlet extends HttpServlet {
 		//         session.setAttribute("errorMessages", writes);
 		//         response.sendRedirect("./");
 		//     }
+
+
 	}
+
+
 
 	// private boolean isValid(HttpServletRequest request, List<String> messages) {
 	//
