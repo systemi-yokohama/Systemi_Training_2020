@@ -10,6 +10,10 @@ public class Home_bean {
 	int write_id;
 	int comment_write_id;
 	int comment_id;
+	int write_user_id;
+	int comment_user_id;
+	int comment_user;
+
 	public int getComment_id() {
 		return comment_id;
 	}
@@ -83,5 +87,21 @@ public class Home_bean {
 
 	public void setComment_write_id(int comment_write_id) {
 		this.comment_write_id = comment_write_id;
+	}
+
+	public int getWrite_user_id() {
+		return write_user_id;
+	}
+
+	public void setWrite_user_id(int write_user_id) {
+		this.write_user_id = write_user_id;
+	}
+
+	public int getComment_user() {
+		return comment_user;
+	}
+
+	public void setComment_user(int comment_user) {
+		this.comment_user = comment_user;
 	}
 }

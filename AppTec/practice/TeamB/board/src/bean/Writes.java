@@ -12,6 +12,9 @@ public class Writes {
 	private int user_id;
 
 
+
+
+
 	public int getWrite_id() {
 		return write_id;
 	}

@@ -21,6 +21,8 @@ public class NewAccount_Servlet extends HttpServlet {
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+		request.setCharacterEncoding("UTF8");//文字化け防止
+
 		String driver = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://192.168.2.5/board";
 		String USER = "testuser";
@@ -112,7 +114,7 @@ public class NewAccount_Servlet extends HttpServlet {
 			}
 
 			//アカウントの文字数の確認
-			if (user_account.length() < 6 || user_account.length() > 20) {
+			if (user_account.length() < 6 || user_account.length() > 20 ) {
 				request.setAttribute("errorMessage", "アカウント名は文字数6～20で入力してください");
 				request.getRequestDispatcher("/newaccount.jsp").forward(request, response);
 				return;
@@ -121,6 +123,32 @@ public class NewAccount_Servlet extends HttpServlet {
 			if (StringUtils.equals(user_password, check_user_password)) {
 			} else {
 				request.setAttribute("errorMessage", "パスワードと確認パスワードが違います");
+				request.getRequestDispatcher("/newaccount.jsp").forward(request, response);
+				return;
+			}
+			//パスワードの長さ
+			if(user_password .length() < 6 || user_password.length() > 20) {
+				request.setAttribute("errorMessage", "パスワードは文字数6～20で入力してください");
+				request.getRequestDispatcher("/newaccount.jsp").forward(request, response);
+				return;
+			}
+
+			//空文字チェック
+
+			if (user_account == null || user_account.trim().equals("")) {
+				request.setAttribute("errorMessage", "アカウント名には空文字を入れないでください");
+				request.getRequestDispatcher("/newaccount.jsp").forward(request, response);
+				return;
+
+			}
+
+			if (user_password == null || user_password.trim().equals("")) {
+				request.setAttribute("errorMessage", "パスワードには空文字を入れないでください");
+				request.getRequestDispatcher("/newaccount.jsp").forward(request, response);
+				return;
+			}
+			if (user_name == null || user_name.trim().equals("")) {
+				request.setAttribute("errorMessage", "名称には空文字を入れないでください");
 				request.getRequestDispatcher("/newaccount.jsp").forward(request, response);
 				return;
 			}

@@ -2,6 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page import="bean.Users"%>
+<%@ page import="bean.Home_bean"%>
+<%@ page import="bean.Writes"%>
 
 <%
 	// beanのUsersを取得
@@ -21,6 +23,16 @@
 <head>
 <meta charset="UTF-8">
 <title>掲示板システム「board」</title>
+
+<script type="text/javascript">
+	function dd() {
+		if (confirm("削除しますか？"))
+			return true;
+
+		return false;
+	}
+</script>
+
 </head>
 <body>
 	<header>
@@ -53,26 +65,24 @@
 	</header>
 	<h1>投稿一覧</h1>
 	<div>
-	<form action="Home_Servlet" method="post">
-	    <a style="float: right; "><input type="submit" style="color: red; background-color: #ffcce5;"  value="検索リセット" /></a>
-	</form>
-	<br>
-	<br>
-	<form action="HomeCategory_Servlet" method="post">
-		<a style="float: right;">カテゴリー検索：<input type="text"
-			name="category"></a>
-	</form>
-	<form action="HomeDate_Servlet" method="post">
-		<a style="float: right;">期間検索：
-		    <select name="date" size="1">
-				<option value="1" label="1日以内" />
-				<option value="3" label="3日以内" />
-				<option value="7" label="1週間以内" />
-				<option value="30" label="1ヶ月以内" />
-			</select>
-			<input type="submit" value="検索" />
-		</a>
-	</form>
+		<form action="Home_Servlet" method="post">
+			<a style="float: right;"><input type="submit"
+				style="color: red; background-color: #ffcce5;" value="検索リセット" /></a>
+		</form>
+		<br> <br>
+		<form action="HomeCategory_Servlet" method="post">
+			<a style="float: right;">カテゴリー検索：<input type="text"
+				name="category"></a>
+		</form>
+		<form action="HomeDate_Servlet" method="post">
+			<a style="float: right;">期間検索： <select name="date" size="1">
+					<option value="1" label="1日以内" />
+					<option value="3" label="3日以内" />
+					<option value="7" label="1週間以内" />
+					<option value="30" label="1ヶ月以内" />
+			</select> <input type="submit" value="検索" />
+			</a>
+		</form>
 	</div>
 
 	<c:forEach var="write_List" items="${writesList}">
@@ -89,12 +99,16 @@
 				<td colspan="3">${ write_List.getSubject() }</td>
 			</tr>
 			<tr>
+
 				<th>本文
+                    <c:if test="${ user_id == write_List.getWrite_user_id() }">
 					<form action="Delete_Write_Servlet" method="post">
 						<input type="hidden" name="write_id"
 							value="${ write_List.getWrite_id() }" />
-						<button>削除</button>
+						<button onclick="return dd();">削除</button>
 					</form>
+					</c:if>
+
 				</th>
 				<td colspan="3" style="word-wrap: break-word;">${ write_List.getText() }</td>
 			</tr>
@@ -104,11 +118,14 @@
 					test="${comment_List.getComment_write_id() ==  write_List.getWrite_id()}">
 					<tr>
 						<th>コメント
+
+						<c:if test="${ user_id == comment_List.getComment_user() }">
 							<form action="Delete_Comment_Servlet" method="post">
 								<input type="hidden" name="comment_id"
 									value="${ comment_List.getComment_id() }" />
-								<button>削除</button>
+								<button onclick="return dd();">削除</button>
 							</form>
+							</c:if>
 						</th>
 						<td colspan="3" style="word-wrap: break-word;">${ comment_List.getComment_text() }</td>
 					</tr>
@@ -120,42 +137,35 @@
 
 		</table>
 
-		<tr>
-			<th>コメントの投稿</th>
-			<form action="NewComment_Servlet" method="POST">
-			<input type="hidden" name="comment_write_id" value="${write_List.write_id}">
-				<td colspan="2"><textarea name="comment_text" id="comment_text"
-						style="width: 100%"></textarea>
-				<td><button>投稿</button></td>
-			</form>
-		</tr>
+		<p>コメントの投稿</p>
+		<form action="NewComment_Servlet" method="POST">
+			<input type="hidden" name="comment_write_id"
+				value="${write_List.write_id}">
+			<textarea name="comment_text" id="comment_text" style="width: 100%"></textarea>
+			<c:if test="${ not empty errorMessage}">
+				<a style="text-align: center; color: red;"> <c:forEach
+						items="${errorMessage}" var="errorMessage">
+						<c:out value="${errorMessage}" />
+					</c:forEach>
+				</a>
+				<c:remove var="errorMessage" scope="session" />
+			</c:if>
+			<button>投稿</button>
+		</form>
 	</c:forEach>
 
 
 	<br>
-	<a href="#" style="float: right;">前の10件</a>
-	<a href="#" style="float: left;">次の10件</a>
 
-	<c:if test="${ not empty categoryMessage}">
-		<div class="categoryMessage">
+	<c:if test="${ not empty searchResults}">
+		<div class="searchResults">
 			<ul style="text-align: center; color: red;">
-				<c:forEach items="${categoryMessage}" var="categoryMessage">
-					<c:out value="${categoryMessage}" />
+				<c:forEach items="${searchResults}" var="searchResults">
+					<c:out value="${searchResults}" />
 				</c:forEach>
 			</ul>
 		</div>
-		<c:remove var="categoryMessage" scope="session" />
-	</c:if>
-
-	<c:if test="${ not empty dateMessage}">
-		<div class="dateMessage">
-			<ul style="text-align: center; color: red;">
-				<c:forEach items="${dateMessage}" var="dateMessage">
-					<c:out value="${dateMessage}" />
-				</c:forEach>
-			</ul>
-		</div>
-		<c:remove var="dateMessage" scope="session" />
+		<c:remove var="searchResults" scope="session" />
 	</c:if>
 </body>
 </html>

@@ -23,6 +23,9 @@ public class Users implements Serializable {
 	String department_id;
 	String department_name;
 
+	int write_user_id;
+	int comment_user_id;
+
 	public int getUser_id() {
 		return user_id;
 	}
@@ -133,6 +136,22 @@ public class Users implements Serializable {
 
 	public void setCheck_user_password(String check_user_password) {
 		this.check_user_password = check_user_password;
+	}
+
+	public int getWrite_user_id() {
+		return write_user_id;
+	}
+
+	public void setWrite_user_id(int write_user_id) {
+		this.write_user_id = write_user_id;
+	}
+
+	public int getComment_user_id() {
+		return comment_user_id;
+	}
+
+	public void setComment_user_id(int comment_user_id) {
+		this.comment_user_id = comment_user_id;
 	}
 
 }

@@ -63,6 +63,23 @@ public class EditAccountUpdate_Servlet extends HttpServlet {
 			System.out.println(sql_check.toString());
 
 
+			int count = 0;
+
+			rs.next();
+			count = rs.getInt(1);
+
+			System.out.println(count);
+			if(new_user_account== old_user_account){
+			if (count >= 1) {
+				connection.commit();
+				connection.close();
+				statement.close();
+				rs.close();
+				request.setAttribute("errorMessage", "アカウントが重複しています");
+				request.getRequestDispatcher("/editaccount.jsp").forward(request, response);
+				return;
+			}
+			}
 
 			rs.next();
 
@@ -105,6 +122,14 @@ public class EditAccountUpdate_Servlet extends HttpServlet {
 				return;
 			}
 
+			//パスワードの長さ
+			if( user_password .length() < 6 || user_password.length() > 20) {
+				if(0 < user_password .length()){
+							request.setAttribute("errorMessage", "パスワードは文字数6～20で入力してください");
+							request.getRequestDispatcher("/editaccount.jsp").forward(request, response);
+							return;
+				}
+			}
 
 			//SQL文作成
 			StringBuilder sql = new StringBuilder();
